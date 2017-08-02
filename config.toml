@@ -1,0 +1,117 @@
+# Site settings
+baseurl = "http://lockedata.uk/itsalocke"
+languageCode = "en-gb"
+title = "Locke Data"
+theme = "hugo-lockedata"
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.'
+
+# Enable Google Analytics by providing your tracking code.
+#googleAnalytics = ""
+
+DefaultContentLanguage = "en"
+
+[languages.en]
+  weight = 1
+  title = "Locke Data"
+  
+#[languages.de]
+#  weight = 1
+#  title = "Locke Data"
+
+# Some general Theme information:
+#
+# Almost all fields are markdown enabled.
+#
+# Icons use Fontawesome's icon font by default. (fortawesome.github.io/Font-Awesome/icons/)
+# The icons are represented by their corresponding CSS class.
+
+[params]
+  name = "Locke Data"
+  description = "Helping people get started with data science"
+
+  # Optional list of custom assets for css and js.
+  # Asset links are relative to 'static/'.
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+
+
+  dateFormat = "Jan 2, 2006"
+
+  # Main menu is by default generated from front-matter settings.
+  [params.navigation]
+    # Optional brand logo used in nav stored in 'static/img/'.
+    logo = "LockeDataTextNew.svg"
+
+  # Pre- and postpended custom links for main menu.
+#  [[languages.en.menu.prepend]]
+#    url = "http://gohugo.io"
+#    name = "Hugo"
+#    weight = 10
+
+#  [[languages.en.menu.postpend]]
+#    url = "https://github.com/digitalcraftsman/hugo-agency-theme"
+#    name = "Theme on GitHub"
+#    weight = 20
+
+#  [[languages.de.menu.postpend]]
+#    url = "https://github.com/digitalcraftsman/hugo-agency-theme"
+#    name = "Theme auf GitHub"
+#    weight = 20
+
+  # Footer
+  [params.footer]
+    enable = true
+
+  [[languages.en.menu.social]]
+    weight = 10
+    name = "twitter"
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "#"
+  [[languages.en.menu.social]]
+    weight = 20
+    name = "facebook"
+    pre = "<i class='fa fa-facebook'></i>"
+    url = "#"
+  [[languages.en.menu.social]]
+    weight = 30
+    name = "linkedin"
+    pre = "<i class='fa fa-linkedin'></i>"
+    url = "#"
+
+#  [[languages.de.menu.social]]
+#    weight = 10
+#    name = "twitter"
+#    pre = "<i class='fa fa-twitter'></i>"
+#    url = "#"
+#  [[languages.de.menu.social]]
+#    weight = 20
+#    name = "facebook"
+#    pre = "<i class='fa fa-facebook'></i>"
+#    url = "#"
+#  [[languages.de.menu.social]]
+#    weight = 30
+#    name = "linkedin"
+#    pre = "<i class='fa fa-linkedin'></i>"
+#    url = "#"
+
+  # Custom footer menu items not defined within pages.
+  #[[languages.en.menu.footer]]
+  #  weight = 10
+  #  name = "Privacy Policy"
+  #  url = "#"
+
+  #[[languages.de.menu.footer]]
+  #  weight = 10
+  #  name = "Privatsphäre"
+  #  url = "#"
+
+  # Optional piwik tracking.
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com".
+  #  domain = "www.example.com"
+  #  # Optional hash for integrity check.
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="

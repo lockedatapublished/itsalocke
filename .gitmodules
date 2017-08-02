@@ -1,0 +1,3 @@
+[submodule "themes/hugo-lockedata"]
+	path = themes/hugo-lockedata
+	url = git@github.com:lockedata/hugo-lockedata.git
