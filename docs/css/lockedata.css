@@ -184,7 +184,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Comfortaa","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #2165B6;
+    color: #E8830C;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -245,7 +245,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #2165B6;
+    color: #E8830C;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -264,7 +264,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #2165B6;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -283,7 +283,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #2165B6;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -976,4 +976,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #2165B6;
+}
+
+/*OVERWRITES*/
+.col-md-4 {
+	margin-left: auto;
+	margin-right: auto;
 }

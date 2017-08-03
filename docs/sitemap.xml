@@ -4,7 +4,55 @@
       
       
       <url>
-        <loc>http://lockelife.com/all-my-talks-in-one-place-plus-a-hugo-walkthrough/</loc>
+        <loc>http://lockelife.com/talks/is-the-cloud-cost-effective/</loc>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/coping-with-x2000-data-volumes-growth/</loc>
+        <lastmod>2017-07-04T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/solving-power-bi-painpoints-with-r/</loc>
+        <lastmod>2017-06-29T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/data-science-executive-briefing/</loc>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/r--sql-server-for-real-time-predictions/</loc>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/data---docker--discombobulating/</loc>
+        <lastmod>2017-06-26T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/all-my-talks-in-one-place-plus-a-hugo-walkthrough/</loc>
         <lastmod>2017-06-17T09:29:42+00:00</lastmod>
       </url>
     
@@ -12,7 +60,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/why-data-people-dont-do-devops/</loc>
+        <loc>http://lockelife.com/posts/why-data-people-dont-do-devops/</loc>
         <lastmod>2017-06-13T16:44:19+00:00</lastmod>
       </url>
     
@@ -20,7 +68,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/using-purrr-with-apis--revamping-my-code/</loc>
+        <loc>http://lockelife.com/posts/using-purrr-with-apis--revamping-my-code/</loc>
         <lastmod>2017-06-13T10:20:40+00:00</lastmod>
       </url>
     
@@ -28,7 +76,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-and-data-science-activities-in-london-june-27th--29th/</loc>
+        <loc>http://lockelife.com/posts/r-and-data-science-activities-in-london-june-27th--29th/</loc>
         <lastmod>2017-06-07T09:27:46+00:00</lastmod>
       </url>
     
@@ -36,7 +84,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/versioning-r-model-objects-in-sql-server/</loc>
+        <loc>http://lockelife.com/talks/failing-my-way-to-success-with-azure/</loc>
+        <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/versioning-r-model-objects-in-sql-server/</loc>
         <lastmod>2017-05-26T08:00:04+00:00</lastmod>
       </url>
     
@@ -44,7 +100,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/how-to-change-no-match-found-on-your-no-code-qa-bot/</loc>
+        <loc>http://lockelife.com/posts/how-to-change-no-match-found-on-your-no-code-qa-bot/</loc>
         <lastmod>2017-05-22T08:24:04+00:00</lastmod>
       </url>
     
@@ -52,7 +108,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/improving-automatic-document-production-with-r/</loc>
+        <loc>http://lockelife.com/talks/anchor-modelling---agile-databases/</loc>
+        <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/improving-automatic-document-production-with-r/</loc>
         <lastmod>2017-05-19T08:02:26+00:00</lastmod>
       </url>
     
@@ -60,7 +124,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/easy-peasy-qa-bot/</loc>
+        <loc>http://lockelife.com/posts/easy-peasy-qa-bot/</loc>
         <lastmod>2017-05-15T08:00:27+00:00</lastmod>
       </url>
     
@@ -68,7 +132,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/how-to-go-about-interpreting-regression-cofficients/</loc>
+        <loc>http://lockelife.com/posts/how-to-go-about-interpreting-regression-cofficients/</loc>
         <lastmod>2017-05-12T08:31:48+00:00</lastmod>
       </url>
     
@@ -76,7 +140,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/datasaurus-now-on-cran/</loc>
+        <loc>http://lockelife.com/posts/datasaurus-now-on-cran/</loc>
         <lastmod>2017-05-09T10:02:18+00:00</lastmod>
       </url>
     
@@ -84,7 +148,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-quick-tip-parameter-re-use-within-rmarkdown-yaml/</loc>
+        <loc>http://lockelife.com/posts/r-quick-tip-parameter-re-use-within-rmarkdown-yaml/</loc>
         <lastmod>2017-05-08T08:32:00+00:00</lastmod>
       </url>
     
@@ -92,7 +156,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/minor-update-to-hibpwned/</loc>
+        <loc>http://lockelife.com/posts/minor-update-to-hibpwned/</loc>
         <lastmod>2017-05-05T07:46:42+00:00</lastmod>
       </url>
     
@@ -100,7 +164,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/error-installing-latest-r-version-3.4.0-on-windows/</loc>
+        <loc>http://lockelife.com/posts/error-installing-latest-r-version-3.4.0-on-windows/</loc>
         <lastmod>2017-05-03T17:57:13+00:00</lastmod>
       </url>
     
@@ -108,7 +172,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/the-making-of-datasaurus/</loc>
+        <loc>http://lockelife.com/posts/the-making-of-datasaurus/</loc>
         <lastmod>2017-05-02T12:10:32+00:00</lastmod>
       </url>
     
@@ -116,7 +180,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/getting-started-with-data-science--recommended-resources/</loc>
+        <loc>http://lockelife.com/posts/getting-started-with-data-science--recommended-resources/</loc>
         <lastmod>2017-05-02T07:41:04+00:00</lastmod>
       </url>
     
@@ -124,7 +188,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-quick-tip-upload-multiple-files-in-shiny-and-consolidate-into-a-dataset/</loc>
+        <loc>http://lockelife.com/posts/r-quick-tip-upload-multiple-files-in-shiny-and-consolidate-into-a-dataset/</loc>
         <lastmod>2017-04-28T10:27:55+00:00</lastmod>
       </url>
     
@@ -132,7 +196,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/building-an-r-training-environment/</loc>
+        <loc>http://lockelife.com/posts/building-an-r-training-environment/</loc>
         <lastmod>2017-04-24T08:17:13+00:00</lastmod>
       </url>
     
@@ -140,7 +204,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/logistic-regressions-in-r/</loc>
+        <loc>http://lockelife.com/posts/logistic-regressions-in-r/</loc>
         <lastmod>2017-04-21T09:02:44+00:00</lastmod>
       </url>
     
@@ -148,7 +212,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-quick-tip-table-parameters-for-rmarkdown-reports/</loc>
+        <loc>http://lockelife.com/posts/r-quick-tip-table-parameters-for-rmarkdown-reports/</loc>
         <lastmod>2017-04-19T08:50:30+00:00</lastmod>
       </url>
     
@@ -156,7 +220,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/building-your-booth-presence-sce-p4/</loc>
+        <loc>http://lockelife.com/talks/logistic-regressions-in-r/</loc>
+        <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/building-your-booth-presence-sce-p4/</loc>
         <lastmod>2017-04-18T08:28:40+00:00</lastmod>
       </url>
     
@@ -164,7 +236,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/community-workshops/</loc>
+        <loc>http://lockelife.com/posts/community-workshops/</loc>
         <lastmod>2017-04-14T18:00:59+00:00</lastmod>
       </url>
     
@@ -172,7 +244,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/battle-of-the-beards-access-it-online/</loc>
+        <loc>http://lockelife.com/talks/data.table-power-hour/</loc>
+        <lastmod>2017-04-07T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/battle-of-the-beards-access-it-online/</loc>
         <lastmod>2017-03-20T11:11:29+00:00</lastmod>
       </url>
     
@@ -180,7 +260,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/dear-south-wales--bristol-readers-i-need-your-help/</loc>
+        <loc>http://lockelife.com/talks/data.table-in-5-minutes/</loc>
+        <lastmod>2017-03-15T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/dear-south-wales--bristol-readers-i-need-your-help/</loc>
         <lastmod>2017-03-06T12:26:08+00:00</lastmod>
       </url>
     
@@ -188,7 +276,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-quick-tip-microsoft-cognitive-services-text-analytics-api/</loc>
+        <loc>http://lockelife.com/posts/r-quick-tip-microsoft-cognitive-services-text-analytics-api/</loc>
         <lastmod>2017-03-01T09:40:46+00:00</lastmod>
       </url>
     
@@ -196,7 +284,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/announcing-community-r-workshops/</loc>
+        <loc>http://lockelife.com/posts/announcing-community-r-workshops/</loc>
         <lastmod>2017-02-27T09:24:14+00:00</lastmod>
       </url>
     
@@ -204,7 +292,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/quick-tip-knitr-python-windows-setup-checklist/</loc>
+        <loc>http://lockelife.com/posts/quick-tip-knitr-python-windows-setup-checklist/</loc>
         <lastmod>2017-02-22T16:01:15+00:00</lastmod>
       </url>
     
@@ -212,7 +300,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/is-my-time-series-additive-or-multiplicative/</loc>
+        <loc>http://lockelife.com/posts/is-my-time-series-additive-or-multiplicative/</loc>
         <lastmod>2017-02-20T10:46:20+00:00</lastmod>
       </url>
     
@@ -220,7 +308,23 @@
       
       
       <url>
-        <loc>http://lockelife.com/talking-data-and-docker/</loc>
+        <loc>http://lockelife.com/talks/the-you-in-community/</loc>
+        <lastmod>2017-02-18T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/reproducible-r-docs-in-github/</loc>
+        <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/talking-data-and-docker/</loc>
         <lastmod>2017-02-08T16:25:20+00:00</lastmod>
       </url>
     
@@ -228,7 +332,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/crisp-dm-and-why-you-should-know-about-it/</loc>
+        <loc>http://lockelife.com/talks/personal-branding-for-data-scientists/</loc>
+        <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/crisp-dm-and-why-you-should-know-about-it/</loc>
         <lastmod>2017-01-13T15:28:32+00:00</lastmod>
       </url>
     
@@ -236,7 +348,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/going-solo/</loc>
+        <loc>http://lockelife.com/posts/going-solo/</loc>
         <lastmod>2017-01-04T10:02:37+00:00</lastmod>
       </url>
     
@@ -244,7 +356,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/i-love-azure-functions/</loc>
+        <loc>http://lockelife.com/posts/i-love-azure-functions/</loc>
         <lastmod>2016-12-01T22:47:23+00:00</lastmod>
       </url>
     
@@ -252,7 +364,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/an-experiment-in-self-promotion--revive-old-posts/</loc>
+        <loc>http://lockelife.com/posts/an-experiment-in-self-promotion--revive-old-posts/</loc>
         <lastmod>2016-11-24T10:46:40+00:00</lastmod>
       </url>
     
@@ -284,7 +396,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-first-mvp-summit--a-fantastic-reminder/</loc>
+        <loc>http://lockelife.com/posts/my-first-mvp-summit--a-fantastic-reminder/</loc>
         <lastmod>2016-11-14T10:29:45+00:00</lastmod>
       </url>
     
@@ -292,7 +404,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/a-note-to-potential-new-speakers-its-ok-not-to-be-perfect/</loc>
+        <loc>http://lockelife.com/posts/a-note-to-potential-new-speakers-its-ok-not-to-be-perfect/</loc>
         <lastmod>2016-11-08T10:42:48+00:00</lastmod>
       </url>
     
@@ -300,7 +412,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/quick-tip-passing-values-to-a-bash-script/</loc>
+        <loc>http://lockelife.com/posts/quick-tip-passing-values-to-a-bash-script/</loc>
         <lastmod>2016-10-30T14:53:01+00:00</lastmod>
       </url>
     
@@ -308,7 +420,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/girlswithdeeppockets.com/</loc>
+        <loc>http://lockelife.com/posts/girlswithdeeppockets.com/</loc>
         <lastmod>2016-10-28T11:25:13+00:00</lastmod>
       </url>
     
@@ -316,7 +428,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/5-useful-css-sites/</loc>
+        <loc>http://lockelife.com/posts/5-useful-css-sites/</loc>
         <lastmod>2016-10-27T08:00:45+00:00</lastmod>
       </url>
     
@@ -324,7 +436,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/slack-all-the-things/</loc>
+        <loc>http://lockelife.com/talks/get-going-with-modern-r-in-sql-server-in-30-minutes/</loc>
+        <lastmod>2016-10-24T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/slack-all-the-things/</loc>
         <lastmod>2016-10-21T14:59:50+00:00</lastmod>
       </url>
     
@@ -332,7 +452,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stepping-down-from-sql-relay/</loc>
+        <loc>http://lockelife.com/posts/stepping-down-from-sql-relay/</loc>
         <lastmod>2016-10-13T08:35:58+00:00</lastmod>
       </url>
     
@@ -340,7 +460,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/unit-testing-in-ssdt--a-quick-intro/</loc>
+        <loc>http://lockelife.com/posts/unit-testing-in-ssdt--a-quick-intro/</loc>
         <lastmod>2016-10-10T08:00:08+00:00</lastmod>
       </url>
     
@@ -348,7 +468,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/itsalocke.com-now-with-added-locks/</loc>
+        <loc>http://lockelife.com/posts/itsalocke.com-now-with-added-locks/</loc>
         <lastmod>2016-10-07T08:46:31+00:00</lastmod>
       </url>
     
@@ -356,7 +476,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/2016-pass-board-of-directors-candidate-town-halls/</loc>
+        <loc>http://lockelife.com/posts/2016-pass-board-of-directors-candidate-town-halls/</loc>
         <lastmod>2016-10-06T09:27:57+00:00</lastmod>
       </url>
     
@@ -364,7 +484,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/reflections-sql-relay-is-coming/</loc>
+        <loc>http://lockelife.com/posts/reflections-sql-relay-is-coming/</loc>
         <lastmod>2016-09-27T08:24:36+00:00</lastmod>
       </url>
     
@@ -372,7 +492,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/finished-my-first-gamemaker-game/</loc>
+        <loc>http://lockelife.com/posts/finished-my-first-gamemaker-game/</loc>
         <lastmod>2016-09-17T20:11:54+00:00</lastmod>
       </url>
     
@@ -380,7 +500,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/hibpwned-updated-on-cran/</loc>
+        <loc>http://lockelife.com/posts/hibpwned-updated-on-cran/</loc>
         <lastmod>2016-09-15T07:00:53+00:00</lastmod>
       </url>
     
@@ -388,7 +508,23 @@
       
       
       <url>
-        <loc>http://lockelife.com/being-an-organised-sponsor-sce-p3/</loc>
+        <loc>http://lockelife.com/talks/board-packs-combining-shiny-latex-and-databases-for-full-effect/</loc>
+        <lastmod>2016-09-03T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/infrastructure-for-r-peeps/</loc>
+        <lastmod>2016-09-03T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/being-an-organised-sponsor-sce-p3/</loc>
         <lastmod>2016-08-30T08:15:08+00:00</lastmod>
       </url>
     
@@ -396,7 +532,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/assessing-sponsorship-opportunities-sce-p2/</loc>
+        <loc>http://lockelife.com/posts/assessing-sponsorship-opportunities-sce-p2/</loc>
         <lastmod>2016-08-04T10:35:03+00:00</lastmod>
       </url>
     
@@ -404,7 +540,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sponsorship-basics-sce-p1/</loc>
+        <loc>http://lockelife.com/posts/sponsorship-basics-sce-p1/</loc>
         <lastmod>2016-08-02T09:15:25+00:00</lastmod>
       </url>
     
@@ -412,7 +548,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sponsoring-community-events-sce/</loc>
+        <loc>http://lockelife.com/posts/sponsoring-community-events-sce/</loc>
         <lastmod>2016-08-01T09:00:10+00:00</lastmod>
       </url>
     
@@ -420,7 +556,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/giving-back-with-code/</loc>
+        <loc>http://lockelife.com/talks/git-in-5-minutes/</loc>
+        <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/giving-back-with-code/</loc>
         <lastmod>2016-07-20T14:00:50+00:00</lastmod>
       </url>
     
@@ -428,7 +572,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/ideas-for-lightning-talks/</loc>
+        <loc>http://lockelife.com/posts/ideas-for-lightning-talks/</loc>
         <lastmod>2016-07-12T15:27:57+00:00</lastmod>
       </url>
     
@@ -436,7 +580,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stumbling-into--azure-automation/</loc>
+        <loc>http://lockelife.com/posts/stumbling-into--azure-automation/</loc>
         <lastmod>2016-07-11T09:46:12+00:00</lastmod>
       </url>
     
@@ -444,7 +588,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/bad-ways-to-run-a-user-group/</loc>
+        <loc>http://lockelife.com/posts/bad-ways-to-run-a-user-group/</loc>
         <lastmod>2016-07-07T12:53:09+00:00</lastmod>
       </url>
     
@@ -452,7 +596,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/not-an-expert/</loc>
+        <loc>http://lockelife.com/posts/not-an-expert/</loc>
         <lastmod>2016-06-29T08:19:39+00:00</lastmod>
       </url>
     
@@ -460,7 +604,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-pass-#summit2016-submissions-feedback/</loc>
+        <loc>http://lockelife.com/posts/my-pass-#summit2016-submissions-feedback/</loc>
         <lastmod>2016-06-23T11:59:34+00:00</lastmod>
       </url>
     
@@ -468,7 +612,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/use-your-.rprofile-to-give-you-important-notifications/</loc>
+        <loc>http://lockelife.com/posts/use-your-.rprofile-to-give-you-important-notifications/</loc>
         <lastmod>2016-06-23T09:08:43+00:00</lastmod>
       </url>
     
@@ -476,7 +620,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/azure-storage-accounts--resource-groups-matter-to-powershell/</loc>
+        <loc>http://lockelife.com/posts/azure-storage-accounts--resource-groups-matter-to-powershell/</loc>
         <lastmod>2016-06-10T09:00:21+00:00</lastmod>
       </url>
     
@@ -484,7 +628,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/hibpwned-on-cran/</loc>
+        <loc>http://lockelife.com/posts/hibpwned-on-cran/</loc>
         <lastmod>2016-06-09T08:06:58+00:00</lastmod>
       </url>
     
@@ -492,7 +636,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/recent-presentations/</loc>
+        <loc>http://lockelife.com/talks/getting-better-with-data/</loc>
+        <lastmod>2016-06-08T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/recent-presentations/</loc>
         <lastmod>2016-06-01T08:09:32+00:00</lastmod>
       </url>
     
@@ -500,7 +652,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/#satrdays-voting-closes-may-31st/</loc>
+        <loc>http://lockelife.com/posts/#satrdays-voting-closes-may-31st/</loc>
         <lastmod>2016-05-27T12:00:56+00:00</lastmod>
       </url>
     
@@ -508,7 +660,23 @@
       
       
       <url>
-        <loc>http://lockelife.com/satrday-location-voting-now-open/</loc>
+        <loc>http://lockelife.com/talks/cut-the-r-learning-curve/</loc>
+        <lastmod>2016-05-21T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/my-ways-of-being-lazy-with-infrastructure/</loc>
+        <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/satrday-location-voting-now-open/</loc>
         <lastmod>2016-05-11T15:45:44+00:00</lastmod>
       </url>
     
@@ -516,7 +684,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/installing-sql-server-odbc-drivers-on-ubuntu-15.04/</loc>
+        <loc>http://lockelife.com/posts/installing-sql-server-odbc-drivers-on-ubuntu-15.04/</loc>
         <lastmod>2016-04-20T14:13:28+00:00</lastmod>
       </url>
     
@@ -524,7 +692,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/shiny-module-design-patterns-pass-module-inputs-to-other-modules/</loc>
+        <loc>http://lockelife.com/posts/shiny-module-design-patterns-pass-module-inputs-to-other-modules/</loc>
         <lastmod>2016-04-19T10:15:19+00:00</lastmod>
       </url>
     
@@ -532,7 +700,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/shiny-module-design-patterns-pass-module-input-to-other-modules/</loc>
+        <loc>http://lockelife.com/posts/shiny-module-design-patterns-pass-module-input-to-other-modules/</loc>
         <lastmod>2016-04-14T12:05:55+00:00</lastmod>
       </url>
     
@@ -540,7 +708,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/using-travis-make-sure-you-use-a-github-pat/</loc>
+        <loc>http://lockelife.com/talks/skilling-up-to-code-with-data/</loc>
+        <lastmod>2016-04-13T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/using-travis-make-sure-you-use-a-github-pat/</loc>
         <lastmod>2016-04-12T10:27:03+00:00</lastmod>
       </url>
     
@@ -548,7 +724,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/shiny-module-design-patterns-pass-a-single-input-to-multiple-modules/</loc>
+        <loc>http://lockelife.com/posts/shiny-module-design-patterns-pass-a-single-input-to-multiple-modules/</loc>
         <lastmod>2016-04-08T10:56:32+00:00</lastmod>
       </url>
     
@@ -556,7 +732,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-quick-tip-collapse-a-lists-of-data.frames-with-data.table/</loc>
+        <loc>http://lockelife.com/posts/r-quick-tip-collapse-a-lists-of-data.frames-with-data.table/</loc>
         <lastmod>2016-04-05T14:05:26+00:00</lastmod>
       </url>
     
@@ -564,7 +740,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/auto-deploying-documentation-better-change-tracking-of-artefacts/</loc>
+        <loc>http://lockelife.com/posts/auto-deploying-documentation-better-change-tracking-of-artefacts/</loc>
         <lastmod>2016-04-04T11:04:34+00:00</lastmod>
       </url>
     
@@ -572,7 +748,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-package-news-tfsr-hibpwned-mockaroo/</loc>
+        <loc>http://lockelife.com/posts/r-package-news-tfsr-hibpwned-mockaroo/</loc>
         <lastmod>2016-03-24T15:44:03+00:00</lastmod>
       </url>
     
@@ -580,7 +756,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/satrdays-are-go/</loc>
+        <loc>http://lockelife.com/posts/satrdays-are-go/</loc>
         <lastmod>2016-03-23T13:52:16+00:00</lastmod>
       </url>
     
@@ -588,7 +764,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/hibpwned-an-r-package-for-haveibeenpwned.com/</loc>
+        <loc>http://lockelife.com/posts/hibpwned-an-r-package-for-haveibeenpwned.com/</loc>
         <lastmod>2016-03-21T15:02:08+00:00</lastmod>
       </url>
     
@@ -596,7 +772,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sqlcardiff-return-of-the-beard-2016-03-30/</loc>
+        <loc>http://lockelife.com/posts/sqlcardiff-return-of-the-beard-2016-03-30/</loc>
         <lastmod>2016-03-15T09:59:42+00:00</lastmod>
       </url>
     
@@ -604,7 +780,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/ssh-tunnels-on-windows-for-r/</loc>
+        <loc>http://lockelife.com/posts/ssh-tunnels-on-windows-for-r/</loc>
         <lastmod>2016-03-14T13:41:06+00:00</lastmod>
       </url>
     
@@ -612,7 +788,23 @@
       
       
       <url>
-        <loc>http://lockelife.com/beware-the-microsoft-edge-as-a-pdf-reader/</loc>
+        <loc>http://lockelife.com/talks/statistics-101/</loc>
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/analytical-web-services/</loc>
+        <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/beware-the-microsoft-edge-as-a-pdf-reader/</loc>
         <lastmod>2016-03-09T14:08:53+00:00</lastmod>
       </url>
     
@@ -620,7 +812,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/mockaroo--making-realistic-test-data-in-r/</loc>
+        <loc>http://lockelife.com/posts/mockaroo--making-realistic-test-data-in-r/</loc>
         <lastmod>2016-03-08T14:00:54+00:00</lastmod>
       </url>
     
@@ -628,7 +820,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/upcoming-r-for-microsoft-training-days/</loc>
+        <loc>http://lockelife.com/posts/upcoming-r-for-microsoft-training-days/</loc>
         <lastmod>2016-03-07T09:55:13+00:00</lastmod>
       </url>
     
@@ -636,7 +828,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/declutter-a-shiny-reports-code-v2.0/</loc>
+        <loc>http://lockelife.com/posts/declutter-a-shiny-reports-code-v2.0/</loc>
         <lastmod>2016-03-03T13:40:34+00:00</lastmod>
       </url>
     
@@ -644,7 +836,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-life-my-universe-my-everything/</loc>
+        <loc>http://lockelife.com/posts/my-life-my-universe-my-everything/</loc>
         <lastmod>2016-03-01T20:08:37+00:00</lastmod>
       </url>
     
@@ -652,7 +844,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/fixing-the-tiny-icons-big-text-issue-on-my-xps13/</loc>
+        <loc>http://lockelife.com/posts/fixing-the-tiny-icons-big-text-issue-on-my-xps13/</loc>
         <lastmod>2016-01-13T17:32:14+00:00</lastmod>
       </url>
     
@@ -660,7 +852,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/satrdays-final-push/</loc>
+        <loc>http://lockelife.com/posts/satrdays-final-push/</loc>
         <lastmod>2016-01-06T14:54:37+00:00</lastmod>
       </url>
     
@@ -668,7 +860,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/optirum-0.37.3-now-out/</loc>
+        <loc>http://lockelife.com/posts/optirum-0.37.3-now-out/</loc>
         <lastmod>2016-01-04T07:26:14+00:00</lastmod>
       </url>
     
@@ -676,7 +868,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/anchor-modelling-sixth-normal-form-databases/</loc>
+        <loc>http://lockelife.com/posts/anchor-modelling-sixth-normal-form-databases/</loc>
         <lastmod>2015-12-31T11:47:29+00:00</lastmod>
       </url>
     
@@ -684,7 +876,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/auto-deploying-documentation-rtraining/</loc>
+        <loc>http://lockelife.com/posts/auto-deploying-documentation-rtraining/</loc>
         <lastmod>2015-12-23T10:25:48+00:00</lastmod>
       </url>
     
@@ -692,7 +884,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/should-presenters-have-to-pay-to-attend/</loc>
+        <loc>http://lockelife.com/posts/should-presenters-have-to-pay-to-attend/</loc>
         <lastmod>2015-12-07T15:55:36+00:00</lastmod>
       </url>
     
@@ -700,7 +892,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/auto-deploying-documentation-faster/</loc>
+        <loc>http://lockelife.com/posts/auto-deploying-documentation-faster/</loc>
         <lastmod>2015-11-13T09:13:22+00:00</lastmod>
       </url>
     
@@ -708,7 +900,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/boris-presentation-agency--356labs/</loc>
+        <loc>http://lockelife.com/posts/boris-presentation-agency--356labs/</loc>
         <lastmod>2015-11-11T09:43:11+00:00</lastmod>
       </url>
     
@@ -716,7 +908,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/optirum-0.37.1-now-out/</loc>
+        <loc>http://lockelife.com/posts/optirum-0.37.1-now-out/</loc>
         <lastmod>2015-11-07T19:26:10+00:00</lastmod>
       </url>
     
@@ -724,7 +916,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sqlsaturdays-but-for-r/</loc>
+        <loc>http://lockelife.com/posts/sqlsaturdays-but-for-r/</loc>
         <lastmod>2015-11-04T19:25:22+00:00</lastmod>
       </url>
     
@@ -732,7 +924,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/some-recent-posts-over-on-the-mango-blog/</loc>
+        <loc>http://lockelife.com/posts/some-recent-posts-over-on-the-mango-blog/</loc>
         <lastmod>2015-10-28T17:10:32+00:00</lastmod>
       </url>
     
@@ -740,7 +932,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/women-doing-technology/</loc>
+        <loc>http://lockelife.com/posts/women-doing-technology/</loc>
         <lastmod>2015-10-24T08:35:00+00:00</lastmod>
       </url>
     
@@ -748,7 +940,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/dataops--its-a-thing-honest/</loc>
+        <loc>http://lockelife.com/posts/dataops--its-a-thing-honest/</loc>
         <lastmod>2015-10-16T20:27:03+00:00</lastmod>
       </url>
     
@@ -756,7 +948,23 @@
       
       
       <url>
-        <loc>http://lockelife.com/sql-relay-is-here/</loc>
+        <loc>http://lockelife.com/talks/knowing-your-rs-from-your-elbow/</loc>
+        <lastmod>2015-10-04T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/talks/r-for-developers/</loc>
+        <lastmod>2015-09-24T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/sql-relay-is-here/</loc>
         <lastmod>2015-07-16T09:30:59+00:00</lastmod>
       </url>
     
@@ -764,7 +972,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-training-day-mk2--sqlsatmcr/</loc>
+        <loc>http://lockelife.com/posts/r-training-day-mk2--sqlsatmcr/</loc>
         <lastmod>2015-06-24T08:35:09+00:00</lastmod>
       </url>
     
@@ -772,7 +980,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/custom-latex-beamer-style-templates-for-rmarkdown/</loc>
+        <loc>http://lockelife.com/posts/custom-latex-beamer-style-templates-for-rmarkdown/</loc>
         <lastmod>2015-06-17T12:34:22+00:00</lastmod>
       </url>
     
@@ -780,7 +988,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/auto-deploying-documentation-multiple-r-vignettes/</loc>
+        <loc>http://lockelife.com/posts/auto-deploying-documentation-multiple-r-vignettes/</loc>
         <lastmod>2015-06-05T08:38:44+00:00</lastmod>
       </url>
     
@@ -788,7 +996,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-first-#sqlhangout/</loc>
+        <loc>http://lockelife.com/posts/my-first-#sqlhangout/</loc>
         <lastmod>2015-06-04T08:19:17+00:00</lastmod>
       </url>
     
@@ -796,7 +1004,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/optirum--presentation/</loc>
+        <loc>http://lockelife.com/posts/optirum--presentation/</loc>
         <lastmod>2015-06-03T15:00:31+00:00</lastmod>
       </url>
     
@@ -804,7 +1012,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/automated-documentation-hosting-on-github-via-travis-ci/</loc>
+        <loc>http://lockelife.com/posts/automated-documentation-hosting-on-github-via-travis-ci/</loc>
         <lastmod>2015-06-01T09:29:21+00:00</lastmod>
       </url>
     
@@ -812,7 +1020,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/how-many-is-too-many-conferences/</loc>
+        <loc>http://lockelife.com/posts/how-many-is-too-many-conferences/</loc>
         <lastmod>2015-05-25T17:55:16+00:00</lastmod>
       </url>
     
@@ -820,7 +1028,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sqlsaturday-portugal/</loc>
+        <loc>http://lockelife.com/posts/sqlsaturday-portugal/</loc>
         <lastmod>2015-05-18T09:42:13+00:00</lastmod>
       </url>
     
@@ -828,7 +1036,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/sql-saturday-exeter-steph--ozs-slides/</loc>
+        <loc>http://lockelife.com/talks/agile-bi/</loc>
+        <lastmod>2015-05-16T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/sql-saturday-exeter-steph--ozs-slides/</loc>
         <lastmod>2015-04-26T16:04:36+00:00</lastmod>
       </url>
     
@@ -836,7 +1052,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/easy-continuous-integration-for-r/</loc>
+        <loc>http://lockelife.com/posts/easy-continuous-integration-for-r/</loc>
         <lastmod>2015-04-20T09:06:36+00:00</lastmod>
       </url>
     
@@ -844,7 +1060,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/unified.diff-source-control-smells--latex/</loc>
+        <loc>http://lockelife.com/posts/unified.diff-source-control-smells--latex/</loc>
         <lastmod>2015-04-17T09:44:38+00:00</lastmod>
       </url>
     
@@ -852,7 +1068,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/optirum--gini-like-a-wizard/</loc>
+        <loc>http://lockelife.com/posts/optirum--gini-like-a-wizard/</loc>
         <lastmod>2015-04-16T10:22:38+00:00</lastmod>
       </url>
     
@@ -860,7 +1076,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stuff-i-read-this-week/</loc>
+        <loc>http://lockelife.com/posts/stuff-i-read-this-week/</loc>
         <lastmod>2015-04-15T08:20:34+00:00</lastmod>
       </url>
     
@@ -868,7 +1084,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--improving-font-sizes/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--improving-font-sizes/</loc>
         <lastmod>2015-04-13T12:24:14+00:00</lastmod>
       </url>
     
@@ -876,7 +1092,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/an-r-data.table-cookbook/</loc>
+        <loc>http://lockelife.com/posts/an-r-data.table-cookbook/</loc>
         <lastmod>2015-04-08T11:47:08+00:00</lastmod>
       </url>
     
@@ -884,7 +1100,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stuff-i-read-this-bit-more-than-a-week/</loc>
+        <loc>http://lockelife.com/posts/stuff-i-read-this-bit-more-than-a-week/</loc>
         <lastmod>2015-04-07T08:24:38+00:00</lastmod>
       </url>
     
@@ -892,7 +1108,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/working-with-azure-blob-storage-some-notes/</loc>
+        <loc>http://lockelife.com/posts/working-with-azure-blob-storage-some-notes/</loc>
         <lastmod>2015-04-06T09:27:05+00:00</lastmod>
       </url>
     
@@ -900,7 +1116,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/deployr--why-microsoft-bought-revolution/</loc>
+        <loc>http://lockelife.com/posts/deployr--why-microsoft-bought-revolution/</loc>
         <lastmod>2015-03-23T10:19:10+00:00</lastmod>
       </url>
     
@@ -908,7 +1124,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/bride-of-frankenstein-tfs---r/</loc>
+        <loc>http://lockelife.com/posts/bride-of-frankenstein-tfs---r/</loc>
         <lastmod>2015-03-20T10:44:35+00:00</lastmod>
       </url>
     
@@ -916,7 +1132,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/overcoming-social-anxiety-to-attend-user-groups/</loc>
+        <loc>http://lockelife.com/posts/overcoming-social-anxiety-to-attend-user-groups/</loc>
         <lastmod>2015-03-14T14:13:17+00:00</lastmod>
       </url>
     
@@ -924,7 +1140,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stuff-i-read-this-week/</loc>
+        <loc>http://lockelife.com/posts/stuff-i-read-this-week/</loc>
         <lastmod>2015-02-27T13:01:49+00:00</lastmod>
       </url>
     
@@ -932,7 +1148,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/where-do-i-fit-in-the-microsoft-future/</loc>
+        <loc>http://lockelife.com/posts/where-do-i-fit-in-the-microsoft-future/</loc>
         <lastmod>2015-02-24T10:41:45+00:00</lastmod>
       </url>
     
@@ -940,7 +1156,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stuff-i-read-this-week/</loc>
+        <loc>http://lockelife.com/posts/stuff-i-read-this-week/</loc>
         <lastmod>2015-02-22T12:08:49+00:00</lastmod>
       </url>
     
@@ -948,7 +1164,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/declutter-a-shiny-reports-code/</loc>
+        <loc>http://lockelife.com/posts/declutter-a-shiny-reports-code/</loc>
         <lastmod>2015-02-18T11:41:21+00:00</lastmod>
       </url>
     
@@ -956,7 +1172,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/stuff-i-read-this-week/</loc>
+        <loc>http://lockelife.com/posts/stuff-i-read-this-week/</loc>
         <lastmod>2015-02-13T15:45:58+00:00</lastmod>
       </url>
     
@@ -964,7 +1180,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/a-busy-month-or-so/</loc>
+        <loc>http://lockelife.com/posts/a-busy-month-or-so/</loc>
         <lastmod>2015-02-11T15:15:36+00:00</lastmod>
       </url>
     
@@ -972,7 +1188,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/magrittr-cleaner-program-flow/</loc>
+        <loc>http://lockelife.com/posts/magrittr-cleaner-program-flow/</loc>
         <lastmod>2015-02-09T11:51:23+00:00</lastmod>
       </url>
     
@@ -980,7 +1196,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-on-windows--weird-user-name-gotcha/</loc>
+        <loc>http://lockelife.com/posts/r-on-windows--weird-user-name-gotcha/</loc>
         <lastmod>2015-02-07T18:40:09+00:00</lastmod>
       </url>
     
@@ -988,7 +1204,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/paul-randal-offers-mentoring/</loc>
+        <loc>http://lockelife.com/posts/paul-randal-offers-mentoring/</loc>
         <lastmod>2015-02-06T19:20:50+00:00</lastmod>
       </url>
     
@@ -996,7 +1212,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-r-pre-con-sqlsat-exeter/</loc>
+        <loc>http://lockelife.com/posts/my-r-pre-con-sqlsat-exeter/</loc>
         <lastmod>2015-01-24T10:10:29+00:00</lastmod>
       </url>
     
@@ -1004,7 +1220,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--intro-to-r-case-study/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--intro-to-r-case-study/</loc>
         <lastmod>2015-01-21T09:48:28+00:00</lastmod>
       </url>
     
@@ -1012,7 +1228,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/spell-check-your-spreadsheets/</loc>
+        <loc>http://lockelife.com/posts/spell-check-your-spreadsheets/</loc>
         <lastmod>2015-01-20T10:10:54+00:00</lastmod>
       </url>
     
@@ -1020,7 +1236,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sqlsaturday-exeter-2015/</loc>
+        <loc>http://lockelife.com/posts/sqlsaturday-exeter-2015/</loc>
         <lastmod>2015-01-19T20:09:35+00:00</lastmod>
       </url>
     
@@ -1028,7 +1244,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--presentation-design/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--presentation-design/</loc>
         <lastmod>2015-01-18T10:52:45+00:00</lastmod>
       </url>
     
@@ -1036,7 +1252,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/review-the-first-cardiff-r-user-group-meeting/</loc>
+        <loc>http://lockelife.com/posts/review-the-first-cardiff-r-user-group-meeting/</loc>
         <lastmod>2015-01-14T14:25:05+00:00</lastmod>
       </url>
     
@@ -1044,7 +1260,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/photoshop-image-macro-or-something-even-better/</loc>
+        <loc>http://lockelife.com/posts/photoshop-image-macro-or-something-even-better/</loc>
         <lastmod>2015-01-13T10:59:21+00:00</lastmod>
       </url>
     
@@ -1052,7 +1268,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--prioritising-events-to-speak-at/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--prioritising-events-to-speak-at/</loc>
         <lastmod>2015-01-12T09:57:16+00:00</lastmod>
       </url>
     
@@ -1060,7 +1276,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/conference-sessions--basic-web-scraping-in-r/</loc>
+        <loc>http://lockelife.com/posts/conference-sessions--basic-web-scraping-in-r/</loc>
         <lastmod>2015-01-11T16:56:22+00:00</lastmod>
       </url>
     
@@ -1068,7 +1284,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--throw-1/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--throw-1/</loc>
         <lastmod>2015-01-10T09:59:50+00:00</lastmod>
       </url>
     
@@ -1076,7 +1292,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/starting-the-cardiff-r-user-group/</loc>
+        <loc>http://lockelife.com/posts/starting-the-cardiff-r-user-group/</loc>
         <lastmod>2015-01-09T15:41:19+00:00</lastmod>
       </url>
     
@@ -1084,7 +1300,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--throw-1-speak-1/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--throw-1-speak-1/</loc>
         <lastmod>2015-01-08T10:33:25+00:00</lastmod>
       </url>
     
@@ -1092,7 +1308,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/updated-site/</loc>
+        <loc>http://lockelife.com/posts/updated-site/</loc>
         <lastmod>2015-01-03T16:21:11+00:00</lastmod>
       </url>
     
@@ -1100,7 +1316,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/organised-speaking--session-abstracts/</loc>
+        <loc>http://lockelife.com/posts/organised-speaking--session-abstracts/</loc>
         <lastmod>2015-01-02T09:31:14+00:00</lastmod>
       </url>
     
@@ -1108,7 +1324,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sql-cardiff-dates-announced/</loc>
+        <loc>http://lockelife.com/posts/sql-cardiff-dates-announced/</loc>
         <lastmod>2014-12-29T11:00:02+00:00</lastmod>
       </url>
     
@@ -1116,7 +1332,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/aggregate-on-a-lookup-in-ssrs/</loc>
+        <loc>http://lockelife.com/posts/aggregate-on-a-lookup-in-ssrs/</loc>
         <lastmod>2014-11-23T12:59:13+00:00</lastmod>
       </url>
     
@@ -1124,7 +1340,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/the-basics-of-common-table-expressions-ctes/</loc>
+        <loc>http://lockelife.com/posts/the-basics-of-common-table-expressions-ctes/</loc>
         <lastmod>2014-11-10T15:40:15+00:00</lastmod>
       </url>
     
@@ -1132,7 +1348,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/database-/-bi-related-unit-testing-options/</loc>
+        <loc>http://lockelife.com/posts/database-/-bi-related-unit-testing-options/</loc>
         <lastmod>2014-11-06T16:18:48+00:00</lastmod>
       </url>
     
@@ -1140,7 +1356,15 @@
       
       
       <url>
-        <loc>http://lockelife.com/whereve-we-been/</loc>
+        <loc>http://lockelife.com/talks/intro-to-r/</loc>
+        <lastmod>2014-07-04T00:00:00+00:00</lastmod>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/posts/whereve-we-been/</loc>
         <lastmod>2014-06-28T11:49:21+00:00</lastmod>
       </url>
     
@@ -1148,7 +1372,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/merry-christmas/</loc>
+        <loc>http://lockelife.com/posts/merry-christmas/</loc>
         <lastmod>2013-12-24T21:54:30+00:00</lastmod>
       </url>
     
@@ -1156,7 +1380,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/fiddly-ssrs/</loc>
+        <loc>http://lockelife.com/posts/fiddly-ssrs/</loc>
         <lastmod>2013-11-28T01:15:25+00:00</lastmod>
       </url>
     
@@ -1164,7 +1388,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/sqlrelay-cardiff--nov-13th/</loc>
+        <loc>http://lockelife.com/posts/sqlrelay-cardiff--nov-13th/</loc>
         <lastmod>2013-09-25T20:44:54+00:00</lastmod>
       </url>
     
@@ -1172,7 +1396,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/r-for-database-and-excel-people/</loc>
+        <loc>http://lockelife.com/posts/r-for-database-and-excel-people/</loc>
         <lastmod>2013-09-15T18:00:27+00:00</lastmod>
       </url>
     
@@ -1180,7 +1404,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/marketing-for-sqlrelay--two-weeks-in/</loc>
+        <loc>http://lockelife.com/posts/marketing-for-sqlrelay--two-weeks-in/</loc>
         <lastmod>2013-09-13T18:45:19+00:00</lastmod>
       </url>
     
@@ -1188,7 +1412,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/tired-of-right-clicking-on-folders-and-going-to-properties-to-get-the-folder-size/</loc>
+        <loc>http://lockelife.com/posts/tired-of-right-clicking-on-folders-and-going-to-properties-to-get-the-folder-size/</loc>
         <lastmod>2013-09-07T18:31:12+00:00</lastmod>
       </url>
     
@@ -1196,7 +1420,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/marketing-for-sqlrelay--in-the-beginning/</loc>
+        <loc>http://lockelife.com/posts/marketing-for-sqlrelay--in-the-beginning/</loc>
         <lastmod>2013-09-01T11:30:40+00:00</lastmod>
       </url>
     
@@ -1204,7 +1428,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/dynamic-named-range-generator/</loc>
+        <loc>http://lockelife.com/posts/dynamic-named-range-generator/</loc>
         <lastmod>2013-08-27T21:00:50+00:00</lastmod>
       </url>
     
@@ -1212,7 +1436,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/regex-functions-in-vba/</loc>
+        <loc>http://lockelife.com/posts/regex-functions-in-vba/</loc>
         <lastmod>2013-08-20T18:55:37+00:00</lastmod>
       </url>
     
@@ -1220,7 +1444,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/ssis-basics-and-gotchas--presentation-and-resources/</loc>
+        <loc>http://lockelife.com/posts/ssis-basics-and-gotchas--presentation-and-resources/</loc>
         <lastmod>2013-08-16T17:06:24+00:00</lastmod>
       </url>
     
@@ -1228,7 +1452,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/dynamic-named-ranges--the-basics/</loc>
+        <loc>http://lockelife.com/posts/dynamic-named-ranges--the-basics/</loc>
         <lastmod>2013-07-27T19:55:47+00:00</lastmod>
       </url>
     
@@ -1236,7 +1460,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-first-platformer/</loc>
+        <loc>http://lockelife.com/posts/my-first-platformer/</loc>
         <lastmod>2013-06-28T22:03:28+00:00</lastmod>
       </url>
     
@@ -1244,7 +1468,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/my-day/night-cycle-demo/</loc>
+        <loc>http://lockelife.com/posts/my-day/night-cycle-demo/</loc>
         <lastmod>2013-06-27T20:25:40+00:00</lastmod>
       </url>
     
@@ -1252,7 +1476,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/user-group-presentation/</loc>
+        <loc>http://lockelife.com/posts/user-group-presentation/</loc>
         <lastmod>2013-05-31T20:19:42+00:00</lastmod>
       </url>
     
@@ -1260,7 +1484,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/synchronising-schema-between-mssql--mysql-with-ssis/</loc>
+        <loc>http://lockelife.com/posts/synchronising-schema-between-mssql--mysql-with-ssis/</loc>
         <lastmod>2013-05-29T16:25:47+00:00</lastmod>
       </url>
     
@@ -1268,7 +1492,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/making-charts-with-conditionally-coloured-series/</loc>
+        <loc>http://lockelife.com/posts/making-charts-with-conditionally-coloured-series/</loc>
         <lastmod>2013-05-25T16:05:54+00:00</lastmod>
       </url>
     
@@ -1276,7 +1500,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/center-across-selection/</loc>
+        <loc>http://lockelife.com/posts/center-across-selection/</loc>
         <lastmod>2013-05-24T15:23:29+00:00</lastmod>
       </url>
     
@@ -1284,7 +1508,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/time-to-go-home/</loc>
+        <loc>http://lockelife.com/posts/time-to-go-home/</loc>
         <lastmod>2013-05-19T15:19:04+00:00</lastmod>
       </url>
     
@@ -1292,7 +1516,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/objectless-check-boxes-using-vba/</loc>
+        <loc>http://lockelife.com/posts/objectless-check-boxes-using-vba/</loc>
         <lastmod>2013-05-12T14:03:09+00:00</lastmod>
       </url>
     
@@ -1300,7 +1524,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/setting-up-wordpress-on-azure/</loc>
+        <loc>http://lockelife.com/posts/setting-up-wordpress-on-azure/</loc>
         <lastmod>2013-05-11T22:14:43+00:00</lastmod>
       </url>
     
@@ -1332,7 +1556,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/post/</loc>
+        <loc>http://lockelife.com/posts/</loc>
         <lastmod>2017-06-17T09:29:42+00:00</lastmod>
       </url>
     
@@ -1349,7 +1573,7 @@
       
       <url>
         <loc>http://lockelife.com/talks/</loc>
-        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
       </url>
     
   
@@ -1358,6 +1582,15 @@
       <url>
         <loc>http://lockelife.com/tags/#statuspost/</loc>
         <lastmod>2017-06-07T09:27:46+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/accounting/</loc>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1385,6 +1618,15 @@
       <url>
         <loc>http://lockelife.com/tags/anchor-model/</loc>
         <lastmod>2015-12-31T11:47:29+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/anchor-modeling/</loc>
+        <lastmod>2017-05-20T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1438,7 +1680,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/azure/</loc>
-        <lastmod>2016-12-01T22:47:23+00:00</lastmod>
+        <lastmod>2017-07-04T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1581,6 +1823,15 @@
       
       
       <url>
+        <loc>http://lockelife.com/tags/careers/</loc>
+        <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
         <loc>http://lockelife.com/categories/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
         <priority>0</priority>
@@ -1619,6 +1870,15 @@
       <url>
         <loc>http://lockelife.com/tags/chocolatey/</loc>
         <lastmod>2016-06-01T08:09:32+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/cloud/</loc>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1707,6 +1967,15 @@
       
       
       <url>
+        <loc>http://lockelife.com/categories/data/</loc>
+        <lastmod>2017-06-29T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
         <loc>http://lockelife.com/tags/data-analysis/</loc>
         <lastmod>2015-01-11T16:56:22+00:00</lastmod>
         <priority>0</priority>
@@ -1753,7 +2022,7 @@
       
       <url>
         <loc>http://lockelife.com/categories/data-science/</loc>
-        <lastmod>2017-06-13T10:20:40+00:00</lastmod>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1789,7 +2058,7 @@
       
       <url>
         <loc>http://lockelife.com/categories/dataops/</loc>
-        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1799,6 +2068,15 @@
       <url>
         <loc>http://lockelife.com/tags/datasaurus/</loc>
         <lastmod>2017-05-09T10:02:18+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/datatable/</loc>
+        <lastmod>2017-04-07T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1843,7 +2121,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/docker/</loc>
-        <lastmod>2017-04-24T08:17:13+00:00</lastmod>
+        <lastmod>2017-06-26T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1952,6 +2230,15 @@
       <url>
         <loc>http://lockelife.com/tags/fonts/</loc>
         <lastmod>2015-04-13T12:24:14+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/fundamentals/</loc>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2076,8 +2363,26 @@
       
       
       <url>
+        <loc>http://lockelife.com/tags/infrastructure/</loc>
+        <lastmod>2017-07-04T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
         <loc>http://lockelife.com/tags/knitr/</loc>
         <lastmod>2017-02-22T16:01:15+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/lambda/</loc>
+        <lastmod>2017-07-04T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2140,7 +2445,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/logistic-regression/</loc>
-        <lastmod>2015-04-16T10:22:38+00:00</lastmod>
+        <lastmod>2017-04-19T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2195,6 +2500,15 @@
       <url>
         <loc>http://lockelife.com/tags/magrittr/</loc>
         <lastmod>2015-02-09T11:51:23+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/management/</loc>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2436,6 +2750,15 @@
       
       
       <url>
+        <loc>http://lockelife.com/tags/power-bi/</loc>
+        <lastmod>2017-06-29T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
         <loc>http://lockelife.com/tags/powerbi/</loc>
         <lastmod>2016-06-01T08:09:32+00:00</lastmod>
         <priority>0</priority>
@@ -2490,6 +2813,15 @@
       
       
       <url>
+        <loc>http://lockelife.com/tags/processes/</loc>
+        <lastmod>2015-05-16T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
         <loc>http://lockelife.com/tags/productivity/</loc>
         <lastmod>2017-05-19T08:02:26+00:00</lastmod>
         <priority>0</priority>
@@ -2501,6 +2833,24 @@
       <url>
         <loc>http://lockelife.com/tags/professional-development/</loc>
         <lastmod>2017-01-13T15:28:32+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/categories/professional-development/</loc>
+        <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/categories/programming/</loc>
+        <lastmod>2017-04-07T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2554,7 +2904,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/r/</loc>
-        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2752,7 +3102,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/source-control/</loc>
-        <lastmod>2015-03-20T10:44:35+00:00</lastmod>
+        <lastmod>2016-07-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2815,7 +3165,7 @@
       
       <url>
         <loc>http://lockelife.com/tags/sql-server/</loc>
-        <lastmod>2017-05-26T08:00:04+00:00</lastmod>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2915,6 +3265,15 @@
       <url>
         <loc>http://lockelife.com/tags/statistics/</loc>
         <lastmod>2017-05-12T08:31:48+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+      
+      
+      <url>
+        <loc>http://lockelife.com/tags/strategy/</loc>
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     

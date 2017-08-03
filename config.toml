@@ -9,7 +9,9 @@ copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa
 #googleAnalytics = ""
 
 [permalinks]
-  post = "/:title/"
+  posts = "/posts/:title/"
+  talks = "/talks/:title/"
+  
   
 DefaultContentLanguage = "en"
 
