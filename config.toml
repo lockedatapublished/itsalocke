@@ -8,6 +8,9 @@ copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa
 # Enable Google Analytics by providing your tracking code.
 #googleAnalytics = ""
 
+[permalinks]
+  post = "/:title/"
+  
 DefaultContentLanguage = "en"
 
 [languages.en]
