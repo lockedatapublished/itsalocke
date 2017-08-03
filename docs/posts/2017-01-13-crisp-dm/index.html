@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>CRISP-DM and why you should know about it &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">CRISP-DM and why you should know about it</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>The Cross Industry Standard Process for Data Mining (CRISP-DM) was a concept developed 20 years ago now. I&#8217;ve read about it in various data mining and related books and it&#8217;s come in very handy over the years. In this post, I&#8217;ll outline what the model is and why you should know about it, even if it has that terribly out of vogue phrase data mining in it! 😉</p>
+
+<blockquote class="twitter-tweet" data-width="525">
+  <p lang="en" dir="ltr">
+    Data / R people. Do you know what the CRISP-DM model is?
+  </p>
+  
+  <p>
+    &mdash; Steph Locke (@SteffLocke) <a href="https://twitter.com/SteffLocke/status/818148292060213250">January 8, 2017</a>
+  </p>
+</blockquote>
+
+<p></p>
+
+<h2 id="crisp-dm">CRISP-DM</h2>
+
+<p>The model splits a data mining project into six phases and it allows for needing to go back and forth between different stages. I&#8217;d personally stick a few more backwards arrows but it&#8217;s generally fine. The CRISP-DM model applies equally well to a data science project.<figure style="width: 3707px" class="wp-caption alignnone"></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Cross_Industry_Standard_Process_for_Data_Mining"><img class="size-medium_large" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png" alt="CRISP-DM Process diagram by Kenneth Jensen (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" width="3707" height="3714" /></a><figcaption class="wp-caption-text">CRISP-DM Process diagram by Kenneth Jensen (Own work) [CC BY-SA 3.0 (<a href="http://creativecommons.org/licenses/by-sa/3.0)">http://creativecommons.org/licenses/by-sa/3.0)</a>], via Wikimedia Commons</figcaption></figure></p>
+
+<h3 id="typical-activities-in-each-phase">Typical activities in each phase</h3>
+
+<p>In <a href="http://geni.us/dm4crm">Data Mining Techniques in CRM</a>, a very readable book, they outline in Table 1.1. some typical activities within each phase:</p>
+
+<ul>
+<li>Business Understanding
+
+<ul>
+<li>Understanding the business goal</li>
+<li>Situation assessment</li>
+<li>Translating the business goal in a data mining objective</li>
+<li>Development of a project plan</li>
+</ul></li>
+<li>Data understanding
+
+<ul>
+<li>Considering data requirements</li>
+<li>Initial data collection, exploration, and quality assessment</li>
+</ul></li>
+<li>Data preparation
+
+<ul>
+<li>Selection of required data</li>
+<li>Data acquisition</li>
+<li>Data integration and formatting [&#8230;]</li>
+<li>Data cleaning</li>
+<li>Data tranaformation and enrichment [&#8230;]</li>
+</ul></li>
+<li>Modeling
+
+<ul>
+<li>Selection of appropriate modeling technique</li>
+<li>[&#8230;] Splitting of the dataset into training and testing subsets for evaluation purposes</li>
+<li>Development and examination of alternative modeling algorithms and parameter settings</li>
+<li>Fine tuning of the model settings according to an initial assessment of the model&#8217;s performance</li>
+</ul></li>
+<li>Model evaluation
+
+<ul>
+<li>Evaluation of the model in the context of the business success criteria</li>
+<li>Model approval</li>
+</ul></li>
+<li>Deployment
+
+<ul>
+<li>Create a report of findings</li>
+<li>Planning and development of the deployment procedure</li>
+<li>Deployment of the [&#8230;] model</li>
+<li>Distribution of the model results and integration in the organisation&#8217;s operational [&#8230;] system</li>
+<li>Development of a maintenance / update plan</li>
+<li>Review of the project</li>
+<li>Planning the next steps</li>
+</ul></li>
+</ul>
+
+<h2 id="crisp-dm-8217-s-value">CRISP-DM&#8217;s value</h2>
+
+<p>The CRISP-DM process outlines the steps involved in performing data science activities from business need to deployment, and most importantly it indicates how <em>iterative</em> this process is and that you never get things perfectly right.</p>
+
+<h3 id="iterative">Iterative</h3>
+
+<p>Within a given project, we know that at the beginning of our first ever project we may not have a lot of domain knowledge, or there might be problems with the data or the model might not be valuable enough to put into production. These things happen, and the really nice thing about the CRISP-DM model is it allows for us to do that. It&#8217;s not a single linear path from project kick-off to deployment. It helps you remember not to beat yourself up over having to go back a step. It also equips you with something upfront to explain to managers that sometimes you will need to bounce between some phases, and <em>that&#8217;s ok</em>.</p>
+
+<blockquote>
+<p>All models are wrong but some are useful <strong>(George Box)</strong></p>
+</blockquote>
+
+<p>We also know that our model is not going to be perfect. By the end of the project, our model&#8217;s value is already deteriorating! We get new customers, people change, the world changes, the business changes. Everything is conspiring against your model. This means it requires regular TLC for it remain of value. We might need to just regular adjust slightly for the latest view of the world (re-calibration) or we might need to take another tilt at modelling the problem again. The big circle around the process shows this fact of a data scientist&#8217;s life.</p>
+
+<h3 id="long-term-strategy">Long-term strategy</h3>
+
+<p>Working from the expectation that we will be iterative, we can start planning cycles of work. These might start with a short, small, simple model cycle to get a basic model quickly. Then further iterations can develop stronger models. The business gets some immediate benefit and it can then continue getting additional benefit from further cycles, or people could be moved onto building the next quick and simple model.</p>
+
+<p>This gives the business a better high-level view of where data scientists are adding value and it means if the company is evolving the processes and data engineering capabilities at the same time, then a broad range of simple models can be first developed and implemented, giving learning experiences for all involved.</p>
+
+<h3 id="templates">Templates</h3>
+
+<p>Estimation of project work and scoping is often difficult for data science projects, and that does need to change. One thing we can do is take the CRISP-DM phases and typical activities and build checklists and process frameworks around them. We can start moving each &#8220;bespoke&#8221; activity into a &#8220;cookie-cutter&#8221; activity.</p>
+
+<p>One simple way of doing this is to start with a checklist. I am a big fan on checklists, more so after reading <a href="http://geni.us/checkman">The Checklist Manifesto</a>. You can build a manual checklist for people to work through to make sure important tasks are completed, that considerations from past projects are addressed, and you can ensure that ethical, regulatory, and legal considerations are considered at the right points in the development cycle.</p>
+
+<p>The <a href="https://azure.microsoft.com/en-gb/documentation/learning-paths/data-science-process/">Microsoft Team Data Science Process</a> is a developing framework that broadly follows the CRISP-DM model and is bringing in templates and tools to help data scientists. It&#8217;s proving quite interesting and I would recommend it as follow up reading.</p>
+
+<h2 id="thinking-about-how-we-work">Thinking about how we work</h2>
+
+<p>I read a lot of productivity, project management, and framework books. I&#8217;m always interested in how we can do our jobs better. Usually, this boils down to making things simpler and helping ensure we do the right things at the right time. The CRISP-DM is one simple thing that has helped me put that structure onto what often seems a chaotic process. I hope it could offer you some benefit and I&#8217;d be really interested to hear your thoughts, experiences, and tips for building better data science workflows.</p>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

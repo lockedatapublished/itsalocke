@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Auto-deploying documentation: FASTER! &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Auto-deploying documentation: FASTER!</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>Over the past few years I&#8217;ve been delving deeper into automatically building and deploying documentation and reporting in R (with rmarkdown, LaTeX etc). This post covers another step forward on that journey towards awesomeness.</p>
+
+<p></p>
+
+<hr />
+
+<h3 id="posts-in-this-series">Posts in this series</h3>
+
+<ol>
+<li><a href="https://itsalocke.com/automated-documentation-hosting-on-github-via-travis-ci/">Automated documentation hosting on github via Travis-CI</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-multiple-r-vignettes/">Auto-deploying documentation: multiple R vignettes</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-faster/">Auto-deploying documentation: FASTER!</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-rtraining/">Auto-deploying documentation: Rtraining</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-better-change-tracking-artefacts/">Auto-deploying documentation: better change tracking of artefacts</a></li>
+</ol>
+
+<hr />
+
+<p>I wrote a while back about how <a href="https://twitter.com/rmflight">Robert Flight</a>&#8216;s post helped me <a href="https://itsalocke.com/automated-documentation-hosting-on-github-via-travis-ci/">make web pages out of my R package vignette</a> <em>automatically</em> whenever I committed a change to GitHub. I took it further by modifying to <a href="https://itsalocke.com/auto-deploying-documentation-multiple-r-vignettes/">loop through vignettes</a>.</p>
+
+<p>I then promised to do one thing: make a much more complex version. Well, that&#8217;s taken me a while and you can check it out in its <a href="https://github.com/stephlocke/Rtraining">current guise for Rtraining</a> but it&#8217;s still not as clean I&#8217;d like because of my pants coding on some of the Rmarkdown docs. Whilst I can&#8217;t blog about a neat solution for that (yet), I wanted to cover the neat, but most importantly fast, solution I was able to crib from <a href="http://kieranhealy.org/">Kieran Healy</a> on using <a href="http://kieranhealy.org/blog/archives/2015/10/16/using-containerized-travis-ci-to-check-r-in-rmarkdown-files/">containerized R builds</a> and how this makes things go whizzy fast!</p>
+
+<p>Part of the big problem I&#8217;ve had when doing my Rtraining auto-doc process has been the amount of time it takes to build my R environment from scratch before generating the documents. When your build takes more than 15 minutes you find other things to do with the intervening time and end up completely forgetting about it.</p>
+
+<h2 id="how-do-you-solve-that-full-build-issue">How do you solve that full-build issue?</h2>
+
+<p>Unfortunately, a long build time is a typical state of affairs with the <a href="http://docs.travis-ci.com/user/languages/r/">R Travic-CI</a> builds at the moment because they require elevated permissions and run on VMs. Travis have been using containers from <a href="https://www.docker.com/">docker</a> to do much cooler stuff. By using containers they have less initial setup that needs doing so your build starts quicker, then you can set up some caching of dependencies so that it keeps all your installed stuff lying around ready for use when you commit things. This means that unless a dependency has changed e.g. new version, or no longer required, the cache is still valid and can be used. Overall, between the two pieces it means time is spent on testing your stuff, and less time is spent on the prep for testing.</p>
+
+<p>This can literally take 10-15 minutes off your build time &#8211; woohoo!</p>
+
+<h2 id="why-isn-8217-t-everyone-doing-it">Why isn&#8217;t everyone doing it?</h2>
+
+<p>Well, it is pretty new and R support has only just gone into travis generally. There&#8217;s also some permissions issues that go away with <code>sudo</code>. At the moment, the <a href="https://github.com/jtilly/R-travis-container-example">example container R build</a> that Jan Tilly built is still pretty bare bones and isn&#8217;t as easy out of the box as the mainstream version.</p>
+
+<h2 id="move-on-to-the-cool-stuff-already">Move on to the cool stuff already!</h2>
+
+<p>When I needed to do an <a href="https://github.com/stephlocke/isc-proposal">rmarkdown repository</a> for making <a href="https://www.r-consortium.org/about/isc/proposals">R Consortium Infrastructure Proposals</a>, I was able to take the opportunity to take Jan&#8217;s code and move forward with it so that the ISC proposal is always web-facing. Here&#8217;s how I did it:</p>
+
+<ul>
+<li>Used @jtilly&#8217;s <a href="https://github.com/jtilly/R-travis-container-example/blob/master/.travis.yml">.travis.yml</a> file as the backbone</li>
+<li>Emulated @yihui&#8217;s <a href="https://github.com/yihui/knitr/blob/master/.travis.yml">knitr .travis.yml</a> file in order to get recent versions of pandoc and texlive for rmarkdown to work correctly</li>
+<li>Used a shell script for sorting out git commits, and my R file for generating the Rmarkdown docs</li>
+</ul>
+
+<h3 id="what-next">What next?</h3>
+
+<p>Take a look at the key components (below) or have a play &#8211; take the <a href="https://github.com/stephlocke/isc-proposal">proposal boilerplate</a> and follow the instructions on configuring it to work on your account. Try adding new docs or dependencies, or add a package infrastructure &#8211; in other words hack away! Most importantly though, smile at jobs that take just a minute 😀</p>
+
+<h3 id="the-r-code">The R code</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;isc-proposal&quot; path=&quot;ghgenerate.R&quot;]
+</code></pre>
+
+<h3 id="the-bash-code">The bash code</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;isc-proposal&quot; path=&quot;.push_gh_pages.sh&quot;]
+</code></pre>
+
+<h3 id="the-travis-yaml">The travis yaml</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;isc-proposal&quot; path=&quot;.travis.yml&quot;]
+</code></pre>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

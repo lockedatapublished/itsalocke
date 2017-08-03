@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Installing SQL Server ODBC drivers on Ubuntu 15.04 &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Installing SQL Server ODBC drivers on Ubuntu 15.04</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p><strong>UPDATE 2016-10-21 : You can now get the ODBC 13 driver for Linux with a much smoother install process than below. Get all the relevant information on <a href="https://blogs.msdn.microsoft.com/sqlnativeclient/2016/10/20/odbc-driver-13-0-for-linux-released/">the announcement from the Microsoft SQLNCli team blog</a>.</strong></p>
+
+<p>Did you know you can now get <a href="https://www.microsoft.com/en-gb/server-cloud/sql-server-on-linux.aspx">SQL Server ODBC drivers for Ubuntu</a>? Yes, no, maybe? It&#8217;s ok even if you haven&#8217;t since it&#8217;s pretty new! Anyway, this presents me with an ideal opportunity to standardise my SQL Server ODBC connections across the operating systems I use R on i.e. Windows and Ubuntu. My first trial was to get it working on <a href="https://travis-ci.org">Travis-CI</a> since that&#8217;s where all my training magic happens and if it can&#8217;t work on a clean build like Travis, then where can it work? Alas, the ODBC 13 driver doesn&#8217;t work Ubuntu 14.04 so this set of instructions has been modified to provide code for Ubuntu 15.04 only.</p>
+
+<h2 id="tl-dr">TL;DR</h2>
+
+<p>It works, but it&#8217;s really hacky right now. Definitely looking forward to the next iterations of this driver.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<ul>
+<li>This will work for Ubuntu 15.04 but 14.04 has a different set of C compilers</li>
+<li>This is currently hacky, and Microsoft are on the case for improving it so this post could quickly become out of date.</li>
+<li>Be very careful installing the driver on an existing machine. Due to the overwriting of unixODBC if already installed and potential compatibility issues with other driver managers you may have installed.</li>
+</ul>
+
+<p></p>
+
+<h2 id="line-by-line">Line by line</h2>
+
+<pre><code>wget https://download.microsoft.com/download/2/E/5/2E58F097-805C-4AB8-9FC6-71288AB4409D/msodbcsql-13.0.0.0.tar.gz -P ..
+</code></pre>
+
+<p>Download the compressed file containing all the relevant stuff. This URL is important &#8211; the website does not provide a URL like this and this one is likely to be unstable. Microsoft are aware of this as a problem for users who like to script everything and will hopefully be addressing it in the short to medium term.</p>
+
+<p>The <code>-P ..</code> tells the <code>wget</code> command to dump the file in the parent directory so that it won&#8217;t set off warnings when I build my R package.</p>
+
+<pre><code>tar xvzf ../msodbcsql-13.0.0.0.tar.gz -C ..
+</code></pre>
+
+<p>This little line unzips the file we just downloaded to the parent directory.</p>
+
+<pre><code>sed -i '14d' ../msodbcsql-13.0.0.0/build_dm.sh
+sed -i '/tmp=/c\tmp=/tmp/odbcbuilds' ../msodbcsql-13.0.0.0/build_dm.sh
+</code></pre>
+
+<p>Unfortunately the default script that should be executed next generates a random directory for the unixODBC driver manager. The random directory is present in the output text and not easy to pipe into the next command. Consequently, with much help from <a href="https://www.linkedin.com/in/vinson-yu-91475339">Vin from MSFT</a> we have this current hack to change the directory to a fixed directory.</p>
+
+<pre><code>../msodbcsql-13.0.0.0/build_dm.sh --accept-warning
+</code></pre>
+
+<p>This line runs a shell script that <strong>builds</strong> the unixODBC driver manager. Note &#8211; you can&#8217;t rely on the unixODBC driver available via apt-get at this time due to the SQL Server ODBC driver not being compatible (currently) with the latest versions. Also, it wasn&#8217;t noted in the manual but I had to add the <code>--accept-warning</code> to suppress some sort of notification that wanted to be triggered. I suspect I just sold my soul and that I&#8217;m encouraging you to do the same.</p>
+
+<pre><code>cd /tmp/odbcbuilds/unixODBC-2.3.1
+sudo make install
+</code></pre>
+
+<p>These lines shunts us over to the directory for the unixODBC build and installs it. The <code>sudo</code> is necessary for the installation to the <code>usr/</code> directory.</p>
+
+<pre><code>cd ~
+</code></pre>
+
+<p>This gets you back to the your starting package directory for continuing on to package install.</p>
+
+<pre><code>sudo apt-get install libgss3 -y
+</code></pre>
+
+<p>This dependency was needed by the ODBC driver</p>
+
+<pre><code>../msodbcsql-13.0.0.0/install.sh verify
+</code></pre>
+
+<p>Verify the driver can be installed. This line wasn&#8217;t so great since it doesn&#8217;t check for a bug/feature &#8211; that you&#8217;re in the right directory &#8211; otherwise, a series of file copies in the install process won&#8217;t work.</p>
+
+<pre><code>cd ../msodbcsql-13.0.0.0/
+sudo ./install.sh install --accept-license
+</code></pre>
+
+<p>Proceed to install the driver in the right directory</p>
+
+<pre><code>odbcinst -q -d -n &quot;ODBC Driver 13 for SQL Server&quot;
+</code></pre>
+
+<p>Test the driver is usable</p>
+
+<h2 id="the-final-file">The final file</h2>
+
+<pre><code>wget https://download.microsoft.com/download/2/E/5/2E58F097-805C-4AB8-9FC6-71288AB4409D/msodbcsql-13.0.0.0.tar.gz -P ..
+tar xvzf ../msodbcsql-13.0.0.0.tar.gz -C ..
+sed -i '14d' ../msodbcsql-13.0.0.0/build_dm.sh
+sed -i '/tmp=/ctmp=/tmp/odbcbuilds' ../msodbcsql-13.0.0.0/build_dm.sh
+../msodbcsql-13.0.0.0/build_dm.sh --accept-warning
+cd /tmp/odbcbuilds/unixODBC-2.3.1
+sudo make install
+cd ~
+sudo apt-get install libgss3 -y
+../msodbcsql-13.0.0.0/install.sh verify
+cd ../msodbcsql-13.0.0.0/
+sudo ./install.sh install --accept-license
+odbcinst -q -d -n &quot;ODBC Driver 13 for SQL Server&quot;
+</code></pre>
+
+<h2 id="the-manuals-for-reading">The manuals (for reading)</h2>
+
+<ul>
+<li><a href="https://msdn.microsoft.com/en-us/library/hh568451(v=sql.110).aspx">Microsoft ODBC Driver for SQL Server on Linux</a></li>
+<li><a href="https://msdn.microsoft.com/en-us/library/hh568449(v=sql.110).aspx">Installing the Driver Manager</a></li>
+<li><a href="https://msdn.microsoft.com/en-us/library/hh568454(v=sql.110).aspx">Installing the Microsoft ODBC Driver for SQL Server on Linux</a></li>
+</ul>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

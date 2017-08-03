@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Auto-deploying documentation: Rtraining &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Auto-deploying documentation: Rtraining</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      
+
+<p>In my <a href="https://itsalocke.com/auto-deploying-documentation-faster/">last post</a> on using GitHub, Travis-CI, and rmarkdown/knitr for automatically building and deploying documentation, I covered how I was able to do it with a containerised approach so things were faster. I also said my <a href="https://github.com/stephlocke/Rtraining">Rtraining</a> repository was still too brittle to blog about. This has changed &#8211; WOO HOO!</p>
+
+<p>The main thanks for that goes out to the new package <a href="https://github.com/daattali/ezknitr">ezknitr</a> from <a href="https://twitter.com/daattali">Dean Attali</a>. ezknitr takes the pain out of working directories, making my hierarchies much more resilient. I made a very simple reproduction of my scenarios in a repo called <a href="https://github.com/stephlocke/ezknitrTest">ezknitrTest</a> &#8211; you can peruse it online or take a copy to play, but it essentially shows how you can use <code>ezknitr::ezknit</code> instead of <code>rmarkdown::render</code> and <code>knitr::knit</code>. It&#8217;s really handy!</p>
+
+<p>So I went through and converted everything in my Rtraining to this and realised it messed up my slide decks &#8211; it&#8217;s been so long since I had built a pure knitr solution that I forgot that <code>rmarkdown::render</code> != <code>knitr::knit</code>. For my slidedecks, if I wanted the ioslides_presentation format, I needed to use <code>rmarkdown::render</code>. The problem with that has been the relative references to the CSS and the logo.</p>
+
+<p>To solve this I read about the <a href="http://rmarkdown.rstudio.com/developer_custom_formats.html">custom render formats capability</a> and created a <a href="https://github.com/stephlocke/Rtraining/blob/master/R/stephSlideStyle.R">function</a> that produces an ioslides_presentation but with my CSS preloaded by default. This now means that I can produce slides with better file referencing.</p>
+
+<p>All in all, Rtraining is the culmination of my learnings over the past year of developing an analytical document pipeline that fits into my DataOps category. A summary of the features it uses are:</p>
+
+<ul>
+<li>dynamic file identification</li>
+<li>dynamic index page</li>
+<li>custom render formats</li>
+<li>custom CSS</li>
+<li>ezknitr&#8217;d files</li>
+<li>continuous integration</li>
+<li>continuous deployment</li>
+<li>containerised builds</li>
+</ul>
+
+<p>It can now be browsed on <a href="http://stephlocke.github.io/Rtraining/">stephlocke/github.io/Rtraining</a>.</p>
+
+<hr />
+
+<h3 id="posts-in-this-series">Posts in this series</h3>
+
+<ol>
+<li><a href="https://itsalocke.com/automated-documentation-hosting-on-github-via-travis-ci/">Automated documentation hosting on github via Travis-CI</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-multiple-r-vignettes/">Auto-deploying documentation: multiple R vignettes</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-faster/">Auto-deploying documentation: FASTER!</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-rtraining/">Auto-deploying documentation: Rtraining</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-better-change-tracking-artefacts/">Auto-deploying documentation: better change tracking of artefacts</a></li>
+</ol>
+
+<hr />
+
+<p>PS If you&#8217;re looking to do a more book-like project, Hadley provides <a href="https://github.com/hadley/bookdown">bookdown</a> for your publication needs.</p>
+
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

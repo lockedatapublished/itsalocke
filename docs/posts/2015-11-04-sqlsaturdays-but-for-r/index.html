@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>SQLSaturdays but for R? &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">SQLSaturdays but for R?</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p><strong>UPDATE: Proposal now being developed after fantastic community support. Check out satRdays on <a href="https://github.com/stephlocke/RSaturday-proposal">GitHub</a> and contribute your opinions!</strong></p>
+
+<p>I had a contact from a very nice chap in Dallas a month ago about whether in the R world we do anything like SQLSaturdays.</p>
+
+<p>The great thing about the SQLSaturdays he said was not that they&#8217;re free (well it helps!) but that they&#8217;re on his time. Developing his skills was something he couldn&#8217;t get signed off by his boss so he wanted to be able to do it by himself.</p>
+
+<p>In answer to the question of whether there are local(ish) weekend conferences happening regularly for R, my answer was &#8220;not really&#8221; and it&#8217;s a shame because the R community is fantastic. I started thinking about why we don&#8217;t have them and what would be needed to change that.</p>
+
+<p>Free / cheap regional small-medium conferences are a must for growing user knowledge and speakers in R.</p>
+
+<p></p>
+
+<h2 id="what-are-sqlsaturdays">What are SQLSaturdays?</h2>
+
+<p>SQLSaturdays are free, SQL Server related conferences held around the world. The SQLSaturdays focus on developing technical knowledge and skill with talks at a range of levels. The first SQLSaturday was in 2007, and in 2015 it&#8217;ll have grown to 115 events across the globe. That&#8217;s a fantastic achievement, especially as we&#8217;re generally seeing the SQL events expand into Business Intelligence and Analytics.</p>
+
+<p>They&#8217;re run by local communities to grow support and attendance for their user groups, but they&#8217;re supported globally by <a href="http://sqlpass.org/">PASS</a> who provide the brand, the amazingly helpful <a href="https://twitter.com/KarlaKay22">Karla</a>, and the digital infrastructure needed.</p>
+
+<h2 id="who-are-pass">Who are PASS?</h2>
+
+<p>PASS was set up in 1999 by Microsoft and CA Technologies to help promote and educate users of SQL Server around the world. PASS run the PASS Summit, a much larger paid-for conference that acts as a fund-raising vehicle for the support of PASS&#8217; infrastructure, SQLSaturdays, and the Virtual Chapters. The way PASS operate the events to help grow the user base and the quality of knowledge within the SQL community, provide a great example that the new <a href="https://www.r-consortium.org/">R Consortium</a> could learn from &#8211; especially given Microsoft are key partners of the group. PASS operate with some salaried employees but for the most part this massive organisation is staffed with volunteers &#8211; it&#8217;s not perfect but they do a great of supporting learning and the community.</p>
+
+<h2 id="what-8217-s-the-problem-for-doing-them-for-r">What&#8217;s the problem for doing them for R?</h2>
+
+<p>If they&#8217;re so awesome, why aren&#8217;t we already doing them? There are a few main reasons:</p>
+
+<ul>
+<li>There&#8217;s been not been a central association / organisation with this in their remit</li>
+<li>The user base for R is much smaller than SQL Server was, even back in 2007, let alone today</li>
+<li>A corollary of fewer users is that there are fewer speakers. This makes it harder to get 5 to 10 good quality speakers for a conference in Cardiff or Albuquerque for instance</li>
+<li>The academic roots of R means that almost R conferences happen during the week* and potentially there could be a lot of pushback to weekend events</li>
+<li>There may not be enough companies deriving benefits from the R language and who are willing to pay to grow the user base and brand awareness</li>
+</ul>
+
+<h2 id="what-it-would-take-to-get-them-going-for-r">What it would take to get them going for R?</h2>
+
+<p>In terms of what it would take to do these, the answer is &#8220;not much&#8221;. Doing a minimal replication would entail:</p>
+
+<ol>
+<li>A group of people who can produce a central platform</li>
+<li>Some pilot user groups out there willing to organise a conference</li>
+<li>A few good sponsors who can support the first conferences</li>
+<li>A group of people willing to travel to speak and/or attend</li>
+<li>A dab hand at graphic design to come up with a neat logo</li>
+</ol>
+
+<h2 id="what-next">What next?</h2>
+
+<p>I think R Saturdays could be a great way to make R more accessible. Community events don&#8217;t happen because of just one person though, it can literally be a cast of thousands when you include the attendees, so more folks are required to make it happen &#8211; so we&#8217;ll need some willing people to help tackle this.</p>
+
+<p>It&#8217;s theoretically within the remit of the <a href="https://www.r-consortium.org/news/faqs/what-kinds-projects-will-r-consortium-undertake">R Consortium to provide a central platform for these events</a>. It&#8217;d additionally support the big useR! conferences too, so this could be an excellent proposal to put in front in of the Infrastructure Committee. I raised it at the Panel Discussion at <a href="http://www.earl-conference.com/boston/agenda/">EARL 2015 Boston</a> and the Consortium are keen.</p>
+
+<p>I intend to submit a proposal, but before I do, I&#8217;d really love to have some discussion on the concept and potential pitfalls people might see. Please either discuss below or <a href="https://twitter.com/home?status=Hey%20%40SteffLocke,%20about%20%23RSaturdays">tweet with #RSaturday to @SteffLocke</a>.</p>
+
+<pre><code> * I'm aware there's some &quot;Citation Required&quot; - if you have evidence to the contrary, please give a heads up!
+</code></pre>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

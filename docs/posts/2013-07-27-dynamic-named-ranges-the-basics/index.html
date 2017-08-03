@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Dynamic named ranges – the basics &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Dynamic named ranges – the basics</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p><strong>Whoah nelly, what&#8217;s a <em>named range</em> first of all let alone a dynamic one?</strong></p>
+
+<p>A named range is a shorthand or alias for a set of cells in Excel.  These can be created easily by simply selecting one or more cells and using the name box to give it whatever name you feel relevant.  This alias can then be used in formula to make something much more insightful like =A1_VAT as opposed to =A1_0.2<figure id="attachment_58201" style="width: 254px" class="wp-caption alignnone"></p>
+
+<p><a href="http://res.cloudinary.com/lockedata/image/upload/v1499851309/2013-08-27-20_13_19-Microsoft-Excel-Book1_xkzrvi_calvkf.png"><img class="size-full wp-image-58201" alt="Excel nav bar" src="http://res.cloudinary.com/lockedata/image/upload/v1499851309/2013-08-27-20_13_19-Microsoft-Excel-Book1_xkzrvi_calvkf.png" width="254" height="102" /></a><figcaption class="wp-caption-text">Excel name box</figcaption></figure></p>
+
+<p>For more info on these, I can highly recommend the Contextures blog and video:</p>
+
+<p><strong>Ok, so what&#8217;s a dynamic named range?</strong></p>
+
+<p>A dynamic named range is one that can grow or shrink dependant how much data there is, instead of a fixed size.</p>
+
+<p><strong>What&#8217;s the point?</strong></p>
+
+<p>This allows you to build pivot table connections that always select the relevant amount of data, it allows you create dropdown list for validation that can be easily updated, and it allows you to produce cleaner formula.  There are many other uses including producing charts with the last X entries showing only.</p>
+
+<p><strong>So, how do I do it?</strong></p>
+
+<p>You need two functions COUNTA and OFFSET</p>
+
+<ul>
+<li>COUNTA (as opposed to just COUNT which will only count numbers) will work out how many rows (or columns) need to be included in the range</li>
+<li>OFFSET will build the range of cells needed based on a starting cell and some info how the range needs to be built</li>
+</ul>
+
+<p>A dynamic named range formula looks like</p>
+
+<p>=OFFSET(<span style="color: #cc9900;">Sheet1!</span><span style="color: #3366ff;">$A$1</span>, <span style="color: #339966;">0,0,</span> <span style="color: #ff9900;">COUNTA(<span style="color: #cc9900;">Sheet1!</span>$A$1:$A$1000)</span>)</p>
+
+<p><span style="color: #3366ff;">The start point</span></p>
+
+<p><span style="color: #339966;">How many rows and columns it needs to move</span></p>
+
+<p><span style="color: #ff9900;">How many rows it needs to extend &#8211; no need to use $A:$A since this uses unnecessary processing power</span></p>
+
+<p><span style="color: #cc9900;">Included to allow the formula to be hardcoded to a specific range in a sheet</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

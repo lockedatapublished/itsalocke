@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Automated documentation hosting on github via Travis-CI &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Automated documentation hosting on github via Travis-CI</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>In this post, I&#8217;m going to cover how you can use continuous integration and source control to build and host documentation (or any other static HTML) for free, and in a way that updates every time your code changes. I&#8217;ll cover the generic capability, and then how I apply this to my simplest package, tfsR. In a later post (once I&#8217;ve cracked the best method to do it) I&#8217;ll cover my more complex use case of multiple documents and a dynamically constructed index page.</p>
+
+<p>NB: This is kicked off from a <a href="http://rmflight.github.io/posts/2014/11/travis_ci_gh_pages.html">post</a> from Robert Flight about applying to the technique to R package vignettes. It&#8217;s a very useful post but it was quite specific to his situation and I wanted to understand the principles behind it before I started extending it to my more complex cases.</p>
+
+<hr />
+
+<h3 id="posts-in-this-series">Posts in this series</h3>
+
+<ol>
+<li><a href="https://itsalocke.com/automated-documentation-hosting-on-github-via-travis-ci/">Automated documentation hosting on github via Travis-CI</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-multiple-r-vignettes/">Auto-deploying documentation: multiple R vignettes</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-faster/">Auto-deploying documentation: FASTER!</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-rtraining/">Auto-deploying documentation: Rtraining</a></li>
+<li><a href="https://itsalocke.com/auto-deploying-documentation-better-change-tracking-artefacts/">Auto-deploying documentation: better change tracking of artefacts</a></li>
+</ol>
+
+<hr />
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li>Must haves:
+
+<ul>
+<li>Travis-CI</li>
+<li>GitHub</li>
+</ul></li>
+<li>Optional:
+
+<ul>
+<li>A linux machine (so you can test your bash script that Travis-CI will run)</li>
+<li>R (for following the specific instructions)</li>
+</ul></li>
+</ul>
+
+<h2 id="high-level-process">High-level process</h2>
+
+<ul>
+<li>Get an OAUTH token from github</li>
+<li>Add OAUTH token to travis</li>
+<li>Add a *.sh file that gets your HTML (depending on circumstance, you may also need to generate it) and pushes to gh-pages branch</li>
+<li>Include your .sh file in the <code>after_success</code> part of your travis file</li>
+
+<li><p>Commit &amp; push!</p>
+
+<p></p></li>
+</ul>
+
+<h2 id="detailed-process">Detailed process</h2>
+
+<ul>
+<li>Get a token from <a href="https://github.com/settings/tokens/new">github</a> &#8211; use least privileges so only grant read/write access to public repos<figure id="attachment_61354" style="width: 760px" class="wp-caption alignnone"></li>
+</ul>
+
+<p><a href="http://res.cloudinary.com/lockedata/image/upload/v1499851046/OAUTHperms_lbmohc.png"><img class="size-full wp-image-61354" src="http://res.cloudinary.com/lockedata/image/upload/v1499851046/OAUTHperms_lbmohc.png" alt="github OAUTH permissions" width="760" height="534" /></a><figcaption class="wp-caption-text">github OAUTH permissions</figcaption></figure></p>
+
+<ul>
+<li><p>Store the OAUTH token on travis with the name GH_TOKEN</p>
+
+<ul>
+<li>I did this by using the environment variables for the repository (in the settings for the repository) as it had the least dependencies required to do and travis-ci will pick up anywhere I use GH_TOKEN in the build process without me having to add it to my <code>.travis.yml</code> file</li>
+
+<li><p>You can alternatively use the travis CLI to pass the token to travis-ci, which&#8217;ll return an encrypted version that you can use in your <code>travis.yml</code> file</p>
+
+<figure id="attachment_61355" style="width: 765px" class="wp-caption alignnone">[<img class="size-full wp-image-61355" src="http://res.cloudinary.com/lockedata/image/upload/v1499851045/environmentvariable_y844pm.png" alt="travis-ci addd an environment variable" width="765" height="428" />][9]<figcaption class="wp-caption-text">travis-ci add an environment variable</figcaption></figure></li>
+</ul></li>
+
+<li><p>Add a bash file that gets the HTML and pushes it to the repository. <a href="http://rmflight.github.io/posts/2014/11/travis_ci_gh_pages.html">Robert&#8217;s bash script</a> is a really good example of actual code so I only cover the concept here:</p>
+
+<ul>
+<li>Create an empty directory you can work in</li>
+<li>Create a git repository to hold all your HTML pages in</li>
+<li>Commit all the HTML files (make sure there is one called index.html)</li>
+<li>Push the repo into the gh-pages branch of your destination repo (which will be at <code>http:://[GH_TOKEN]@github.com/[CONTAINER]/[REPO].git</code>)</li>
+</ul></li>
+
+<li><p>Add your bash file to the<code>.travis.yml</code> instructions / config file so that it&#8217;ll be taken into account on the next push</p>
+
+<h1 id="do-this-bit-if-you-encrypted-the-string-via-cli">Do this bit if you encrypted the string via CLI</h1>
+
+<p>env:
+global:</p>
+
+<ul>
+<li>secure: &ldquo;travisCLIreturnedstring&rdquo;
+<br /></li>
+</ul>
+
+<h1 id="do-this-bit-for-every-situation-as-it-makes-it-executable-and-then-executes-it-once-the-build-passes-we-don-t-docs-from-bad-builds-afterall">Do this bit for every situation as it makes it executable and then executes it once the build passes - we don&rsquo;t docs from bad builds afterall!</h1>
+
+<p>before_install:
+- chmod 755 ./.push_gh_pages.sh</p>
+
+<p>after_success:
+- ./.push_gh_pages.sh</p></li>
+
+<li><p>Commit the two (or potentially more if you need to add your bash file to build ignore files) files and then push the changes. Your next travis build should pick it all up and execute the bash file once the rest of the build has been a success</p></li>
+</ul>
+
+<h2 id="putting-it-together-8211-tfsr">Putting it together &#8211; tfsR</h2>
+
+<p>I&#8217;ve <a href="https://itsalocke.com/easy-continuous-integration-for-r/">been using Travis-CI</a> for <a href="https://github.com/stephlocke/optiRum">optiRum</a> and <a href="https://github.com/stephlocke/tfsR">tfsR</a> for a while now. This has given me confidence in that my unit tests are run successfully, and records test coverage. What it didn&#8217;t do though was make my vignette or help documentation available &#8211; you had to read the un-rendered version of the vignette or download and compile. This wasn&#8217;t very accessible, especially for new people.</p>
+
+<p>As this is my simplest package with only one vignette it seemed an ideal test case. To achieve the documentation building I amended or added three files, following Robert&#8217;s instructions for the most part:</p>
+
+<h3 id="push-gh-pages-sh">.push_gh_pages.sh</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;tfsR&quot; path=&quot;.push_gh_pages.sh&quot;]
+</code></pre>
+
+<h3 id="travis-yml">.travis.yml</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;tfsR&quot; path=&quot;.travis.yml&quot;]
+</code></pre>
+
+<h3 id="rbuildignore">.Rbuildignore</h3>
+
+<pre><code>[embedGitHubContent owner=&quot;stephlocke&quot; repo=&quot;tfsR&quot; path=&quot;.Rbuildignore&quot;]
+</code></pre>
+
+<p>You can see the finished results at <a href="http://stephlocke.github.io/tfsR">stephlocke.github.io/tfsR</a></p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+<li><a href="http://rmflight.github.io/posts/2014/11/travis_ci_gh_pages.html">Robert Flight on Travis-CI to Github Pages</a></li>
+<li><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">Custom domains for gh-pages</a></li>
+<li><a href="http://jekyllrb.com/docs/github-pages/">Jekyll github pages</a></li>
+<li><a href="https://help.github.com/categories/github-pages-basics/">Github pages help</a></li>
+</ul>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

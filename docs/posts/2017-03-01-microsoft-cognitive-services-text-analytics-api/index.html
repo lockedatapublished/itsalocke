@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>R Quick tip: Microsoft Cognitive Services’ Text Analytics API &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">R Quick tip: Microsoft Cognitive Services’ Text Analytics API</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>Today in class, I taught some fundamentals of API consumption in R. As it was aligned to some Microsoft content, we first used <a href="https://haveibeenpwned.com">HaveIBeenPwned.com</a>&#8216;s API and then played with <a href="https://www.microsoft.com/cognitive-services/en-us/">Microsoft Cognitive Services</a>&#8216; Text Analytics API. This brief post overviews what you need to get started, and how you can chain consecutive calls to these APIs in order to perform multi-lingual sentiment analysis.</p>
+
+<p><strong>UPDATE: See improved code in <a href="https://itsalocke.com/using-purrr-with-apis/">Using purrr with APIs – revamping my code</a></strong></p>
+
+<p></p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>To use the analytics API, you need two things:</p>
+
+<ul>
+<li>A key</li>
+<li>A URL</li>
+</ul>
+
+<p>Get the key by <a href="https://www.microsoft.com/cognitive-services/en-us/sign-up">signing up for free</a> on the Cognitive Services site for the Text Analytics API. Make sure to verify your email address!</p>
+
+<p>The URL can be retrieved from the <a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics/documentation">API documentation</a> and you can even play in an <a href="https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0">online sandbox</a> before you start implementing it.</p>
+
+<p>To use the API in R, you need:</p>
+
+<ul>
+<li><a href="https://cran.r-project.org/package=httr"><code>httr</code></a></li>
+<li><a href="https://cran.r-project.org/package=jsonlite"><code>jsonlite</code></a>, which <code>httr</code> will kindly install for you</li>
+</ul>
+
+<p>To make some things easier on myself, I&#8217;m also going to use <a href="https://cran.r-project.org/package=dplyr"><code>dplyr</code></a> and <a href="https://cran.r-project.org/package=data.table"><code>data.table</code></a>.</p>
+
+<pre><code class="r">library(httr)
+library(jsonlite)
+library(data.table)
+library(dplyr)
+</code></pre>
+
+<h2 id="starting-info">Starting info</h2>
+
+<p>To talk to the API, we need our URL, our API, and some data.</p>
+
+<pre><code class="r"># Setup
+cogapikey&lt;-"XXX"
+cogapi&lt;-"https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages"
+
+text=c("is this english?"
+       ,"tak er der mere kage"
+       ,"merci beaucoup"
+       ,"guten morgen"
+       ,"bonjour"
+       ,"merde"
+       ,"That's terrible"
+       ,"R is awesome")
+
+# Prep data
+df&lt;-data_frame(id=1:8,text)
+mydata&lt;-list(documents= df)
+</code></pre>
+
+<h2 id="topic-detection">Topic detection</h2>
+
+<p>We have some different languages and we need to first do language detection before we can analyse the sentiment of our phrases</p>
+
+<pre><code class="r"># Construct a request
+response&lt;-POST(cogapi, 
+               add_headers(`Ocp-Apim-Subscription-Key`=cogapikey),
+               body=toJSON(mydata))
+</code></pre>
+
+<p>Now we need to consume our response such that we can add the language code to our existing data.frame. The structure of the response JSON doesn&#8217;t play well with others so I use data.table&#8217;s nifty <code>rbindlist</code>. It is a <strong>very good</strong> candidate for <a href="https://cran.r-project.org/package=purrr"><code>purrr</code></a> but I&#8217;m not up to speed on that yet.</p>
+
+<pre><code class="r"># Process response
+respcontent&lt;-content(response, as="text")
+respdf&lt;-data_frame(
+    id=as.numeric(fromJSON(respcontent)$documents$id), 
+    iso6391Name=rbindlist(
+      fromJSON(respcontent)$documents$detectedLanguages
+    )$iso6391Name
+  )
+</code></pre>
+
+<p>Now that we have a table, we can join the two together</p>
+
+<pre><code class="r"># Combine
+df%&gt;%
+  inner_join(respdf) %&gt;%
+  select(id, language=iso6391Name, text) -&gt;
+  dft
+</code></pre>
+
+<h2 id="sentiment-analysis">Sentiment analysis</h2>
+
+<p>With an ID, text, and a language code, we can now request the sentiment of our text be analysed.</p>
+
+<pre><code class="r"># New info
+mydata&lt;-list(documents= dft)
+cogapi&lt;-"https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment"
+# Construct a request
+response&lt;-POST(cogapi, 
+               add_headers(`Ocp-Apim-Subscription-Key`=cogapikey),
+               body=toJSON(mydata))
+</code></pre>
+
+<p>Processing this response is simpler than processing the language response</p>
+
+<pre><code># Process reponse
+respcontent&lt;-content(response, as=&quot;text&quot;)
+
+fromJSON(respcontent)$documents %&gt;%
+   mutate(id=as.numeric(id)) -&gt;
+   responses
+
+# Combine
+dft %&gt;%
+  left_join(responses) -&gt;
+  dfts
+</code></pre>
+
+<p>And&#8230; et voila! A multi-language dataset with the language identified and the sentiment scored where the language can be scored. 😀</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">id</th>
+<th align="left">language</th>
+<th align="left">text</th>
+<th align="right">score</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="left">en</td>
+<td align="left">is this english?</td>
+<td align="right">0.2852910</td>
+</tr>
+
+<tr>
+<td align="right">2</td>
+<td align="left">da</td>
+<td align="left">tak er der mere kage</td>
+<td align="right">NA</td>
+</tr>
+
+<tr>
+<td align="right">3</td>
+<td align="left">fr</td>
+<td align="left">merci beaucoup</td>
+<td align="right">0.8121097</td>
+</tr>
+
+<tr>
+<td align="right">4</td>
+<td align="left">de</td>
+<td align="left">guten morgen</td>
+<td align="right">NA</td>
+</tr>
+
+<tr>
+<td align="right">5</td>
+<td align="left">fr</td>
+<td align="left">bonjour</td>
+<td align="right">0.8118965</td>
+</tr>
+
+<tr>
+<td align="right">6</td>
+<td align="left">fr</td>
+<td align="left">merde</td>
+<td align="right">0.0515683</td>
+</tr>
+
+<tr>
+<td align="right">7</td>
+<td align="left">en</td>
+<td align="left">That&#8217;s terrible</td>
+<td align="right">0.1738841</td>
+</tr>
+
+<tr>
+<td align="right">8</td>
+<td align="left">en</td>
+<td align="left">R is awesome</td>
+<td align="right">0.9546152</td>
+</tr>
+</tbody>
+</table>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

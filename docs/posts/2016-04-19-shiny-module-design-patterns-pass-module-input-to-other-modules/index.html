@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Shiny module design patterns: Pass module inputs to other modules &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Shiny module design patterns: Pass module inputs to other modules</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>Continuing in the series of <a href="https://itsalocke.com/tag/shiny-design-patterns/">shiny module design patterns</a>, this post covers how to pass all the inputs from one module to another.</p>
+
+<h2 id="tl-dr">TL;DR</h2>
+
+<p>Return <code>input</code> from within the server call. Store the <code>callModule()</code> result in a variable. Pass the variable into arguments for other modules. Access the variable like you would <code>input</code>. <a href="https://github.com/stephlocke/shinymodulesdesignpatterns">Steal the code</a> and, as always, if you can improve it do so!</p>
+
+<p></p>
+
+<h2 id="starting-out">Starting out</h2>
+
+<p>For the purposes of this post, I&#8217;ll be morphing the dummy application that Rstudio produces when you use <strong>New file &gt; Shiny app</strong>. I&#8217;ve created a <a href="https://github.com/stephlocke/shinymodulesdesignpatterns">repository</a> to store these design patterns in and the default shiny app that will be converted / mangled is the <code>01_original.R</code> file in each folder. This post covers inputs being passed on to other modules so is held in the <a href="https://github.com/stephlocke/shinymodulesdesignpatterns/tree/master/input_to_multiplemodules">input_to_multiplemodules folder</a>.<figure style="width: 500px" class="wp-caption aligncenter"></p>
+
+<p><a href="https://github.com/stephlocke/shinymodulesdesignpatterns/tree/master/input_to_multiplemodules"><img src="https://raw.githubusercontent.com/stephlocke/shinymodulesdesignpatterns/master/input_to_multiplemodules/README/original.png" alt="input value being directly used in shiny app" width="500" height="120" /></a><figcaption class="wp-caption-text">input value being directly used in shiny app</figcaption></figure></p>
+
+<h2 id="pass-module-inputs-to-other-modules">Pass module inputs to other modules</h2>
+
+<h3 id="make-a-module-that-contains-inputs">Make a module that contains inputs</h3>
+
+<p>A module must have a server function and can optionally have UI and Input functions. We need a module that has an input function so our skeleton for our setup values is</p>
+
+<pre><code>setupInput &lt;- function( id ){
+ns&lt;-NS(id)
+
+}
+</code></pre>
+
+<p>Input parameters must be held in a <code>tagList()</code> so that the shiny UI knows to handle them like other directly mentioned inputs. The <code>setupInput</code> function can contain any number of inputs, including the <code>bins</code> input that used to be a global input.</p>
+
+<pre><code>setupInput&lt;-function(id){
+  ns&lt;-NS(id)
+  tagList(
+  sliderInput(ns(&quot;bins&quot;), &quot;Number of bins:&quot;,
+              min = 1,  max = 50, value = 30)
+  )
+}
+</code></pre>
+
+<h3 id="output-the-inputs">Output the inputs</h3>
+
+<p>In the module with the input parameters, we may need to do stuff with the value and also make it available for other modules. To make the input parameters available, we need to put the <code>input</code> object in the <code>return()</code> value of the module.</p>
+
+<pre><code>setup&lt;-function(input,output,session){
+  return(input)
+}
+</code></pre>
+
+<p>In the example file, I also show how to show all inputs for a module in a table. This is very handy for providing a consolidated list of parameters that could be viewed or exported. The <code>input</code> object is a reactive <a href="https://cran.r-project.org/web/packages/R6/vignettes/Introduction.html">R6</a> object and cannot be directly coerced into a data.frame. To enable the coercion the <code>reactiveValuesToList()</code> function needs to be used first. This, of course, can be applied to any reactive value making it easy to extract values where required.</p>
+
+<h3 id="make-a-module-that-accepts-additional-arguments">Make a module that accepts additional arguments</h3>
+
+<p>The vanilla module server function construct is <code>function(input,output,session){}</code>. There isn&#8217;t room for extra parameters to be passed through so we have to make space for one. In this case, our module skeleton that will hold our histogram code is</p>
+
+<pre><code>charts &lt;- function( input, output, session, bins) {
+
+}
+</code></pre>
+
+<p>To enable us to utilise the results of the <code>callModule(setup,&quot;setupA&quot;)</code> we need to store the results, and then pass through the object.</p>
+
+<pre><code>bins&lt;-callModule(setup,&quot;setupA&quot;)
+callModules(charts, &quot;chartA&quot;, bins)
+</code></pre>
+
+<h3 id="use-the-input-value">Use the input value</h3>
+
+<p>When you reference a reactive value, you reference it like a function but what we&#8217;ve passed through is an <code>input</code> object. As a result we don&#8217;t need to use <code>bins()</code> just <code>bins</code> and we can use it just like it was <code>input</code> so we can then use <code>bins$bin</code>.</p>
+
+<p>Instead of <code>bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)</code> in our original, when we use our reactive value in our chart module, it becomes:</p>
+
+<pre><code>chart &lt;- function(input, output, session, bins) {
+  output$distPlot &lt;- renderPlot({
+    x    &lt;- faithful[, 2]
+    bins &lt;- seq(min(x), max(x), length.out = bins$bin + 1)
+    hist(x,
+         breaks = bins,
+         col = 'darkgray',
+         border = 'white')
+  })
+}
+</code></pre>
+
+<p>Note that the input values did not receive a namespace so could be labelled directly. If you run the sample file for this design pattern, you&#8217;ll note that the printing of the input values did print the namespaces as the UI output component utilised the <code>ns()</code> function.</p>
+
+<h3 id="putting-it-together">Putting it together</h3>
+
+<p>To be able to pass all inputs from one module to another, you need to:</p>
+
+<ol>
+<li>Make a module that returns the `input` object</li>
+<li>Store the callModule results in a variable</li>
+<li>Add an argument to your module&#8217;s server function arguments</li>
+<li>Pass the name of the variable to the module</li>
+<li>Use <code>argument$inputparamname</code> within the module&#8217;s server function main code to refer to a specific input parameter</li>
+</ol>
+
+<p>See file <a href="https://github.com/stephlocke/shinymodulesdesignpatterns/blob/master/input_to_multiplemodules/04_allinputsmodule.R">04_allinputsmodule.R</a> for the end to end solution.<figure style="width: 500px" class="wp-caption aligncenter"></p>
+
+<p><img class="" src="https://raw.githubusercontent.com/stephlocke/shinymodulesdesignpatterns/master/input_to_multiplemodules/README/inputPassthrough.png
+" alt="Store input in a reactive value to pass values onto modules" width="500" /></a><figcaption class="wp-caption-text">Store callModule to pass into other modules</figcaption></figure></p>
+
+<h2 id="further-study">Further study</h2>
+
+<ul>
+<li><a href="https://itsalocke.com/tag/shiny-design-patterns/">Other shiny design pattern posts</a></li>
+<li><a href="http://shiny.rstudio.com/articles/modules.html">Shiny Modules Rstudio article</a></li>
+<li>Understanding Modules <a href="https://www.rstudio.com/resources/webinars/">webinar</a> and <a href="https://github.com/rstudio/webinars/blob/master/19-Understanding-modules/01-Modules-Webinar.pdf">associated materials</a></li>
+<li><a href="https://www.rstudio.com/resources/webinars/shiny-developer-conference/">Modularizing Shiny app code</a> video from Shiny Developer Conference</li>
+</ul>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

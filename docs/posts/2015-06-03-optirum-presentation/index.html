@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>optiRum – presentation &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">optiRum – presentation</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <blockquote>
+<p><a href="http://cran.r-project.org/web/packages/optiRum/" title="optiRum on CRAN" target="_blank">optiRum</a>, the R package I built and support for Optimum on CRAN has gained some extra functions recently. Some of it uses currently experimental data.table functionality so I&#8217;m eagerly awaiting the release to CRAN to deliver optiRum.</p>
+
+<p>In the interim, I thought I&#8217;d give some brief overviews of <strong>existing</strong> functionality contained in the package.</p>
+</blockquote>
+
+<p>The next part of <a href="https://itsalocke.com/optirum-gini-like-a-wizard/" target="_blank">the coverage</a> of <a href="https://github.com/stephlocke/optiRum" target="_blank">optiRum</a> functionality is to talk about the stuff that makes generating outputs easier!</p>
+
+<p></p>
+
+<h2 id="cut2-in-latex">cut2 in LaTeX</h2>
+
+<p>A minor thing but one that caused significant headaches is the wonderful <code>cut2()</code> function from <a href="http://cran.r-project.org/web/packages/Hmisc/index.html">Hmisc</a>. <code>cut2()</code> is a more flexible boundary generating function that produces (IMO) better intervals i.e.</p>
+
+<ul>
+<li>(0,5] is the <code>cut</code> interval and this means all numbers greater than 0 and less than or equal to 5</li>
+<li>[0,5) is the <code>cut2</code> interval and this means all numbers greater than or equal to 0 and less than 5</li>
+</ul>
+
+<p>The <code>cut2</code> way ensures there are fewer allocation issues due to rounding with a large number of decimal places. Unfortunately when you try to make a table of these in LaTeX, it thinks you&#8217;re trying to go into &#8220;maths mode&#8221;.</p>
+
+<p>To avoid this I wrote a <code>sanitise()</code> function to replace the <code>sanitize()</code> function from <a href="http://cran.r-project.org/web/packages/knitr/index.html">knitr</a> so that it will escape any <code>[</code> characters a table output from R. Whilst I was giving it a UK name (to save function masking issues), I also extended it to correctly handle the GBP symbol (<code>£</code>) since that was also an issue for us.</p>
+
+<h2 id="charts">Charts</h2>
+
+<p><strong>Opinion: if you&#8217;re using R, you should be using ggplot2 for charts</strong></p>
+
+<p>Life is <em>much</em> easier when using it. Get a very quick primer in <a href="http://stephlocke.github.io/Rtraining/chartintro.html" target="_blank" title="Steph Locke explains gpplot2 basics">my note</a> about building charts using it.</p>
+
+<p>optiRum contains a <code>theme_optimum()</code> (after the company, not an adjective) that changes the ggplot2 default chart look. The ggplot2 themes are good to begin with, and others have extended it further e.g. <a href="http://cran.r-project.org/web/packages/ggthemes/index.html">ggthemes</a>, but we wanted a standard within our company that we could use for charts. There were some considerations:</p>
+
+<ul>
+<li>colleagues love to print, despite best efforts to dissuade them, but to meet IT halfway they print 4 A4 pages per sheet (2 pages on each side) so the chart labels need to be legible when printed to less than 50% of their intended size</li>
+<li>a lot of our charts are over time and colleagues like to compare values so having y-axis grid lines can aid them</li>
+<li>labels whilst needing to be legible should be de-emphasised to help keep focus on the chart&#8217;s message</li>
+
+<li><p>as much of the plot area should be given over to the chart as possible so space for legends should be minimised</p>
+
+<figure id="attachment_61325" style="width: 1000px" class="wp-caption alignnone">[<img src="http://res.cloudinary.com/lockedata/image/upload/v1499851089/optimum_adk38b.png" alt="ggplot2 example charts" width="1000" height="333" class="size-full wp-image-61325" />][4]<figcaption class="wp-caption-text">ggplot2 example charts</figcaption></figure></li>
+</ul>
+
+<p>[gist <a href="https://gist.github.com/stephlocke/fb8dd7c819aa11cc222c">https://gist.github.com/stephlocke/fb8dd7c819aa11cc222c</a> ]</p>
+
+<h2 id="generate-pdfs">Generate PDFs</h2>
+
+<p>Using knitr to integrate analysis and content via LaTeX is fantastic. Unfortunately, where we can end up with some pretty complex documents, we often need to make multiple passthroughs of documents to fully typeset.</p>
+
+<p>The handy &#8220;Compile PDF&#8221; button in Rstudio, whilst great for simple documents could end up not doing enough passthroughs. At the same time it would generate lots of extra files and you&#8217;d have no control over the file name when it was generated.</p>
+
+<p>To get around this I first used build scripts that did a lot of compensating work around the <code>knit2pdf()</code> function to do the various bits and pieces. This became relatively standard but there would be exceptions or different people would write date suffixes differently. <code>generatePDF()</code> is my answer to the various issues we encountered, including some pesky environment interactions with data.table.</p>
+
+<p><code>generatePDF()</code> takes the following arguments (lots have defaults):</p>
+
+<ul>
+<li><code>srcpath</code> is a folder relative to the current directory so that you don&#8217;t have to change working directories</li>
+<li><code>srcname</code> is the file name, less the Rnw extension, as it was easier to type plus enforced the use case</li>
+<li><code>destpath</code> is the output folder, again relative to the current directory, to give better routing as we rarely wanted the PDF amongst the source code</li>
+<li><code>destname</code> is the file name we want the document output as (less <code>.pdf</code>) so that we&#8217;re no reliant on the source file&#8217;s name</li>
+<li><code>DATED</code> gives a date suffix to the file meaning different versions can generated over different days with unique file references (enabling the way some folks were, or provided model variants over time)</li>
+<li><code>CLEANUP</code> says whether to remove all the pesky extra files that generating a PDF can produce</li>
+<li><code>QUIET</code> allows you to produce a PDF with less console activity, making it less burdensome for automated tasks</li>
+<li>more like environment and passthroughs to <code>knit2pdf()</code></li>
+</ul>
+
+<h2 id="get-the-package">Get the package</h2>
+
+<ul>
+<li>Install from CRAN: <code>install.packages(optiRum)</code></li>
+<li>Install the dev version from the github repository using devtools: <code>devtools::install_github(&quot;stephlocke/optiRum&quot;)</code></li>
+</ul>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

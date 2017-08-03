@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Using purrr with APIs – revamping my code &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Using purrr with APIs – revamping my code</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      
+
+<p>I wrote a little while back about <a href="https://itsalocke.com/microsoft-cognitive-services-text-analytics-api/">using Microsoft Cognitive Services APIs with R</a> to first of all detect the language of pieces of text and then do sentiment analysis on them. I wasn&#8217;t too happy with the some of the code as it was very inelegant. I knew I could code better than I had, especially as I&#8217;ve been doing a lot more work with purrr recently. However, it had sat in drafts for a while. Then David Smith kindly posted about the <a href="http://blog.revolutionanalytics.com/2017/06/interfacing-with-apis.html">process I used</a> which meant I had to get this nicer version of my code out ASAP!</p>
+
+<p>Get the complete code in this <a href="https://gist.github.com/stephlocke/441ea493be926b76bac59452a3f57281">gist</a>.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+<li>API access
+
+<ul>
+<li><a href="https://www.microsoft.com/cognitive-services/en-us/sign-up">A key</a></li>
+<li><a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics/documentation">An endpoint</a></li>
+</ul></li>
+<li>Packages
+
+<ul>
+<li><a href="https://cran.r-project.org/package=httr">httr</a></li>
+<li><a href="https://cran.r-project.org/package=jsonlite">jsonlite</a></li>
+<li><a href="https://cran.r-project.org/package=dplyr">dplyr</a></li>
+<li><a href="https://cran.r-project.org/package=purrr">purrr</a></li>
+</ul></li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<pre><code class="r">library(httr)
+library(jsonlite)
+library(dplyr)
+library(purrr)
+
+cogapikey&lt;-"XXX"
+
+text=c("is this english?"
+       ,"tak er der mere kage"
+       ,"merci beaucoup"
+       ,"guten morgen"
+       ,"bonjour"
+       ,"merde"
+       ,"That's terrible"
+       ,"R is awesome")
+
+# Put data in an object that converts to the expected schema for the API
+data_frame(text) %&gt;% 
+  mutate(id=row_number()) -&gt;
+  textdf
+
+textdf %&gt;% 
+  list(documents=.) -&gt;
+  mydata
+</code></pre>
+
+<h2 id="language-detection">Language detection</h2>
+
+<p>We need to identify the most likely language for each bit of text in order to send this additional bit of info to the sentiment analysis API to be able to get decent results from the sentiment analysis.</p>
+
+<pre><code class="r">cogapi&lt;-"https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages?numberOfLanguagesToDetect=1"
+
+cogapi %&gt;% 
+  POST(add_headers(`Ocp-Apim-Subscription-Key`=cogapikey),
+       body=toJSON(mydata)) -&gt;
+  response
+
+# Process response
+response %&gt;% 
+  content() %&gt;%
+  flatten_df() %&gt;% 
+  select(detectedLanguages) %&gt;% 
+  flatten_df()-&gt;
+  respframe
+
+textdf %&gt;% 
+  mutate(language= respframe$iso6391Name) -&gt;
+  textdf
+</code></pre>
+
+<h2 id="sentiment-analysis">Sentiment analysis</h2>
+
+<p>With an ID, text, and a language code, we can now request the sentiment of our text be analysed.</p>
+
+<pre><code class="r"># New info
+mydata&lt;-list(documents = textdf)
+
+# New endpoint
+cogapi&lt;-"https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment"
+
+# Construct a request
+cogapi %&gt;% 
+  POST(add_headers(`Ocp-Apim-Subscription-Key`=cogapikey),
+       body=toJSON(mydata)) -&gt;
+  response
+
+# Process response
+response %&gt;% 
+  content() %&gt;%
+  flatten_df() %&gt;% 
+  mutate(id=as.numeric(id))-&gt; 
+  respframe
+
+# Combine
+textdf %&gt;%
+  left_join(respframe) -&gt;
+  textdf
+</code></pre>
+
+<p>And&#8230; et voila! A multi-language dataset with the language identified and the sentiment scored using purrr for easier to read code.</p>
+
+<p>Using purrr with APIs makes code nicer and more elegant as it really helps interact with hierarchies from JSON objects. I feel much better about this code now!</p>
+
+<h2 id="original">Original</h2>
+
+<table>
+<thead>
+<tr>
+<th align="right">id</th>
+<th align="left">language</th>
+<th align="left">text</th>
+<th align="right">score</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="left">en</td>
+<td align="left">is this english?</td>
+<td align="right">0.2852910</td>
+</tr>
+
+<tr>
+<td align="right">2</td>
+<td align="left">da</td>
+<td align="left">tak er der mere kage</td>
+<td align="right">NA</td>
+</tr>
+
+<tr>
+<td align="right">3</td>
+<td align="left">fr</td>
+<td align="left">merci beaucoup</td>
+<td align="right">0.8121097</td>
+</tr>
+
+<tr>
+<td align="right">4</td>
+<td align="left">de</td>
+<td align="left">guten morgen</td>
+<td align="right">NA</td>
+</tr>
+
+<tr>
+<td align="right">5</td>
+<td align="left">fr</td>
+<td align="left">bonjour</td>
+<td align="right">0.8118965</td>
+</tr>
+
+<tr>
+<td align="right">6</td>
+<td align="left">fr</td>
+<td align="left">merde</td>
+<td align="right">0.0515683</td>
+</tr>
+
+<tr>
+<td align="right">7</td>
+<td align="left">en</td>
+<td align="left">That&#8217;s terrible</td>
+<td align="right">0.1738841</td>
+</tr>
+
+<tr>
+<td align="right">8</td>
+<td align="left">en</td>
+<td align="left">R is awesome</td>
+<td align="right">0.9546152</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="revised">Revised</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">text</th>
+<th align="right">id</th>
+<th align="left">language</th>
+<th align="right">score</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">is this english?</td>
+<td align="right">1</td>
+<td align="left">en</td>
+<td align="right">0.2265771</td>
+</tr>
+
+<tr>
+<td align="left">tak er der mere kage</td>
+<td align="right">2</td>
+<td align="left">da</td>
+<td align="right">0.7455934</td>
+</tr>
+
+<tr>
+<td align="left">merci beaucoup</td>
+<td align="right">3</td>
+<td align="left">fr</td>
+<td align="right">0.8121097</td>
+</tr>
+
+<tr>
+<td align="left">guten morgen</td>
+<td align="right">4</td>
+<td align="left">de</td>
+<td align="right">0.8581840</td>
+</tr>
+
+<tr>
+<td align="left">bonjour</td>
+<td align="right">5</td>
+<td align="left">fr</td>
+<td align="right">0.8118965</td>
+</tr>
+
+<tr>
+<td align="left">merde</td>
+<td align="right">6</td>
+<td align="left">fr</td>
+<td align="right">0.0515683</td>
+</tr>
+
+<tr>
+<td align="left">That&#8217;s terrible</td>
+<td align="right">7</td>
+<td align="left">en</td>
+<td align="right">0.0068665</td>
+</tr>
+
+<tr>
+<td align="left">R is awesome</td>
+<td align="right">8</td>
+<td align="left">en</td>
+<td align="right">0.9973871</td>
+</tr>
+</tbody>
+</table>
+
+<p>Interestingly the scores for English have not stayed the same &#8211; for instance, Microsoft now sees &#8220;R is awesome&#8221; in a much more positive light. It&#8217;s also great to see German and Danish are now supported!</p>
+
+<p>Get the complete code in this <a href="https://gist.github.com/stephlocke/441ea493be926b76bac59452a3f57281">gist</a>.</p>
+
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

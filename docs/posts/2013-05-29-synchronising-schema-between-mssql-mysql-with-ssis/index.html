@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Synchronising schema between MSSQL &amp; MySQL with SSIS &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Synchronising schema between MSSQL &amp; MySQL with SSIS</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>The problem:</p>
+
+<p>A system we need to report on that is form based.  Whenever there is a new form, there is a new table, and whenever there is a new or amended* field on the form, there is a new column in the table.  Maintaining the imports of this data into a staging environment would require a lot of code and time to build manually from scratch.</p>
+
+<p>What is required is something that goes through the two schema for all relevant objects and updates our staging area’s schema accordingly.</p>
+
+<p>Points for consideration:</p>
+
+<ul>
+<li>Due to the level of change in source system, all loads are dynamically generated SQL</li>
+<li>Loads run from a data dictionary table, which needs to be updated when we update the schema</li>
+<li>Loads occur daily</li>
+</ul>
+
+<p></p>
+
+<h2 id="group-concat">Group_concat</h2>
+
+<p>On top of existing mysql requirements, we need group_concat – a brilliant function and very useful in this situation.  It is set so that tables with lots of measures can have all the names collapsed into one string without truncation</p>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic1_zgmzho.jpg"><img class="alignnone size-medium wp-image-8491" src="http://res.cloudinary.com/lockedata/image/upload/h_208,w_300/v1499851244/schemasync-pic1_zgmzho_rfaglu.jpg" alt="schemasync - pic1" width="500" height="347" /></a></p>
+
+<h2 id="second-up-list-of-key-objects">Second up: list of key objects</h2>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic2_iwfjp1.jpg"><img class="alignnone size-medium wp-image-8511" src="http://res.cloudinary.com/lockedata/image/upload/h_254,w_300/v1499851246/schemasync-pic2_iwfjp1_mlkfqo.jpg" alt="schemasync - pic2" width="500" height="423" /></a></p>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic3_erycfu.jpg"><img class="alignnone size-medium wp-image-8521" src="http://res.cloudinary.com/lockedata/image/upload/h_86,w_300/v1499851247/schemasync-pic3_erycfu_qwnsb9.jpg" alt="schemasync - pic3" width="500" height="143" /></a></p>
+
+<h2 id="enumerate-through-key-objects">Enumerate through key objects</h2>
+
+<p><a href="http://res.cloudinary.com/lockedata/image/upload/v1499851248/schemasync-pic4_suuixn_jro3e9.png"><img class="alignnone size-full wp-image-8531" src="http://res.cloudinary.com/lockedata/image/upload/v1499851248/schemasync-pic4_suuixn_jro3e9.png" alt="schemasync - pic4" width="238" height="337" /></a></p>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic5_nmekei.jpg"><img class="alignnone size-medium wp-image-8541" src="http://res.cloudinary.com/lockedata/image/upload/h_252,w_300/v1499851249/schemasync-pic5_nmekei_bwqno9.jpg" alt="schemasync - pic5" width="500" height="419" /></a></p>
+
+<p>&nbsp;</p>
+
+<h2 id="drop-existing-table">Drop existing table</h2>
+
+<p>Because it’s easier to drop and recreate a table rather than alter it, I proceed to drop and recreate the table &#8211; don&#8217;t do this on tables you report directly from! <a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic6_oeekzw.jpg"><img class="alignnone size-medium wp-image-8551" src="http://res.cloudinary.com/lockedata/image/upload/h_255,w_300/v1499851250/schemasync-pic6_oeekzw_tk35t6.jpg" alt="schemasync - pic6" width="500" height="424" /></a></p>
+
+<p>Use a variable to make sql dynamic</p>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic7_nd0bpp.jpg"><img class="alignnone size-medium wp-image-8561" src="http://res.cloudinary.com/lockedata/image/upload/h_255,w_300/v1499851251/schemasync-pic7_nd0bpp_tzshhe.jpg" alt="schemasync - pic7" width="500" height="424" /></a></p>
+
+<p><strong>DropTableSQL</strong> &lt;&#8211; &#8220;drop table if exists worksmart_&#8221;+ @[User::TableToCheck]</p>
+
+<h2 id="data-flow-task-update-data-dictionary">Data flow task: update data dictionary</h2>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic8_ym6xzk.png"><img class="alignnone size-medium wp-image-8571" src="http://res.cloudinary.com/lockedata/image/upload/h_284,w_300/v1499851252/schemasync-pic8_ym6xzk_ccivzs.png" alt="schemasync - pic8" width="500" height="473" /></a></p>
+
+<p>In Source tasks, dummy sql is required:</p>
+
+<pre>SELECT 
+ltrim(lower(COLUMN_NAME)) as systemfield, 
+DATA_TYPE
+FROM    INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME ='TableToCheck' 
+AND data_type&lt;&gt;'image' 
+AND COLUMN_NAME NOT IN ('function','pref_name') 
+ORDER BY replace(column_name,'_','')</pre>
+
+<p>You will then need to add an expression on the data flow task for the sql to actually pull from a variable:</p>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic9_r6jtul.jpg"><img class="alignnone size-medium wp-image-8581" src="http://res.cloudinary.com/lockedata/image/upload/h_292,w_300/v1499851253/schemasync-pic9_r6jtul_od3ib0.jpg" alt="schemasync - pic9" width="500" height="486" /></a></p>
+
+<p><strong>WorksmartColumnDataSQL</strong> &lt;-</p>
+
+<pre>"SELECT 
+ltrim(lower(COLUMN_NAME)) as systemfield, 
+DATA_TYPE
+FROM    INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME ='TableToCheck' 
+AND data_type&lt;&gt;'image' 
+AND COLUMN_NAME NOT IN ('function','pref_name') 
+ORDER BY replace(column_name,'_','')"</pre>
+
+<h3 id="left-join-data-to-identify-what-is-already-present">Left join data to identify what is already present</h3>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic10_ap6uyr.jpg"><img class="alignnone size-medium wp-image-8591" src="http://res.cloudinary.com/lockedata/image/upload/h_282,w_300/v1499851254/schemasync-pic10_ap6uyr_zaeeul.jpg" alt="schemasync - pic10" width="500" height="470" /></a></p>
+
+<h3 id="only-get-new-entries">Only get new entries</h3>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic11_vfhh2a.jpg"><img class="alignnone size-medium wp-image-8601" src="http://res.cloudinary.com/lockedata/image/upload/h_156,w_300/v1499851255/schemasync-pic11_vfhh2a_mqeqbr.jpg" alt="schemasync - pic11" width="500" height="259" /></a></p>
+
+<p>Nb – At this point I go onto add some more details but this is a similar step to above so I won’t cover it</p>
+
+<h3 id="add-extra-columns-as-required">Add extra columns as required</h3>
+
+<p><a href="http://itsalocke.wpengine.com/wp-content/uploads/2015/04/schemasync-pic12_wazpuq.jpg"><img class="alignnone size-medium wp-image-8611" src="http://res.cloudinary.com/lockedata/image/upload/h_248,w_300/v1499851256/schemasync-pic12_wazpuq_pohswy.jpg" alt="schemasync - pic12" width="500" height="413" /></a></p>
+
+<h3 id="insert-into-destination">Insert into destination</h3>
+
+<h2 id="create-table-based-on-new-metadata">Create table based on new metadata</h2>
+
+<p>Same mechanism as dropping a table – a sql task, and a variable</p>
+
+<p><strong>TableCreationSQL</strong> &lt;-</p>
+
+<pre>"select 
+concat(' create table ', table,' (',
+GROUP_CONCAT(concat(Field, ' ', fieldtype,' comment ''',coalesce(fielddescription,''),'''')),
+coalesce(concat(', primary key(',(
+             select group_concat(field) 
+             from _data_dictionary d2 
+             where d2. table=d. able 
+             and d2.Is_PrimaryKey='y' 
+             group by table),')'),''), ') 
+ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci') 
+FROM _data_dictionary d 
+where systemtable='"+ @[User::TableToCheck] +
+"' group by table"</pre>
+
+<p>The Result Set is then passed to the next variable to be executed</p>
+
+<h2 id="perform-table-creation">Perform table creation</h2>
+
+<p>As above but no mapping, and ActualTableCreationSQL is used</p>
+
+<p><a href="http://res.cloudinary.com/lockedata/image/upload/v1499851245/schemasync-pic13_y1qg3h_eaqxfz.jpg"><img class="alignnone size-full wp-image-8501" src="http://res.cloudinary.com/lockedata/image/upload/v1499851245/schemasync-pic13_y1qg3h_eaqxfz.jpg" alt="schemasync - pic13" width="624" height="533" /></a></p>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

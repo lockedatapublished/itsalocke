@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>All my talks in one place (plus a Hugo walkthrough!) &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">All my talks in one place (plus a Hugo walkthrough!)</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      
+
+<p>I mentioned in an earlier post about how I&#8217;m <a href="https://itsalocke.com/improving-automatic-document-production-with-r/">revamping my presentation slides process</a> but that I hadn&#8217;t tackled the user experience of browsing my slides, which wasted lots of the effort I put in. To tackle this part of it, I&#8217;ve made <a href="http://lockedata.uk">lockedata.uk</a> using Hugo to be a way of finding and browsing presentations on R, SQL, and more. As Hugo is so easy, I thought I&#8217;d throw in a quick Hugo walkthrough too so that you could build your own blog/slides/company site if you wanted to.</p>
+
+<p>The great thing about using Hugo with a sort of blog taxonomy system is now all my presentations have categories and tags so you can find something relevant. Additionally, I&#8217;m also ordering slides by the date of the last presentation. This means if you see me present, you can straight away get the slides &#8211; they&#8217;ll be the first thing on the page.</p>
+
+<p>A number of the talks will also include the videos (embedded with <a href="http://gohugo.io/extras/shortcodes/">Hugo shortcodes</a> for the most part) from when I&#8217;ve presented the talk as that&#8217;s the most robust way of getting value out of the slides.</p>
+
+<figure id="attachment_62246" style="width: 750px" class="wp-caption aligncenter">[<img src="http://res.cloudinary.com/lockedata/image/upload/h_370,w_750/v1499849491/lockedatapreview_oz7rvc.png" alt="lockedata.uk - presentation website built with Hugo. Read the post to get a hugo walkthrough." width="750" height="371" class="size-large wp-image-62246" />][2]<figcaption class="wp-caption-text">lockedata.uk &#8211; presentation website built with Hugo. Read the post to get a hugo walkthrough.</figcaption></figure>
+  
+
+<p>If you&#8217;re interested in the tech behind the site read on&#8230;</p>
+
+<h2 id="hugo-walkthrough">Hugo walkthrough</h2>
+
+<p>This site uses <a href="https://gohugo.io">Hugo</a>. Hugo is a &#8220;static site generator&#8221; which means you write a bunch of markdown and it generates html. This is great for building simple sites like company leafletware or blogs.</p>
+
+<p>You can get Hugo across platforms and on Windows it&#8217;s just an executable you can put in your program files. You can then work with it like git in the command line. More details on actually installing Hugo can be found in their <a href="http://gohugo.io/overview/installing/">very good install docs</a>.</p>
+
+<p>You will want to read some of the <a href="https://gohugo.io/overview/introduction/">docs</a> to make customisations but the &#8220;happy path&#8221; Hugo walkthrough to get started is:</p>
+
+<ol>
+<li>Make a new site you simply run <code>hugo new site NAME</code></li>
+<li>Let&#8217;s do some git, run <code>git init</code> inside the new site&#8217;s directory to get your git repo going</li>
+<li>Make a repo on GitHub that we&#8217;ll want to push to later on</li>
+<li>Find a <a href="https://themes.gohugo.io">theme</a> to suit your needs and go to its github page</li>
+<li>Change to the themes directory then clone the theme into the themes directory</li>
+<li>Back on the top-level of your site, extract your themes example content with something like <code>cp -av themes/academic/exampleSite/* .</code></li>
+<li>Get your site running locally with real-time changes by running <code>hugo server -w</code></li>
+<li>Start editing the sample content to meet your needs and using the site (available at <code>localhost:1313</code>) to see how it&#8217;s going</li>
+<li>When you&#8217;re happy, stop the local server (in Windows, this is ctrl+c)</li>
+<li>Make sure in the <code>config.toml</code> file, the site URL reflects where it&#8217;ll go on Github i.e. <code>http://yourusername.gihub.io/yourreponame/</code></li>
+<li>Generate your site to the <code>docs</code> directory with <code>hugo -d docs</code></li>
+<li>Commit everything and push to your GitHub repo</li>
+<li>In the Settings page for the Github repo, set the <code>Github Pages &gt; Source</code> option to &#8220;master branch /docs folder&#8221;</li>
+</ol>
+
+<p>Now your site will be available <code>yourusername.gihub.io/yourreponame</code></p>
+
+<p>PS If you want to do a lot of R in your blog, you can utilise <a href="https://github.com/rstudio/blogdown">blogdown</a> which is an rmarkdown Hugo hybrid.</p>
+
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>

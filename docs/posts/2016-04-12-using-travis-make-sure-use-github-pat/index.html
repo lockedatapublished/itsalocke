@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helping people get started with data science">
+  <meta name="author" content="Locke Data">
+  <meta name="generator" content="Hugo 0.25.1" />
+  <title>Using Travis? Make sure you use a Github PAT &middot; Locke Data</title>
+  <!-- Stylesheets -->
+  <link href="http://lockelife.com/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/lockedata.css" rel="stylesheet">
+  <link href="http://lockelife.com/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="http://lockelife.com/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://lockelife.com/favicon.ico">
+  
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lt IE 9]>
+
+
+  <![endif]-->
+</head>
+
+
+  <body id="page-top" class="single">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          
+          <img src="http://lockelife.com/img/LockeDataTextNew.svg" class="img-responsive" alt="">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+        
+
+        
+          <li>
+            <a href="/#casestudies">Case Studies</a>
+          </li>
+        
+          <li>
+            <a href="/#community">Community</a>
+          </li>
+        
+          <li>
+            <a href="/#calendar">Calendar</a>
+          </li>
+        
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
+        
+          <li>
+            <a href="/#company">Company</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Single -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Using Travis? Make sure you use a Github PAT</div>
+      <div class="intro-lead-in"></div>
+    </div>
+  </div>
+</header>
+<section id="single">
+  <div class="container">
+    
+      <p>We&#8217;re in the fantastic situation where lots of people are using <a href="https://travis-ci.org/">Travis-CI</a> to test their R packages or use it to test and deploy their analytics/ documentation / anything really. It&#8217;s popularity has been having a negative side-effect recently though! GitHub <a href="https://developer.github.com/v3/#rate-limiting">rate limits</a> API access to 5000 requests per hour so sometimes there are more R related jobs running on Travis per hour than this limit, causing builds to error typically with a message that includes</p>
+
+<blockquote>
+<p>403 forbidden</p>
+</blockquote>
+
+<p>This error will cause your build to fail, even if you didn&#8217;t do anything wrong. To solve it short-term you can wait a little while and restart your build.<figure id="attachment_61598" style="width: 768px" class="wp-caption aligncenter"></p>
+
+<p><img class="size-medium_large wp-image-61598" src="http://res.cloudinary.com/lockedata/image/upload/h_131,w_750/v1499850336/restartbuilds_hsvpmp.png" alt="How to restart a build in Travis-CI" width="768" height="134" /><figcaption class="wp-caption-text">How to restart a build in Travis-CI</figcaption></figure></p>
+
+<p>That is a very short-termist solution and does not solve the problem for future you or other users of the service. The real solution to resolving this issue is to get off the default API access credentials and use your own.</p>
+
+<p>The R integration in Travis makes good use of the <a href="https://cran.r-project.org/package=devtools">devtools</a>. The devtools package looks for an environment variable called <code>GITHUB_PAT</code> that holds a <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">personal access token</a> (PAT) for using the GitHub API and if it doesn&#8217;t find one it uses a default token. When we get our own PAT and store it in Travis, devtools will pick up our token and use it, meaning you&#8217;ll only ever get rate limited if you do more than 5000 builds in an hour, which is an achievement I&#8217;d love to hear about.</p>
+
+<p></p>
+
+<h2 id="how-to">How to</h2>
+
+<ol>
+<li><a href="https://github.com/settings/tokens">Create a PAT</a> with no permissions i.e. untick all the permissions boxes</li>
+<li>Copy the key</li>
+<li>Go to your repo&#8217;s settings on Travis e.g. <a href="https://travis-ci.org/stephlocke/Rtraining/settings">https://travis-ci.org/stephlocke/Rtraining/settings</a></li>
+<li>Add an environment variable called GITHUB_PAT and paste in your key. There is a toggle next to it that defaults to not show the value in the log. This key has no permissions but still, keep it private and don&#8217;t toggle!</li>
+</ol>
+
+<h2 id="stay-secure">Stay secure</h2>
+
+<p>If you followed the instructions above your key will be conforming to the <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">principle of least privileges</a> because it will only be able to perform public actions that anyone can take i.e. read and clone a public repository. That being said, it&#8217;s never wise to let credentials escape out into the wilderness unless you can avoid it. This is where the bit about ensuring the value doesn&#8217;t get printed to the log comes in. If it never gets printed, the only time this key is available for stealing is when you&#8217;re creating it and adding it to Travis.</p>
+
+<h2 id="verifying-it-worked">Verifying it worked</h2>
+
+<p>When you next run a build, you should see some (or all) of the following signs of success, over and above a lack of a 403 error:</p>
+
+<pre><code>Setting environment variables from repository settings
+$ export GITHUB_PAT=[secure]
+
+
+$ Rscript -e 'devtools::install_github(&quot;stephlocke/tfsR&quot;,dependencies=TRUE)'
+Using GitHub PAT from envvar GITHUB_PAT
+</code></pre>
+    
+  </div>
+</section>
+
+
+    
+    
+
+    
+
+    
+
+    <!-- jQuery -->
+<script src='js/jquery-v3.2.1/jquery.min.js'></script>
+
+<!-- Bootstrap Core -->
+<script src="http://lockelife.com/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme -->
+<script src="http://lockelife.com/js/agency.js"></script>
+
+
+
+
+
+
+  
+ <!-- calendar -->
+ <script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script src='js/moment-v2.18.1/moment.min.js'></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print'>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendarobj').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,listYear'
+			},
+
+			displayEventTime: false, 
+
+        googleCalendarApiKey: 'AIzaSyATQH8hB-JTno5Snw11GZ4uZVNVxbaiIIc',
+        events: {
+            googleCalendarId: 'n58bvqjr8a5ur8jgb2o712mn4k@group.calendar.google.com'
+        },
+			editable: false,
+			eventClick: function(event) {
+				
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+
+  </body>
+</html>
