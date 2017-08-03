@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:creator>
           <cc:Agent>
             <dc:title>Oz Locke</dc:title>
@@ -89,9 +89,9 @@
            id="text995"
            y="4100.2397"
            x="3213.978"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;vector-effect:none;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
              y="4100.2397"
              x="3213.978"
              id="tspan993"
@@ -100,9 +100,9 @@
            id="text999"
            y="4111.0605"
            x="-2947.696"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Cavorting;-inkscape-font-specification:Cavorting;letter-spacing:0px;word-spacing:0px;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:100;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1858.36621094px;line-height:1.25;font-family:Cavorting;-inkscape-font-specification:Cavorting;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:100;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:100;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:100;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;"
              y="4111.0605"
              x="-2947.696"
              id="tspan997"
@@ -114,7 +114,7 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Condensed';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Condensed';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;"
            x="2166.1194"
            y="4132.8384"
            id="text1005"><tspan
@@ -122,7 +122,7 @@
              id="tspan1003"
              x="2166.1194"
              y="4132.8384"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Condensed';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;vector-effect:none;fill:#2165b6;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;">D</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:1858.36621094px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Condensed';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:46.45915604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;">D</tspan></text>
       </g>
     </g>
   </g>
