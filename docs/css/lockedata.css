@@ -7,6 +7,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
