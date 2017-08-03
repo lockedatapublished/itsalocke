@@ -1635,8 +1635,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/tags/community/</loc>
-        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
+        <loc>http://lockelife.com/categories/community/</loc>
+        <lastmod>2017-06-13T16:44:19+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1644,8 +1644,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/categories/community/</loc>
-        <lastmod>2017-06-13T16:44:19+00:00</lastmod>
+        <loc>http://lockelife.com/tags/community/</loc>
+        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1743,8 +1743,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/tags/data-science/</loc>
-        <lastmod>2017-05-02T07:41:04+00:00</lastmod>
+        <loc>http://lockelife.com/categories/data-science/</loc>
+        <lastmod>2017-06-13T10:20:40+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1752,8 +1752,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/categories/data-science/</loc>
-        <lastmod>2017-06-13T10:20:40+00:00</lastmod>
+        <loc>http://lockelife.com/tags/data-science/</loc>
+        <lastmod>2017-05-02T07:41:04+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1779,8 +1779,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/tags/dataops/</loc>
-        <lastmod>2017-06-13T16:44:19+00:00</lastmod>
+        <loc>http://lockelife.com/categories/dataops/</loc>
+        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1788,8 +1788,8 @@
       
       
       <url>
-        <loc>http://lockelife.com/categories/dataops/</loc>
-        <lastmod>2017-06-17T09:29:42+00:00</lastmod>
+        <loc>http://lockelife.com/tags/dataops/</loc>
+        <lastmod>2017-06-13T16:44:19+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -2553,7 +2553,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/tags/r/</loc>
+        <loc>http://lockelife.com/categories/r/</loc>
         <lastmod>2017-06-17T09:29:42+00:00</lastmod>
         <priority>0</priority>
       </url>
@@ -2562,7 +2562,7 @@
       
       
       <url>
-        <loc>http://lockelife.com/categories/r/</loc>
+        <loc>http://lockelife.com/tags/r/</loc>
         <lastmod>2017-06-17T09:29:42+00:00</lastmod>
         <priority>0</priority>
       </url>

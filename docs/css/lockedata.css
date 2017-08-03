@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
@@ -60,7 +60,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -79,7 +79,7 @@ h6 {
 .btn-primary {
     border-color: #2165B6;
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: #2165B6;
@@ -130,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #2165B6;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -183,7 +183,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Fugaz One","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Comfortaa","Helvetica Neue",Helvetica,Arial,cursive;
     color: #2165B6;
 }
 
@@ -236,7 +236,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -320,7 +320,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -343,7 +343,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -793,28 +793,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
@@ -835,7 +835,7 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -843,7 +843,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: 'Fugaz One',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Comfortaa',"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
