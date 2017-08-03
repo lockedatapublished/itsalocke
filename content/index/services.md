@@ -11,8 +11,8 @@ date = "2016-11-22"
 
 button = "Close project"
 
-[menu.main]
-  name = "Services"
-  weight = 40
-  url = "#services"
+#[menu.main]
+#  name = "Services"
+# weight = 40
+#  url = "#services"
 +++

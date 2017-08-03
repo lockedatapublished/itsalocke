@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://lockedata.uk/itsalocke/"
+baseurl = "http://lockelife.com/"
 languageCode = "en-gb"
 title = "Locke Data"
 theme = "hugo-lockedata"
