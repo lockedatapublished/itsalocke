@@ -1,3 +1,9 @@
 [submodule "themes/hugo-lockedata"]
 	path = themes/hugo-lockedata
 	url = https://github.com/lockedata/hugo-lockedata.git
+
+[submodule "public"]
+
+	path = public
+
+	url = https://github.com/lockedatapublished/lockedatapublished.github.io.git
