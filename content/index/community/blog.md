@@ -7,4 +7,4 @@ date = "2016-11-22"
 icon="fa-keyboard-o"
 +++
 
-Stay up to date by reading our [technical blog](http://lockedata.uk/itsalockeblog).
+Stay up to date by reading our [technical blog](/blog).

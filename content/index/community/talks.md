@@ -7,4 +7,4 @@ date = "2016-11-22"
 icon="fa-comments-o"
 +++
 
-Learn from our [slides and videos](http://lockedata.uk/).
+Learn from our [slides and videos](/talks).
