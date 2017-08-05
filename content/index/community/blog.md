@@ -5,6 +5,7 @@ title = "Blog"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 icon="fa-keyboard-o"
+link="/blog"
 +++
 
 Stay up to date by reading our [technical blog](/blog).
