@@ -1,8 +1,8 @@
 +++
 #disabled = true
 weight = 10
-title = "Locke Data helps organisations <br/> start their data science journeys"
-subtitle = "Start your data<br/>science journey"
+title = "We help organisations <br/> with their data science journeys"
+subtitle = "Start your<br/>journey today"
 button = "Start"
 lastmod = "2016-11-22"
 date = "2016-11-22"
