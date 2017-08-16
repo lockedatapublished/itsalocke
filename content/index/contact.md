@@ -19,7 +19,7 @@ date = "2016-11-22"
 # It is possible to substitute formspring with other providers.
 # Example: Mailout plugin from caddy.
 # Provide a URL to post to and add necessary custom javascript.
-postURL = "https://example.com/mailout/"
+#postURL = "https://example.com/mailout/"
 
 # Email can be set here or within config.toml.
 # The email setting from config.toml takes precedent.
