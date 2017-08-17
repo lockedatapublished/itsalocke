@@ -2,11 +2,11 @@
 name = "XXX"
 weight = 10
 ID = 3
-title = "Operationalising models"
+title = "Getting models into production"
 subtitle = "Technical leadership"
 date = "2014-07-07"
-img = "treehouse.png"
-preview = "treehouse-preview.png"
+img = "Signs.png"
+preview = "Signs.png"
 client = "XXX"
 clientLink = "#"
 category = "Technical Leadership"

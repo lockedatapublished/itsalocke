@@ -2,11 +2,11 @@
 name = "XXX"
 weight = 10
 ID = 1
-title = "Training"
-subtitle = "Upskilling People"
+title = "Custom training"
+subtitle = "Education"
 date = "2014-07-05"
-img = "roundicons.png"
-preview = "roundicons-preview.png"
+img = "Mortar Board.png"
+preview = "Mortar Board.png"
 client = "XXX"
 clientLink = "#"
 category = "Upskilling People"

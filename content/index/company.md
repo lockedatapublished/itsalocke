@@ -1,12 +1,13 @@
 +++
 #disable = true
-weight = 100
-title = "Company Resources"
+weight = 41
+title = "Company"
+subtitle = "Company pages and services"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 
 [menu.main]
   name = "Company"
-  weight = 100
+  weight = 30
   url = "#company"
 +++

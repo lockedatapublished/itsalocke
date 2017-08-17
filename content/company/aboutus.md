@@ -2,7 +2,7 @@
 title = "About us"
 lastmod = "2016-11-22"
 date = "2016-11-22"
-image ="img/ChibiStephContact.svg"
+image ="img/ChibiStephBusiness.svg"
 [elements]
   footer = true
   contact = true
@@ -15,7 +15,7 @@ image ="img/ChibiStephContact.svg"
 
 > Locke Data helps organisations start doing data science.
 
-We're a new data science consultancy founded by [Steph Locke](#) early in 2017. Our focus is on starting data science successfully. 
+We're a new data science consultancy founded by [Steph Locke](../steph) early in 2017. Our focus is on starting data science successfully. 
 
 We don't specialise in AI and we'll rarely recommend things like convolutional neural networks or try to use the latest deep learning framework.
 

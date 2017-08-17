@@ -2,11 +2,11 @@
 name = "XXX"
 weight = 20
 ID = 2
-title = "Analytical apps"
+title = "Self-service tools"
 subtitle = "Faciitating access to analytics"
 date = "2014-07-06"
-img = "startup-framework.png"
-preview = "startup-framework-preview.png"
+img = "Signs.png"
+preview = "Signs.png"
 client = "XXX"
 clientLink = "#"
 category = "Technical Leadership"

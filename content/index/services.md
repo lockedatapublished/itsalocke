@@ -2,7 +2,7 @@
 #disable = true
 weight = 40
 title = "How to get started"
-subtitle="Locke Data can help at each step of your journey."
+subtitle="We can help you at each step, hop to the [Company](#company) section for specifics."
 lastmod = "2016-11-22"
 date = "2016-11-22"
 
