@@ -13,12 +13,8 @@ date = "2016-11-22"
 # Logo size of 280px*80px in .svg format is recommended.
 
 [[clients]]
-  name = "envato"
+  name = "Solitwork"
   weight = 10
-  logo = "envato.jpg"
-[[clients]]
-  name = "microlancer"
-  weight = 20
-  logo = "microlancer.jpg"
-  link = "#"
+  logo = "solitwork.png"
+  link="//www.solitwork.com/"
 +++
