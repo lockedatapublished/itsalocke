@@ -7,10 +7,7 @@ endpoint = "Be part<br>of our<br>story!"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 
-[menu.main]
-  name = "Timeline"
-  weight = 40
-  url = "#timeline"
+
 
 [style]
   center = true
