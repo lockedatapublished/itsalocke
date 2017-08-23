@@ -4,6 +4,7 @@ weight = 10
 title = "We help organisations <br/> with their data science journeys"
 subtitle = "Start your<br/>journey today"
 button = "Start"
+communitylink = "Take me to your community stuff!"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 
