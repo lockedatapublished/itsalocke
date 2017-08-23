@@ -1,6 +1,6 @@
 +++
 #disable = true
-weight = 200
+weight = 400
 title = "Training bundles"
 lastmod = "2016-11-22"
 date = "2016-11-22"

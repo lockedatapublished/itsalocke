@@ -7,4 +7,4 @@ icon = "fa-terminal"
 link = ""
 +++
 
-Tackle your first project with support or leadership from experts.
+Tackle your first project with support and/or leadership from experts.
