@@ -15,6 +15,9 @@ copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa
   
 DefaultContentLanguage = "en"
 
+[social]
+twitter = "lockedata"
+
 [languages.en]
   weight = 1
   title = "Locke Data"
