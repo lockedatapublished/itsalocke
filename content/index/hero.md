@@ -2,8 +2,8 @@
 #disabled = true
 weight = 10
 title = "We help organisations <br/> with their data science journeys"
-subtitle = "We can help you <br/> begin yours"
-button = "Let's start"
+subtitle = "Start your<br/>journey today"
+button = "Start"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 
