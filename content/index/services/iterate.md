@@ -7,4 +7,4 @@ icon = "fa-repeat"
 link = ""
 +++
 
-Pick a new project or improve the existing ones. Smooth out processes and start working smarter.
+Pick a new project or improve on existing ones. Smooth out processes and start working smarter.

@@ -8,4 +8,4 @@ link="/company/readiness"
 icon="fa-check-square-o"
 +++
 
-Is your organisation ready for data science? Get a [Readiness Review](/company/readiness) to check.
+Is your organisation ready for data science? Get a [readiness review](/company/readiness) to check.

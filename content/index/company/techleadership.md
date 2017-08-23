@@ -1,6 +1,6 @@
 +++
 #disable = true
-weight = 450
+weight = 200
 title = "Technical leadership"
 lastmod = "2016-11-22"
 date = "2016-11-22"
