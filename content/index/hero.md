@@ -1,7 +1,7 @@
 +++
 #disabled = true
 weight = 10
-title = "We help organisations <br/> with their data science journeys"
+title = "We help organisations with <br/> their data science journeys"
 subtitle = "Start your<br/>journey today"
 button = "Start"
 communitylink = "Take me to your community stuff!"
