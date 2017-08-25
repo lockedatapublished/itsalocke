@@ -1,6 +1,6 @@
 +++
 #disable = true
-weight = 300
+weight = 400
 title = "Bug bounty"
 lastmod = "2016-11-22"
 date = "2016-11-22"
