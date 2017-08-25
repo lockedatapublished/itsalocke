@@ -1,7 +1,7 @@
 +++
 #disable = true
-weight = 999
-title = "About"
+weight = 100
+title = "Locke Data"
 lastmod = "2016-11-22"
 date = "2016-11-22"
 link="/company/aboutus"
