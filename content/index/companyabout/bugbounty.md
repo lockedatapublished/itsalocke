@@ -4,6 +4,7 @@ weight = 300
 title = "Bug bounty"
 lastmod = "2016-11-22"
 date = "2016-11-22"
+link="https://goo.gl/forms/KQiYR201Fcn4k9Zh2"
 icon="fa-bug"
 +++
 
