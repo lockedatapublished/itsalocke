@@ -69,4 +69,4 @@ Now in her second year as an MVP, Steph gets phenomenal opportunities to help ou
 - [MVP](//mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721)
 
 ## Speaker bio
-Steph is the founder of a data science consultancy in the UK. Her talks, blog posts, and conferences are all geared towards helping people in exactly the same way her business does. They all help people get started with data science. In her spare time, Steph plays board games with her husband and takes copious pictures of her doggos.
+Steph is the founder of a consultancy in the UK. Her talks, blog posts, conferences, and business all  havae one thing in common -- they help people get started with data science. In her spare time, Steph plays board games with her husband and takes copious pictures of her doggos.
