@@ -13,7 +13,7 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-Steph is our CCO^[Chief Chibi Officer]. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough five years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//lockelife.com/#contact)]
+Steph is our CCO^[Chief Chibi Officer]. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough five years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
 
 ## Career
 Steph's been earning her own way since she was twelve and she was managing a burger van by the age of seventeen. After smelling of fried onions for a long time, she started putting her maths and IT skills into use whilst she was studying for her Philosophy degree. During her degree, Steph worked a range of temp jobs from trying to cajole guys called Steve to buy motherboards to automating energy bill readings. 

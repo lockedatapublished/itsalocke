@@ -46,7 +46,7 @@ Finally, we can help you implement a new analytical technology, do your first da
 ## Organisations we work with
 We'll happilly work across many industries - we have a lot of experience in financial and insurance sectors but we know data science, we know a bit about a lot, and most importantly we value your expertise and listen to you.
 
-We don't have any ISO accrediations at this point because we only have one full-time consultant (we're a startup remember) so we're probably not right for you if you need a partner with a raft of accrediations. If you do need someone like that, [drop us a message](//lockelife.com/#contact) and we'll help you find the right consultants for you.
+We don't have any ISO accrediations at this point because we only have one full-time consultant (we're a startup remember) so we're probably not right for you if you need a partner with a raft of accrediations. If you do need someone like that, [drop us a message](//itsalocke.com/#contact) and we'll help you find the right consultants for you.
 
  
 ## How we'll work with you
