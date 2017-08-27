@@ -4,8 +4,8 @@ weight = 40
 title = "Timeline"
 subtitle = "Lorem ipsum dolor sit amet consectetur."
 endpoint = "Be part<br>of our<br>story!"
-lastmod = "2016-11-22"
-date = "2016-11-22"
+lastmod = "2017-08-26"
+date = "2017-08-26"
 
 
 

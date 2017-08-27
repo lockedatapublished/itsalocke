@@ -3,8 +3,8 @@
 weight = 31
 # Optional title to describe relationship or emphasize something.
 title = "Past clients"
-lastmod = "2016-11-22"
-date = "2016-11-22"
+lastmod = "2017-08-26"
+date = "2017-08-26"
 
 [style]
   center = true

@@ -3,8 +3,8 @@
 weight = 90
 title = "Contact us"
 subtitle  = "Kick off a conversation about how we can help you."
-lastmod = "2016-11-22"
-date = "2016-11-22"
+lastmod = "2017-08-26"
+date = "2017-08-26"
 # The contact form uses www.formspree.io as default email proxy.
 # Visitors can send up to a 1000 emails each month for free.
 #

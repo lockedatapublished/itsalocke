@@ -2,8 +2,8 @@
 #disable = true
 weight = 400
 title = "Training bundles"
-lastmod = "2016-11-22"
-date = "2016-11-22"
+lastmod = "2017-08-26"
+date = "2017-08-26"
 link="/company/recommendedtraining"
 icon="fa-graduation-cap"
 +++
