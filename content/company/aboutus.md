@@ -16,7 +16,7 @@ image ="img/ChibiStephBusiness.svg"
   center = false
 +++
 
-> Locke Data helps organisations start doing data science.
+> Locke Data helps organisations get started with data science.
 
 We're a new data science consultancy based in Cardiff in the United Kingdom. We were founded by [Steph Locke](../steph) early in 2017 and our focus is on helping organisations start doing data science **successfully**. 
 
