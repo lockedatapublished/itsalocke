@@ -109,11 +109,11 @@ twitter = "lockedata"
 #    pre = "<i class='fa fa-linkedin'></i>"
 #    url = "#"
 
-  # Custom footer menu items not defined within pages.
-  #[[languages.en.menu.footer]]
-  #  weight = 10
-  #  name = "Privacy Policy"
-  #  url = "#"
+ # Custom footer menu items not defined within pages.
+ [[languages.en.menu.footer]]
+   weight = 20
+   name = "Sitemaps"
+   url = "sitemap_index.xml"
 
   #[[languages.de.menu.footer]]
   #  weight = 10
