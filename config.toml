@@ -35,7 +35,7 @@ twitter = "lockedata"
 
 [params]
   name = "Locke Data"
-  description = "Helping people get started with data science"
+    description         = "Locke Data helps organisations get started with data science."
 
   # Optional list of custom assets for css and js.
   # Asset links are relative to 'static/'.
