@@ -18,6 +18,7 @@ DefaultContentLanguage = "en"
 [social]
 twitter = "lockedata"
 
+
 [languages.en]
   weight = 1
   title = "Locke Data"
@@ -42,6 +43,7 @@ twitter = "lockedata"
   custom_css = []
   custom_js  = []
   favicon    = "favicon.ico"
+image="img/ChibiSteph.svg"
 
 
 
