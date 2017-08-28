@@ -45,7 +45,7 @@ DefaultContentLanguage = "en"
   custom_css = []
   custom_js  = []
   favicon    = "favicon.ico"
-image="img/ChibiSteph.svg"
+  image="img/ChibiSteph.png"
 
 
 
