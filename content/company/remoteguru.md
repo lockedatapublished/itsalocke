@@ -67,7 +67,7 @@ We're a jetsetting bunch with clients all over the place so flexibility is great
 
 This means:
 
-- if you are in the UK, intend to reach out to us often, and want next day business turnaround then the monthly cost will be £880 per month plus setup
+- if you are in the UK, intend to reach out to us often, and want next day business turnaround then the monthly cost will be £880 plus setup
 - if you are in the US and want same day turnaround on a lot of help, the monthly cost will be £2,250 plus setup
 
 ## Get started
