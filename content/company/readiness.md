@@ -30,4 +30,4 @@ Hopefully, you're ready or just have some minor things to solve. Getting the gre
 
 If on the other hand, we identify some critical blockers and recommend you solve those first, then the review could save you trying to get data science going in your organisation and wasting plenty of time and money along the way.
 
-{{< btn href="../#contact" msg="Get more info" >}}
+{{<btn href="//itsalocke.com/#contact" msg="Get more info" >}}
