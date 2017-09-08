@@ -68,7 +68,7 @@ We can help by being your remote guru! You can email us or hop on a call with us
   <p>Selected: <span id="engagementcost"></span></p>
 </div>
 
-### What timezones do you need us to work on?
+### What time zones do you need us to work on?
 We like our beauty sleep! When do you need us to be available?
 
 - **UK hours** 9am - 7pm GMT
