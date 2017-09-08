@@ -94,7 +94,7 @@ Based on your requirements, here's what having us available <span id="monthlyhou
 
 - One-off setup costs will be £<span id="setupcosts"></span>
 - Monthly costs will be £<span id="monthlycosts"></span>
-- Get extra time if needed at £<span id="monthlyextra"></span>
+- Get extra time if needed at £<span id="monthlyextra"></span> per extra hour
 
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
@@ -111,11 +111,11 @@ Depending on how much access you need us to have, we'll need to spend some time 
 | Remote access | £500 |
 
 ### Usage
-Pick your expected amount of utilisation to determine the monthly cost under the **It can wait!** turnaround times.
+Here are base monthly prices.
 
 | Level           | Hours included |   Cost | Extra hours |
 |-----------------|---------------:|-------:|------------:|
-| Out of the blue |              0 |     £0 |        £250 |
+| Just the once   |              0 |     £0 |        £250 |
 | Occasional use  |              2 |   £400 |        £200 |
 | Often           |              5 |   £875 |        £175 |
 | A lot           |             10 | £1,500 |        £150 |
