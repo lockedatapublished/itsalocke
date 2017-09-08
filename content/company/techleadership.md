@@ -18,4 +18,4 @@ One of our key offerings is to be a guiding hand through your first project(s) -
 The level of engagement is up to you but this is a great way to parachute in an expert to help you get started but leave your team with the skills needed to do the next project.
 
 
-{{<btn href="../#contact" msg="Talk to us">}}
+{{<btn href="//itsalocke.com/#contact" msg="Talk to us">}}

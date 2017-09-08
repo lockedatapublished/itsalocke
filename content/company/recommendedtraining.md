@@ -33,7 +33,7 @@ The more days of training, the more each topic is covered:
 - Creating reusable code
 - Working with source control
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ## Specialist bundles
 ### Data wrangler
@@ -48,7 +48,7 @@ Get one to four days of wrangling data in R.  The more days of training, the mor
 - Data validation
 - Working with live connections to databases and Spark
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ### Modeller
 Get one to four days of building and evaluating analytical models in R. The more days of training, the more of these topics will be covered:
@@ -64,7 +64,7 @@ Get one to four days of building and evaluating analytical models in R. The more
 
 Note: A Foundation data wrangling day may be required depending on existing skills.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ### Communicator
 Get one to four days of using R to produce compelling graphics, inform people, and facilitating other people's exploring of results through dashboards.
@@ -82,7 +82,7 @@ The more days of training, the more of these topics will be covered:
 
 Note: A Foundation data wrangling day may be required depending on existing skills.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ### Programmer
 Get one to four days of putting R and analytical models into production and working in a robust way.
@@ -100,13 +100,13 @@ The more days of training, the more of these topics will be covered:
 
 Note: A Foundation data wrangling day may be required depending on existing skills.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ## Data science in organisations
 ### Communicating data science results
 A one day event that helps technical and non-technical staff understand the moving parts of the data science project and how the outputs from the different aspects can be presented so that important decisions can be made effectively, without a maths degree being required.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ### Data science management
 Get one to three days of training that gives managers, senior team members, and project / central IT management an understanding of data science and how best to manage the people, processes, and tools.
@@ -121,9 +121,9 @@ The more days of training, the more in-depth these topics will be covered:
 - Managing stakeholder expectations
 
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ### Data science for executives
 A single day event that gives executives and managers an overview of what data science is, how the process works, where the pitfalls are, and what their expectations should be short and medium term.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}

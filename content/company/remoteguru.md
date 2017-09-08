@@ -17,7 +17,7 @@ Are you or your staff learning data science on the job and need someone to answe
 
 We can help by being your remote guru! You can email us or hop on a call with us. Get a lead data scientist for your organisation without having to go through the hiring process.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 ## Decide your requirements
 
@@ -73,4 +73,4 @@ This means:
 ## Get started
 If you want to to kick off a discussion about getting us to be your remote guru, use our form.
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}

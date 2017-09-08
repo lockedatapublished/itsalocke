@@ -19,7 +19,7 @@ Data science is a team sport and needs many people in your organisation to have 
 
 If one of our [bundles](../recommendtraining) doesn't fit the bill for what you need, we can develop a custom training solution based off our existing training and extend it into specific areas you need covered or use your organisation's data to ensure people get practice working with their data.
 
-{{<btn href="../#contact" msg="Schedule a call">}}
+{{<btn href="//itsalocke.com/#contact" msg="Schedule a call">}}
 ## Picking the custom content
 We offer training in the core competencies of data science. You can pick and choose days of training that build up skills to a given level in a day.
 
@@ -102,4 +102,4 @@ If blending existing training isn't quite right, you can even customise further 
 | Managing R infrastructure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Managing a data science team | &checkmark; |  |  |  | &checkmark; |
 
-{{<btn href="../#contact" msg="Get in touch">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}

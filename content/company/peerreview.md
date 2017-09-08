@@ -19,4 +19,4 @@ A peer review involves spending some time describing to us the problem and the a
 
 A more formal audit process involves a more extensive process that also includes data verification, and assessing reproducibility. The report includes all findings and is much more extensive as it is designed for consumption by regulators or third parties who might not have the same level of domain or technical knowledge.
 
-{{<btn href="../#contact" msg="Get a peer review">}}
+{{<btn href="//itsalocke.com/#contact" msg="Get a peer review">}}
