@@ -53,7 +53,7 @@ Pick your expected amount of utilisation to determine the monthly cost under the
 |-----------------|---------------:|-------:|------------:|
 | Out of the blue |              0 |     £0 |        £250 |
 | Occasional use  |              2 |   £400 |        £200 |
-| Often           |              5 |   £800 |        £175 |
+| Often           |              5 |   £875 |        £175 |
 | A lot           |             10 | £1,500 |        £150 |
 
 ### Urgency
@@ -67,7 +67,7 @@ We're a jetsetting bunch with clients all over the place so flexibility is great
 
 This means:
 
-- if you are in the UK, intend to reach out to us often, and want next day business turnaround then the monthly cost will be £880 plus setup
+- if you are in the UK, intend to reach out to us often, and want next day business turnaround then the monthly cost will be £962.50 plus setup
 - if you are in the US and want same day turnaround on a lot of help, the monthly cost will be £2,250 plus setup
 
 ## Get started
