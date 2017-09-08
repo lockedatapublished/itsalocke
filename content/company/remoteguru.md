@@ -13,6 +13,23 @@ image ="img/ChibiStephContact.svg"
   center = false
 +++
 
+
+
+Are you or your staff learning data science on the job and need someone to answer architectural or technical questions? Do you need someone you can bounce ideas off and can tell you what's worked in the past in similar projects? 
+
+We can help by being your remote guru! You can email us or hop on a call with us. Get a lead data scientist for your organisation without having to go through the hiring process.
+
+{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
+
+
+## Decide your requirements
+
+### How much access should we have to your systems?
+
++ **None** If you only need general advice or want to just show via screenshare then we don't need to do any setup
++ **Exports** If you want to be able to send us data and we need to spend some time discussing and implementing some agreed storage and retention etc policies
++ **Remoting access** If you want us to be able to login to your systems to be able to do stuff then we need to work with you to get and test that access
+
 <style> 
 .slider {
   -webkit-appearance: none;
@@ -35,22 +52,6 @@ image ="img/ChibiStephContact.svg"
   cursor: pointer;
 }
 </style>
-
-Are you or your staff learning data science on the job and need someone to answer architectural or technical questions? Do you need someone you can bounce ideas off and can tell you what's worked in the past in similar projects? 
-
-We can help by being your remote guru! You can email us or hop on a call with us. Get a lead data scientist for your organisation without having to go through the hiring process.
-
-{{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
-
-
-## Decide your requirements
-
-### How much access should we have to your systems?
-
-+ **None** If you only need general advice or want to just show via screenshare then we don't need to do any setup
-+ **Exports** If you want to be able to send us data and we need to spend some time discussing and implementing some agreed storage and retention etc policies
-+ **Remoting access** If you want us to be able to login to your systems to be able to do stuff then we need to work with you to get and test that access
-
 <div id="slidecontainer">
   <input type="range" min="1" max="3" value="1" class="slider" id="setup">
   <p>Selected: <span id="setupcost"></span></p>
