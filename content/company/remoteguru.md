@@ -28,7 +28,7 @@ We can help by being your remote guru! You can email us or hop on a call with us
 
 + **None** If you only need general advice or want to just show via screenshare then we don't need to do any setup
 + **Exports** If you want to be able to send us data and we need to spend some time discussing and implementing some agreed storage and retention etc policies
-+ **Remoting access** If you want us to be able to login to your systems to be able to do stuff then we need to work with you to get and test that access
++ **Remote access** If you want us to be able to login to your systems to be able to do stuff then we need to work with you to get and test that access
 
 <style> 
 .slider {
