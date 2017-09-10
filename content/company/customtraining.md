@@ -15,9 +15,9 @@ image ="img/ChibiStephContact.svg"
 
 > You don’t build a business. You build people, and people build the business.
 
-Data science is a team sport and needs many people in your organisation to have the required skills. Investing in training your existing staff helps ensure you can get the necessary skillsets whilst being able to build better data products as your people know your organisation and its data.
+Data science is a team sport and needs many people in your organisation to have the required skills. Investing in training your existing staff helps ensure you can get the necessary skill sets whilst being able to build better data products as your people know your organisation and its data.
 
-If one of our [bundles](../recommendtraining) doesn't fit the bill for what you need, we can develop a custom training solution based off our existing training and extend it into specific areas you need covered or use your organisation's data to ensure people get practice working with their data.
+If one of our [bundles](../recommendtraining) doesn't fit the bill for what you need, we can develop a custom training solution based on our existing training and extend it into specific areas you need covered or use your organisation's data to ensure people get practice working with their data.
 
 {{<btn href="//itsalocke.com/#contact" msg="Schedule a call">}}
 ## Picking the custom content
@@ -29,8 +29,8 @@ We try to offer these using levels so that the higher up the levels you go, the 
 - The Foundation level teaches a the pre-requisite skills to be able to perform tasks in this area. This is usually a good fit for people who might be cross-training from a non-technical background and need additional concepts they might not yet have gained. It's also good for people who want to understand the technology but won't necessarily use the skills.
 - The Beginner level is for people who have some technical experience and are looking to acquire start skills in the area or might only use the skills irregularly.
 - The Intermediate level is for people who have already started building their skills and who are likely to use the skill most days.
-- The Advanced level is great for people who will sue this skill day to day and find themselves dealing with sophisticated challenges.
-- The Executive level isn't aimed at teaching the skills and instead focuses on the high level process, technology, and managing people who perform this task.
+- The Advanced level is great for people who will use this skill day to day and find themselves dealing with sophisticated challenges.
+- The Executive level isn't aimed at teaching the skills and instead focuses on the high-level process, technology, and managing people who perform this task.
 
 By using levels that take a day, it becomes much easier to build a course that suits your specific needs, at the level you need, and that lasts an easy to calculate duration.
 

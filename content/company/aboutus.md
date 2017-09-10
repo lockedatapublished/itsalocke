@@ -24,7 +24,7 @@ We're a new data science consultancy based in Cardiff in the United Kingdom. We 
     <div class="col-lg-6  bg-light-gray"> 
 ## What we are
 - We are your advisors, your mentors, and your educators. We help you grow your skills. 
-- We focus on helping people getting started by offering the services that ensure the organisation, the data, and the people are ready to do data science. 
+- We focus on helping people get started by offering the services that ensure the organisation, the data, and the people are ready to do data science. 
 - We are consultants who leave you with the skills needed to carry on without us.
 
 </div>
@@ -32,7 +32,7 @@ We're a new data science consultancy based in Cardiff in the United Kingdom. We 
 <div class="col-lg-6"> 
 ## What we're not
 - We're not AI specialists, we're not an outsource data science department, we're not contractors.
-- We're not focussed on organisations with big data science teams already. 
+- We don't work with organisations with big data science teams. 
 - We're not people who think data science is easy and you can do it by simply hiring some PhDs or buying some software.
 
 </div>
@@ -47,15 +47,15 @@ We will help you determine which processes are right for your organisation and w
 Finally, we can help you implement a new analytical technology, do your first data science project, or solve those pesky implementation problems you might be facing.
 
 ## Organisations we work with
-We'll happilly work across many industries - we have a lot of experience in financial and insurance sectors but we know data science, we know a bit about a lot, and most importantly we value your expertise and listen to you.
+We'll happily work across many industries - we have a lot of experience in financial and insurance sectors but we know data science, we know a bit about a lot, and most importantly we value your expertise and listen to you.
 
-We don't have any ISO accrediations at this point because we only have one full-time consultant (we're a startup remember) so we're probably not right for you if you need a partner with a raft of accrediations. If you do need someone like that, [drop us a message](//itsalocke.com/#contact) and we'll help you find the right consultants for you.
+We're a startup so we're light on accreditations right now. If you need someone with a load of ISO numbers to their name, [drop us a message](//itsalocke.com/#contact) anyway and we can put you in touch with the right consultants for you.
 
  
 ## How we'll work with you
 First up is a [chat](../#contact) to discuss your overall requirements. We work with you to identify what you need. This could be a readiness review, some training, or just a quick pointer to a useful book.
 
-After we're on the same page about what you need, we'll provide you with a proposal for work. You can accept the proposal and we'll get on with all that contract signing business.
+After we're on the same page about what you need, we'll provide you with a proposal for things we can do for you. You can get us to adjust the prorposal and/or accept the proposal and we'll get on with all that contract signing business.
 
 Once contracts are signed, we'll start working with you to help you deliver your data science programme.
 
@@ -64,4 +64,3 @@ Oh and did we mention we can do a lot of this entirely digitally and remotely?
 You get an easy time booking in remote calls easily, signing contracts digitally, and even have us working with you entirely remotely. This cuts down on cost and decreases turn around time for the work for you. We spend less time travelling and more time delivering -- a fact we love! 
 
 Of course, we'll come on-site when it's beneficial too, but we hope remote can and will work for you wherever you are in world.
-
