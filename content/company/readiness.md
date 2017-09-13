@@ -15,14 +15,14 @@ image ="img/ChibiSteph.svg"
 
 > Is your organisation ready to start doing data science?
 
-Before we setup Locke Data, we saw plenty of data science initiatives happen. Some failed, some succeeded. Our focus is on helping folks get into the "succeeded" bucket. 
+Before we set up Locke Data, we saw plenty of data science initiatives happen. Some failed, some succeeded. Our focus is on helping folks make sure theirs succeeds! 
 
-One of the best ways we've found to help that happen is to work with organisations *before* they start their initiative and working out whether they should start, or if there's some things they need to sort out first.
+One of the best ways we've found to help that happen is to work with organisations *before* they start their initiative and working out whether they're ready to start, or if there are things they need to sort out first.
 
 
 > Fail to plan, and you plan to fail
 
-Our Readiness Reviews involves going through our checklist to assess different criteria around people, processes, and tools. We blend quantitative components like skills tests for staff to qualitiative reviews of documentation and compiling feedback from interviews.
+Our Readiness Reviews involves going through our checklist to assess different criteria around people, processes, and tools. We blend quantitative components like skills tests for staff to qualitative reviews of documentation and compiling feedback from interviews.
 
 Once we've checked out where you are, we'll then be able to provide recommendations. 
 

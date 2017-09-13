@@ -15,16 +15,14 @@ date = "2017-08-26"
 
 Here at Locke Data, we love our technology communities. The more we can share and do for others the better.
 
-Here are some of the way we contribute and how you can take advantage of them.
+Here are some of the ways we contribute, and how you can take advantage of them:
 
 ## Presenting at meetups
-We will happily present at your meetup or user group.
-
-It might have to be remote and it will definitely have to fit into our schedule -- but we will do a talk for you!
+We will happily present at your meetup or user group. It might have to be remote and it will definitely have to fit into our schedule -- but we will do a talk for you!
 
 You can see past [talks](//itsalocke.com/talks) to get an idea of what topics are available. Did you know that some have videos attached you can use in an emergency?
 
-<a class="btn btn-primary" href="//itsalocke.com/#contact" role="button">Get in touch</a>
+<a class="btn btn-primary" href="//itsalocke.com/#contact" role="button">Get in touch</a> to discuss what we can present to your user group.
 
 ## Grow your meetup's funds
 If your meetup is UK based and you'd like to raise some funds, Locke Data can run a half day workshop with you.
@@ -39,4 +37,4 @@ Here are the half day courses you can get us to deliver:
 - Data manipulation in R
 - Building dashboard with shiny
 
-<a class="btn btn-primary" href="//itsalocke.com/#contact" role="button">Get in touch</a>
+<a class="btn btn-primary" href="//itsalocke.com/#contact" role="button">Get in touch</a> to discuss how we can help raise funds for your user group.

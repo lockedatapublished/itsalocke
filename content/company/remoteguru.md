@@ -15,7 +15,7 @@ image ="img/ChibiStephContact.svg"
 
 
 
-Are you or your staff learning data science on the job and need someone to answer architectural or technical questions? Do you need someone you can bounce ideas off and can tell you what's worked in the past in similar projects? 
+Are you or your staff learning data science on the job and need someone to answer architectural or technical questions? Do you need someone you can bounce ideas off, or someone who can tell you what's worked in the past in similar projects? 
 
 We can help by being your remote guru! You can email us or hop on a call with us. Get a lead data scientist for your organisation without having to go through the hiring process.
 
@@ -23,6 +23,7 @@ We can help by being your remote guru! You can email us or hop on a call with us
 
 
 ## Decide your requirements
+Use the sliders below to set your requirements, then check the quote at the bottom of the page.
 
 ### How much access should we have to your systems?
 

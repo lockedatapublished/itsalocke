@@ -28,7 +28,7 @@ Steph is the founder of a consultancy in the UK. Her talks, blog posts, conferen
 ## Career
 Steph's been earning her own way since she was twelve and she was managing a burger van by the age of seventeen. After smelling of fried onions for a long time, she started putting her maths and IT skills into use whilst she was studying for her Philosophy degree. During her degree, Steph worked a range of temp jobs from trying to cajole guys called Steve to buy motherboards to automating energy bill readings. 
 
-She got her first "real" job at [confused.com](//confused.com) as a Product Analyst for the Utilities product.^[Her boss said analysts were the new handbag, that everyone had to have one, and it seems to have stayed true throughout Steph's career.] Steph learnt about digital marketing and did unholy things with spreadsheets to get data. The thirst for data made her learn SQL, and then she jumped into the Business Intelligence (BI) team to build the end-to-end BI environment for the utilities switching product and build some basic data mining models for analysing insurance cross-sells.
+She got her first "proper" IT job at [confused.com](//confused.com) as a Product Analyst for the Utilities product.^[Her boss said analysts were the new handbag, that everyone had to have one, and it seems to have stayed true throughout Steph's career.] Steph learnt about digital marketing and did unholy things with spreadsheets to get data. The thirst for data made her learn SQL, and then she jumped into the Business Intelligence (BI) team to build the end-to-end BI environment for the utilities switching product and build some basic data mining models for analysing insurance cross-sells.
 
 Steph moved onto [Nemo Personal Finance](//nemo-loans.co.uk), a second-mortgage company, to be their BI person. She grew the BI service and more people were hired. Steph mentored five people over the next couple of years in MySQL, database, design, reporting, and most importantly, effectively working with stakeholders. In her final year at Nemo, Steph discovered her passion for R and started resurrecting her maths skills to build models for predicting who would default on their loans and more in order to satisfy regulatory requirements for BASEL II's IRB framework.^[If you know what this is, you can appreciate how rare such a model for second-charge lending is.]
 
@@ -49,13 +49,13 @@ As Steph's interests diversified over the years, not only did she keep running h
 Currently, Steph organises [MSFT Stack](//meetup.com/msft-stack) which is the SQL group, the .Net group, and more combined, plus  [CaRdiff](www.meetup.com/Cardiff-R-User-Group/), the local R group.
 
 ### Conferences
-The first conferences Steph organised were part of [SQL Relay](//sqlrelay.co.uk), a touring SQL conference.^[The first one was held in the training area of Principality Building Society and Steph wouldn't let people eat their cake til they'd finished all their sandwiches.]
+The first conferences Steph organised were part of [SQL Relay](//sqlrelay.co.uk), a touring SQL conference.^[The first one was held in the training area of Principality Building Society and Steph wouldn't let people eat their cake 'til they'd finished all their sandwiches.]
 
-Going from 40 people at the first event to 250 at the last one, Steph grew the Cardiff event whilst also taking responsibility, for marketing, sponsorship, and the whole conference over the years. Steph most enjoyed working with companies who sponsored the events, making them free to attend, as she got to help companies give to the community and get value out of it.
+Going from 40 people at the first event to 250 at the last one, Steph grew the Cardiff event whilst also taking responsibility for marketing, sponsorship, and the whole conference over the years. Steph most enjoyed working with companies who sponsored the events, making them free to attend, as she got to help companies give to the community and get value out of it.
 
 Starting a consultancy is no small feat so she handed over the SQL Relay reigns over to others after the 2016 events.^[Not that she hasn't added more work since then to her TODO list!]
 
-The impact of low-cost, community organised conferences on making a technology and community accessable is tremendous in Steph's eyes. As a result, one of the things she was keen on and has been spearheading is low-cost conferences for the R community called [satRdays](//satrdays.org).
+The impact of low-cost, community organised conferences on making a technology and community accessible is tremendous in Steph's eyes. As a result, one of the things she was keen on and has been spearheading is low-cost conferences for the R community called [satRdays](//satrdays.org).
 
 Steph also ran a small local conference called [Battle of the Beards](//battleofthebeards.info) this year as a full-stack event raising awareness of the problem of male suicide.
 
