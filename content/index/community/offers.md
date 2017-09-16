@@ -1,6 +1,6 @@
 +++
 #disable = true
-weight = 600
+weight = 900
 title = "Offers"
 lastmod = "2017-08-26"
 date = "2017-08-26"
