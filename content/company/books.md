@@ -57,3 +57,14 @@ The book includes the following chapters:
 
 ## Kindle Unlimited
 We make the books available at a low price as we're able to publish these ourselves. Additionally, all the books are available on Kindle Unlimited too. Being on Kindle Unlimited means you can read as many books as you want each month under a subscription model. Amazon offer free trials too so not only can you "Look Inside" a book, you can effectively read the books for free too by signing up for a Kindle Unlimited trial.
+
+## Other books
+
+### Tribal SQL
+Read Steph's chapter on being better at reporting -- get a solid overview of being a great analyst and what skills you need.
+
+{{<btn href="http://geni.us/tribalsql" msg="Get Tribal SQL">}}
+
+{{< figure src="https://images-eu.ssl-images-amazon.com/images/I/51-GKsq1%2BGL.jpg" link="http://geni.us/tribalsql
+" alt="Tribal SQL book cover">}}
+
