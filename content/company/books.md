@@ -56,4 +56,4 @@ The book includes the following chapters:
 > Steph's writing has a very lively and engaging style that is a pleasure to read. Working with R is an excellent introduction into an important part of learning Data Science. Read it and enjoy learning.
 
 ## Kindle Unlimited
-We make the books available at a low price as we're able to publish these ourselves. Additionally, all the books are available on Kindle Unlimited too. Being on Kindle Unlimited means you can read as many books as y ou want each month under a subscription model. Amazon offer free trials too so not only can you "Look Inside", you can effectively read the books for free too by signing up for a Kindle Unlimited trial.
+We make the books available at a low price as we're able to publish these ourselves. Additionally, all the books are available on Kindle Unlimited too. Being on Kindle Unlimited means you can read as many books as you want each month under a subscription model. Amazon offer free trials too so not only can you "Look Inside" a book, you can effectively read the books for free too by signing up for a Kindle Unlimited trial.
