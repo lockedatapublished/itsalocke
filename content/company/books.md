@@ -61,10 +61,12 @@ We make the books available at a low price as we're able to publish these oursel
 ## Other books
 
 ### Tribal SQL
+
+{{<btn href="//geni.us/tribalsql" msg="Get Tribal SQL">}}
+
 Read Steph's chapter on being better at reporting -- get a solid overview of being a great analyst and what skills you need.
 
-{{<btn href="http://geni.us/tribalsql" msg="Get Tribal SQL">}}
 
-{{< figure src="https://images-eu.ssl-images-amazon.com/images/I/51-GKsq1%2BGL.jpg" link="http://geni.us/tribalsql
-" alt="Tribal SQL book cover">}}
+
+{{< figure src="https://images-eu.ssl-images-amazon.com/images/I/51-GKsq1+GL.jpg" link="http://geni.us/tribalsql" alt="Tribal SQL book cover">}}
 
