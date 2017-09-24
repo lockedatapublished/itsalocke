@@ -1,7 +1,7 @@
 +++
 title = "Readiness Reviews"
-lastmod = "2017-08-26"
-date = "2017-08-26"
+lastmod = "2017-09-24"
+date = "2017-09-24"
 image ="img/ChibiSteph.svg"
 [elements]
   footer = true
@@ -28,6 +28,6 @@ Once we've checked out where you are, we'll then be able to provide recommendati
 
 Hopefully, you're ready or just have some minor things to solve. Getting the green light from an independent, experienced third party is a great way to start with buy-in from within your organisation. 
 
-If on the other hand, we identify some critical blockers and recommend you solve those first, then the review could save you trying to get data science going in your organisation and wasting plenty of time and money along the way.
+You might, however, have critical blockers that would cause a project to fail before it ever started. In that situation, we would identify those blockers and recommend resolutions, saving you precious time and money.
 
 {{<btn href="//itsalocke.com/#contact" msg="Get more info" >}}
