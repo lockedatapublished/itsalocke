@@ -1,7 +1,7 @@
 +++
 title = "Peer review"
-lastmod = "2017-08-26"
-date = "2017-08-26"
+lastmod = "2017-09-24"
+date = "2017-09-24"
 image ="img/ChibiStephBusiness.svg"
 [elements]
   footer = true
@@ -17,6 +17,6 @@ If you're a small team or a team of one, it can be really tough to get someone t
 
 A peer review involves spending some time describing to us the problem and the approach taken to solve it. We'll then review the code and documentation associated with the solution or model. We then compile a report outlining our findings for you.
 
-A formal audit involves a more extensive process that also includes data verification, and assessing reproducibility. The report includes all findings and is much more extensive as it is designed for consumption by regulators or third parties who might not have the same level of domain or technical knowledge.
+A formal audit involves a more extensive process that also includes data verification, and assessing reproducibility. The report includes all findings and is much more extensive as it is designed for consumption by regulators or third parties, who might not have the same level of domain or technical knowledge.
 
 {{<btn href="//itsalocke.com/#contact" msg="Get a peer review">}}
