@@ -2,9 +2,9 @@
 #disabled = true
 weight = 10
 title = "We help organisations with <br/> their data science journeys"
-subtitle = "Start your<br/>journey today"
+subtitle = "Get started on<br/>your journey today"
 button = "Start"
-communitylink = "Take me to your community stuff!"
+communitylink = "Community"
 lastmod = "2017-08-26"
 date = "2017-08-26"
 image="img/ChibiSteph.svg"
