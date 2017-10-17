@@ -17,13 +17,12 @@ image ="img/ChibiStephContact.svg"
 
 Are you or your staff learning data science on the job and need someone to answer architectural or technical questions? Do you need someone you can bounce ideas off, or someone who can tell you what's worked in the past in similar projects? 
 
-We can help by being your remote guru! You can email us or hop on a call with us. Get a lead data scientist for your organisation without having to go through the hiring process.
+We can help by being your remote guru! Get a lead data scientist for your organisation without having to go through the hiring process.
 
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
 
 ## Decide your requirements
-Use the sliders below to set your requirements, then check the quote at the bottom of the page.
 
 ### How much access should we have to your systems?
 
@@ -31,10 +30,41 @@ Use the sliders below to set your requirements, then check the quote at the bott
 + **Exports** If you want to be able to send us data and we need to spend some time agreeing how the data will be handled
 + **Remote access** If you want us to be able to login to your systems to be able to do stuff then we need to work with you to get and test that access
 
+
+### How often will you need us?
++ **Just the once** For something that comes up out of the blue
++ **Occasionally** For just one or two things a month
++ **Often** For things that come up weekly - maybe a small team who knows their stuff or one person who needs support
++ **A lot** For on-tap support for a team learning their craft
+
+### What time zones do you need us to work on?
+We like our beauty sleep! When do you need us to be available?
+
+- **UK hours** 9am - 7pm GMT
+- **Other hours** Need us during full US hours for instance?
+
+
+### What turnaround time do you need? 
++ **It can wait!** Schedule calls or get email support within four business days
++ **Need it soon** Schedule calls or get email support within two business days
++ **Need it now** Schedule calls or get email support within a business day
+
+
+## Quote
+
+Use the sliders below based on your requirements and get a quote for your tailored Remote Guru service.
+
+
 <style> 
+#slidecontainer {   
+    margin: 0%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+    margin-right: 10%;
+    margin-left: 10%;}
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 50%;
   height: 15px;
   border-radius: 5px;
   background: #d3d3d3;
@@ -58,39 +88,23 @@ Use the sliders below to set your requirements, then check the quote at the bott
   <p>Selected: <span id="setupcost"></span></p>
 </div>
 
-### How often will you need us?
-+ **Just the once** For something that comes up out of the blue
-+ **Occasionally** For just one or two things a month
-+ **Often** For things that come up weekly - maybe a small team who knows their stuff or one person who needs support
-+ **A lot** For on-tap support for a team learning their craft
 
 <div id="slidecontainer">
   <input type="range" min="1" max="4" value="2" class="slider" id="engagement">
   <p>Selected: <span id="engagementcost"></span></p>
 </div>
 
-### What time zones do you need us to work on?
-We like our beauty sleep! When do you need us to be available?
-
-- **UK hours** 9am - 7pm GMT
-- **Other hours** Need us during full US hours for instance?
-
 <div id="slidecontainer">
   <input type="range" min="1" max="2" value="1" class="slider" id="tz" onChange="updatePrice()">
   <p>Selected: <span id="tzmult"></span></p>
 </div>
-
-### What turnaround time do you need? 
-+ **It can wait!** Schedule calls or get email support within four business days
-+ **Need it soon** Schedule calls or get email support within two business days
-+ **Need it now** Schedule calls or get email support within a business day
 
 <div id="slidecontainer">
   <input type="range" min="1" max="3" value="1" class="slider" id="sla" onChange="updatePrice()">
   <p>Value: <span id="slaval"></span></p>
 </div>
 
-## Quote
+
 Based on your requirements, here's what having us available <span id="monthlyhours"></span> hours a month to be your remote guru would cost:
 
 - One-off setup costs will be £<span id="setupcosts"></span>
@@ -124,7 +138,7 @@ Here are base monthly prices.
 ### Core hours
 Being available outside of UK working hours plays havoc on the social life. As a result, we charge a bit more if you want us to be available  late at night or very early.
 
-| Timezons      | Multiplier |
+| Timezones      | Multiplier |
 |--------------|-------:|
 | UK hours is fine  |   1.0x |
 | Other hours |   1.4x |
