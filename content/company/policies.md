@@ -1,6 +1,6 @@
 +++
 title = "Policies"
-lastmod = "2017-08-26"
+lastmod = "2017-10-30"
 date = "2017-08-26"
 image ="img/ChibiStephBusiness.svg"
 [elements]
@@ -20,3 +20,5 @@ Outlined below are our various policies governing use of the site, how we handle
 - [Privacy Policy](../privacy)
 - [Cookie Policy](../cookie)
 - [Contribution Policy](../contributing)
+- [Non-disclosure agreement](../nda)
+- [Data Protection Policy](../dataprotection)
