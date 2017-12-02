@@ -23,7 +23,7 @@ date = "2017-08-26"
 
 # Email can be set here or within config.toml.
 # The email setting from config.toml takes precedent.
-email = "consultancy@itsalocke.com"
+email = "info@itsalocke.com"
 
 button = "Send message"
 
