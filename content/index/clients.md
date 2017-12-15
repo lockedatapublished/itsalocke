@@ -17,4 +17,16 @@ date = "2017-08-26"
   weight = 10
   logo = "solitwork.png"
   link="//www.solitwork.com/"
+  
+[[clients]]
+  name = "npower Business Solutions"
+  weight = 20
+  logo = "NP_PRIMARY_WHITE_InnerShad_Bus_Sol_Stacked_RGB.JPG"
+  link="//www.npower.com/business-solutions/"
+
+[[clients]]
+  name = "Cancer Research UK"
+  weight = 13
+  logo = "cruk-logo.svg"
+  link="//www.cancerresearchuk.org/"
 +++
