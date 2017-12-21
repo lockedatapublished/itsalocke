@@ -1,0 +1,118 @@
++++ 
+title = "R to whet your appetite" 
+lastmod = "2017-12-20" 
+date = "2017-12-20" 
+[elements] 
+footer = true 
+contact = true
+
+[menu.footer] 
+name = "About Locke Data" 
+weight = 10
+
+[style] 
+center = false 
++++
+
+About R
+-------
+
+R is an open source language released in 2001 that's ideal for [data
+wrangling](https://en.wikipedia.org/wiki/Data_wrangling) and [data
+science](https://en.wikipedia.org/wiki/Data_science). It has connectors
+to pretty every much every data source under the sun, allows you wrangle
+data like nobody's business, build pretty much every type of model ever
+thought up, and visualise it in all the niftiest ways.
+
+R is a vibrant ecosystem that enables people to extend, enhance, and
+replace any part of it. There are many paradigms in R to facilitate
+object-oriented programming, functional programming, and more. If you
+can write something in C++, FORTRAN (yep - that's still a thing), Python, or JavaScript--and of
+course, R!--you can write extensions for R.
+
+There are currently more than eleven thousand extensions (referred to as
+packages) to R in the core ecosystem (which is a fancy word for the
+collected bits and pieces of R!) and two and a half thousand
+packages in the genomics ecosystem.
+
+<p>
+We're also seeing emerging ecosystems and paradigms within CRAN. The
+<a href="http://tidyverse.org/">tidyverse</a> is one such ecosystem,
+focussed primarily on analysing tabular data, and it will be used in
+future works extensively.
+</p>
+
+CRAN
+----
+
+The core ecosystem is **CRAN**, the Comprehensive R Archive Network.
+[CRAN](https://cran.r-project.org) is maintained by some great people
+who put in place a large number of quality gates that an R package must
+adhere to in order to be made widely available. They then host these
+packages and do great things like daily re-runs of all package tests to
+ensure packages are still working. CRAN is the default source of
+packages for most R users.
+
+If you use RStudio, you'll use a **mirror** of CRAN hosted by RStudio.
+There are a number of these mirrors scattered over the globe to help
+reduce the load on the central servers. You can use another one of these
+mirrors, or even set-up your own internal CRAN.
+
+Key points to know about R
+--------------------------
+
+-   R works in-memory which means that the processing is fast but the
+    amount of data you can process is limited to how much RAM your data
+    takes up and how much your computations will require.
+-   R is not multi-threaded by default, it works on a single CPU core.
+    Making use of more than one of your cores to spread the load
+    requires additional packages and often additional coding.
+-   R is quirky! In some ways, R is a lot like other common programming
+    languages, which can make it pretty easy to pick up. However,
+    because R is still designed to be compatible with S, it's actually
+    pretty darn old and as a result, really odd in places.
+-   Coding R will give you the typical gotcha's, and add another: case
+    sensitivity. R is (un)fortunately a language where "Red" and "red"
+    are different and this also extends to variable and function names
+    (which we'll discuss later.) As a consequence, the most common
+    errors you'll find when writing code in R are:
+    -   Incorrectly placed or missing commas
+    -   Incorrectly placed or missing brackets
+    -   Incorrectly placed or missing operators
+    -   Incorrect case used when typing
+-   With so many packages available to extend R, the answer to "how do I
+    write this?" is usually "there's more than one package for that".
+
+Summary
+-------
+
+R is an great language for doing data analysis, data science, and more.
+It has it's quirks but the community around it is huge and is making R
+easier to adopt every day.
+
+Why use R?
+----------
+
+R as a programming language is brilliant at its core competencies --
+statistics and data visualisation. It's also a great "glue" language, by
+which I mean that you can use it to perform computations in many
+different languages and combine the results smoothly. As a result, R
+enables you to be an effective data wrangler, data scientist, and/or
+data visualisation practitioner.
+
+Next time... (you're coming back for more, right?)
+--------------------------------------------------
+
+Data wrangling, the 'tidyverse' and finding your way around RStudio.
+
+Homework and extra reading for the real keen beans
+--------------------------------------------------
+
+-   If you don't already have it, you should [install R and
+    RStudio](http://www.rstudio.com/products/rstudio/download/#download).
+-   Find and follow three R or RStudio related twitter accounts or blogs.
+    \*hint: use the hashtag \#rstats
+-   Have a flick through this great all round guide! - **R for Data
+    Science: Visualize, Model, Transform, Tidy, and Import Data** An
+    end-to-end introduction to R [geni.us/rfords](http://geni.us/rfords)
+
