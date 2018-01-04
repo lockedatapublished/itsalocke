@@ -6,9 +6,6 @@ date = "2017-12-20"
 footer = true 
 contact = true
 
-[menu.footer] 
-name = "About Locke Data" 
-weight = 10
 
 [style] 
 center = false 
