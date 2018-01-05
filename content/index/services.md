@@ -1,7 +1,7 @@
 +++
 #disable = true
 weight = 40
-title = "How to get started"
+title = "Interactive navigation"
 subtitle="We can help you at each step, hop to the [Company](#company) section for specifics."
 lastmod = "2017-08-26"
 date = "2017-08-26"
