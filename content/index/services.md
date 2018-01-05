@@ -1,7 +1,7 @@
 +++
 #disable = true
 weight = 40
-title = "Interactive navigation"
+title = "Start your data science journey here"
 subtitle="We can help you at each step, hop to the [Company](#company) section for specifics."
 lastmod = "2017-08-26"
 date = "2017-08-26"
