@@ -13,9 +13,12 @@
   stroke: white;
 }
 
-.collapsibleTree .node  a {
+.collapsibleTree .node a {
   fill: white;
-  text-decoration: underline;
+}
+
+a:hover {
+text-decoration: none;
 }
 
 .collapsibleTree  .fa {
