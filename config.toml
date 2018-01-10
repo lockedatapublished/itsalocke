@@ -83,9 +83,9 @@ DefaultContentLanguage = "en"
     url = "https://twitter.com/lockedata"
   [[languages.en.menu.social]]
     weight = 20
-    name = "facebook"
-    pre = "<i class='fa fa-facebook'></i>"
-    url = "https://facebook.com/lockedata"
+    name = "youtube"
+    pre = "<i class='fa fa-youtube'></i>"
+    url = "https://www.youtube.com/channel/UCAg9ZUc9v3YedOuyAd-nDZQ"
   [[languages.en.menu.social]]
     weight = 30
     name = "linkedin"
