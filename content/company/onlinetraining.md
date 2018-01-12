@@ -22,9 +22,9 @@ Our online training events allow you to get training from the comfort of your ow
 | 2018-01-08 08:00 PST -2018-01-09 19:00 PST | Data Science Fundamentals with R | $1,995 Use DataScience50 for 50% discount | [BrentOzar.com](brentozar.com/product/data-science-fundamentals-r-live-2-days/?utm_source=lockedata&utm_medium=lockedata&utm_campaign=lockedata) |
 | 2018-04-18 09:00 GMT | Intro to R | $300 | [Calendly](https://calendly.com/lockedata/intro-to-r-apr) |
 | 2018-04-19 09:00 GMT | Advanced R Programming | $500 | [Calendly](https://calendly.com/lockedata/advanced-r-apr) |
-| 2018-04-20 09:00 GMT | Data Science with Azure Machine Learning Crash Course | $500 | [Calendly](https://calendly.com/lockedata/azure-ml-apr) |
 | 2018-05-14 09:00 GMT | Intro to R | $300 | [Calendly](https://calendly.com/lockedata/intro-to-r-may) |
-| 2018-05-15 09:00 GMT | NLP in R | $500 | [Calendly](https://calendly.com/lockedata/nlp-in-r-may) |
+| 2018-05-15 09:00 GMT | [BETA RUN - 50% discount] NLP in R | $250 | [Calendly](https://calendly.com/lockedata/nlp-in-r-may) |
+| 2018-05-16 09:00 GMT | [BETA RUN - 50% discount] Data Science with Azure Machine Learning Crash Course | $250 | [Calendly](https://calendly.com/lockedata/azure-ml-may) |
 
 
 Our events are for small groups so we can tailor the content to the people attending. It also works entirely from your browser so you don't need to get lots of stuff set up before hand. 
