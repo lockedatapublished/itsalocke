@@ -19,7 +19,6 @@ Our online training events allow you to get training from the comfort of your ow
 
 | Date | Course | Price | Register |
 |--------------------------------------------|----------------------------------|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2018-01-08 08:00 PST -2018-01-09 19:00 PST | Data Science Fundamentals with R | $1,995 Use DataScience50 for 50% discount | [BrentOzar.com](brentozar.com/product/data-science-fundamentals-r-live-2-days/?utm_source=lockedata&utm_medium=lockedata&utm_campaign=lockedata) |
 | 2018-04-18 09:00 GMT | Intro to R | $300 | [Calendly](https://calendly.com/lockedata/intro-to-r-apr) |
 | 2018-04-19 09:00 GMT | Advanced R Programming | $500 | [Calendly](https://calendly.com/lockedata/advanced-r-apr) |
 | 2018-05-14 09:00 GMT | Intro to R | $300 | [Calendly](https://calendly.com/lockedata/intro-to-r-may) |
@@ -34,7 +33,7 @@ Get in touch if any of the following apply:
 
 - you can't pay by card 
 - you want to make a group booking
-- you want book multiple days
+- you want to book multiple days
 - you fit in the following categories:
     + student
 	+ academic
@@ -42,3 +41,8 @@ Get in touch if any of the following apply:
 	+ work for a charity
 	
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/lockedata" style="min-width:320px;height:580px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
