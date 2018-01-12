@@ -14,19 +14,39 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-Steph is our CCO^[Chief Chibi Officer]. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough five years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
+Steph is our CCO^[Chief Chibi Officer]. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough six years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
 
-## Links
-- [Twitter](//twitter.com/stefflocke)
-- [LinkedIn](//uk.linkedin.com/in/stephanielocke)
-- [Github](//github.com/stephlocke)
-- [MVP](//mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721)
+This page is split up into sections to help people find what they're looking for.
+ 
+- [Kit for event organisers](#kit-for-event-organisers)
+- [Info for curious folks](#info-for-curious-folks)
 
+# Kit for event organisers
 ## Speaker bio
 Steph is the founder of a consultancy in the UK. Her talks, blog posts, conferences, and business all have one thing in common -- they help people get started with data science. Steph holds the Microsoft MVP award for her community contributions. In her spare time, Steph plays board games with her husband and takes copious pictures of her doggos.
 
+## Links
+- [<i class="fa fa-twitter" ></i> @stefflocke](//twitter.com/stefflocke)
+- [<i class="fa fa-linkedin" ></i>  stephanielocke](//uk.linkedin.com/in/stephanielocke)
+- [<i class="fa fa-github" ></i>  stephlocke](//github.com/stephlocke)
+- [<i class="fa fa-amazon" ></i>  stephanielocke](//amazon.com/author/stephanielocke)
+- [MVP](//mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721)
+
+## Images
+<div class="row">
+<div class="col-lg-4">
+{{< figure src="/img/StephLocke-4.jpg" title="Steph Locke - portrait" width="300px" >}}
+</div>
+<div class="col-lg-4">
+{{< figure src="/img/Steph_Locke_Colour.png" title="Steph Locke - cartoon" width="200px" >}}
+</div>
+<div class="col-lg-4">
+{{< figure src="/img/ChibiSteph.png" title="Steph Locke - chibi" width="300px" >}}
+</div>
+</div>
+# Info for curious folks
 ## Career
-Steph's been earning her own way since she was twelve and she was managing a burger van by the age of seventeen. After smelling of fried onions for a long time, she started putting her maths and IT skills into use whilst she was studying for her Philosophy degree. During her degree, Steph worked a range of temp jobs from trying to cajole guys called Steve to buy motherboards to automating energy bill readings. 
+Steph's been earning her own way since she was twelve and she was managing a burger van by the age of seventeen. After smelling of fried onions for a long time, she started putting her maths and IT skills into use whilst she was studying for her Philosophy degree. During her degree, Steph worked a range of temp jobs from trying to cajole guys called Steve to buy motherboards to automating energy bill analysis. 
 
 She got her first "proper" IT job at [confused.com](//confused.com) as a Product Analyst for the Utilities product.^[Her boss said analysts were the new handbag, that everyone had to have one, and it seems to have stayed true throughout Steph's career.] Steph learnt about digital marketing and did unholy things with spreadsheets to get data. The thirst for data made her learn SQL, and then she jumped into the Business Intelligence (BI) team to build the end-to-end BI environment for the utilities switching product and build some basic data mining models for analysing insurance cross-sells.
 
