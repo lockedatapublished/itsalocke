@@ -1,0 +1,223 @@
+---
+title: "Data types and a Pop Quiz"
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# R data types
+You should already have a new fie created in your project that you made for your homework last week - open this up now so you can copy in bits of code and try them out as we go along!
+
+When we think of different bits of data, some of it might be numbers, text, dates, and more. R has it's own set of these **data types**. Before we get into the data types, let's see how we can get R to tell us what something is. 
+
+R uses **functions** (basically, an inbuilt bit of code that you can call on to do things with, optionally passing it some data to work with) to take some inputs and get an output. The function that we can pass a value to, and get what data type it is as the output, is the `class()` function.
+
+Try these three examples - what classes do you get? Can you see why they are different? 
+```{r}
+class(1)
+class(1.1)
+class("1")
+```
+
+You can use this `class()` function if you're ever unsure what data type something is. This is great for when you're getting unexpected results!
+
+## Numbers
+
+Numbers are split into a few different types:
+
+- **integer**s are whole numbers like 1 or 42^[If you want to guarantee a number is an integer, you can suffix the value with a L e.g. `42L`. If you want to read more about this, check out the R manual at http://cran.r-project.org]
+- **numeric**s are numbers that have a decimal portion associated with them like 1.0 or 3.133^[Numerics in R are floating point numbers - this mean every decimal gets stored usually with a large amount of extra decimal places. This can lead to some unusual results when comparing two decimal values and we'll see an example later.]
+- **complex number**s are numbers that make use of the imaginary number *i* like 4i^[*i* is the square root of -1, which is an impossible number since any negative multiplied by itself would result in a positive. Descartes coined the term "imaginary" in reference to this number as it's a consistent value in formulae but doesn't exist in the real world.]
+
+### Converting to numbers
+The functions `as.numeric()` and `as.integer()` allow you to convert something stored as text into a number.
+
+These functions will give you some red text as a warning if you attempt to convert something to a number that can't be safely converted. It will still attempt to perform the conversion, but return missings (`NA`) instead of actual values.
+
+  + Which of the three datatypes above would you apply this to? Add the code as a new line to your script and see if you are right.
+  
+### Checking numbers
+You can write checks to see if something is numeric, or an integer, with `is.numeric()` or `is.integer()`.
+
+We could also use `class()` here and inspect the result.^[You might recall that `class(1)` had the result of "`r class(1)`" - R was not by default considering 1 as an integer for the purpose of the `class()` function. 
+
+### Special numbers
+As well as `i` to denote imaginary numbers, there are some additional symbols you might encounter or want to use.
+
+- `pi` = `r pi`
+- `Inf` represents positive infinity. You'll often see this if you divide a positive number by zero
+- `-Inf` represents negative infinity. You'll often see this if you divide a negative number by zero
+- `NaN` is what happens when you really screw up a calculation and do something like `0/0`. It means the result is not a number!
+
+## Text
+Text, also known as strings, is split up into two core types:
+
+- **character**s are text as we typically think of it like "red"
+- **factor**s (and the subtype **ordered factor**s) are a text type where the number of unique values is constrained e.g. the values are selected from a dropdown. Factors work by storing numbers that correspond to our values and then printing these values. This is much more space efficient when the number of unique values is low.^[In other programming languages this is often called an **enumerated string**]
+
+We are going to focus on characters.
+
+In R, you can't just type some text as it will be construed as an object or function name. To **delimit** a string you can use speech marks (`"`) or apostrophes (`'`) at the beginning and end of it to show where it starts and ends. These are the **text delimiters** in R.
+
+Note you can't use the two delimiters interchangeably e.g. \"red\', but you can use them together to enable you have speech marks or apostrophes inside a string e.g. `'They said "Read this"'` or `"It's mine now"`. 
+
+If you need to have both inside a string you can **escape** the ones on the inside of a string to say they don't count as text delimiters. To escape a delimiter you can use a backslash(`\`) e.g. `"They said \"Read this\""`.
+
+Beware the copy and paste here - sometimes this can really mess your code up, and if it's not working for no obvious reason, try tidying up all your speech marks and apostrophes.
+
+
+### Converting to strings
+Converting to characters and factors is the same as working with numbers. You swap "numeric" for "character" or "factor" and you're done!
+
+Add another line to your script and try it out.
+
+Similarly to checking numbers, the same rule applies to checking strings - I'm not going to give it away - have a go!
+
+
+## Logical values
+Whilst we've been testing our datatypes, we've created a lot of **logical** or **boolean** values. Boolean values are `TRUE` and `FALSE`. R is case-sensitive so these have to be typed upper-case, otherwise it means something different. 
+
+I bet you can totally guess how to convert and check logicals. Add it to your script!
+
+####**Is your cup of tea full? Is it still hot? You're going to need it for this next bit because dates can be a stinker! I suggest you get up, stretch and refill before you carry on!**
+
+**Deep breath**
+
+## Dates
+
+Dates are one of the hardest parts of programming! This is a very brief introduction to dates so if you want more (and there's lots) - get searching! 
+
+Dates in R split into:
+
+- **date**s do not have any time component
+- **POSIX** date-times
+   + **POSIXct** is an integer based storage method
+   + **POSIXlt** is a component based storage method
+   
+You might be looking at the two POSIX times and thinking to yourself "ZOMG how am I meant to choose?". Most people use the POSIXct format^[According to my unscientific twitter poll at http://twitter.com/SteffLocke/status/895198115594153988], which is the default for many of R's functions.
+
+### Converting to dates
+You can convert to date-time's with `as.Date()`,`as.POSIXct()`, and `as.POSIXlt()`. Ideally, you'll provide a string with the date(time) in ISO8601 formats e.g. "YYYY-MM-DD hh:mm". 
+
+  + Use your birthday and turn it into a date in your script. You guessed it. Use that `as.` function again. (Hint - date needs a capital D!) If you don't know the specific minute of your arrival onto earth, you can just leave hh:mm blank and R will still understand!
+
+Note that it's assuming a time zone based on my device as I've not provided a default. It's prudent to set the time zone in order to avoid the results of your code changing based on where the code is run or when^[Daylight savings time can catch you out]. 
+
+  + Add a timezone to your birthday by including `tz = GMT` inside the brackets. 
+
+
+### Checking dates
+Unfortunately, R does not provide functions for checking whether the class of something is a date-time type without extending it's functionality. We have to use `class()` as a consequence.
+
+```{r}
+class(as.Date("2017-12-31"))
+```
+
+### Getting dates and times
+R has some functions for getting current date-time values^[This is an area showing those wonderful R quirks - the `Sys.*` functions are inconsistently cased].
+
+```{r}
+Sys.Date()
+Sys.time()
+Sys.timezone()
+```
+
+**annnnnd breath out** 
+
+
+## Missings
+Every data type has an `NA`, an identifier for a missing value. 
+
+If you use an NA in an object it will take on the data type used in the object. You can, however, make NAs directly.
+
+```{r}
+NA
+NA_integer_
+NA_character_
+```
+
+### Checking NAs
+You can check what data type an NA is, using the `class()` function. Add this to your script now.
+
+Want to check if something is NA? You know how to check things by now! Add another line to your script, just to be sure. 
+
+## Summary
+There a few more datatypes out in the wild but numbers, strings, booleans, and dates are the core types you'll encounter. 
+
+There are normally `as.*` and `is.*` functions for converting to a datatype or checking if something is a given datatype. You can use `class()` to uncover the datatype too.
+
+Are you ready?
+Are your ready for this?
+Are you hanging on the edge of your seat? 
+
+It's quiz time. 
+
+Using the material from this week and last week, have a go at this quick quiz and consolidate everything you've learned so far. 
+
+## Multiple choice
+
+```{r Q1}
+quiz(
+  question("Where in RStudio do you execute code directly?",
+    answer("in the console", correct = TRUE),
+    answer("in a script"),
+    answer("in a project")
+    ),
+  
+  question("In what year was R released?",
+    answer("1999"),
+    answer("2001", correct=TRUE),
+    answer("2000"),
+    answer("2002")
+  ),
+  
+  question("Which of the R packages listed below are used to make handling dates easier?",
+    answer("tidyverse"),
+    answer("ggplot"),
+    answer("lubridate", correct=TRUE),
+    answer("base")
+  )
+)
+```
+
+### Exercises 
+
+Write the code to find the data type of 1283.4
+
+```{r check data, exercise=TRUE, exercise.lines = 5}
+
+```
+
+Alter this date to something meaningful to you and add a timezone. 
+
+```{r timezone, exercise=TRUE, exercise.lines=10}
+
+my.anniversary <- '2014-03-14'
+
+class(my.anniversary)
+
+dont.forget <- as.Date(my.anniversary)
+
+class(dont.forget)
+
+```
+
+Go on, tweet us your score at @lockedata!
+
+## Keen beans, your time is now. Homework.
+
+  + Don't make me say it again - SAVE YOUR WORK.
+  + Google the 'lubridate' package and see what you can find out - maybe get on the ol' stackoverflow.com and have a look at some questions and answers to see how it is applied.
+  + Make this quote into an R string
+    + "Do you think this is a game?", he said. "No, I think Jenga's a game", Archer responded.
+
+## This weeks optional extras - I've even included an excuse to go and dither at the printer for five minutes this time! Don't say I never give you anything. 
+
+Take a look at [these cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and bookmark them, print them, laminate them! You'll use them more than you think.
+
+If you're still left wanting more, head over to the Learn R landing page and see if next weeks things take your fancy!
+
+

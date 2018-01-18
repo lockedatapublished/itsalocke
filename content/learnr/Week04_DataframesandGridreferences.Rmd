@@ -1,0 +1,520 @@
+---
+title: "Dataframes and Grid References"
+---
+
+## data.frames
+A **data.frame** is a table similar to what we're used to working with in most data analysis tools. It will contain a number of rows with columns containing different pieces of information. Each column in a data.frame has a datatype but it does not have to be the same datatype as the other columns.
+
+We can construct a data.frame from individual vectors via the `data.frame()` function.
+
+```{r}
+data.frame(a=1:2,b=c("blue","red"))
+```
+
+You can also give row names to the rows you end up making, however, I recommend you add these in as a column instead as it'll make them easier to work with long-term.
+
+```{r tidy=FALSE}
+baddf <- data.frame(a = 1:2,
+                   b = c("blue","red"),
+                   row.names = c("First","Second"))
+
+gooddf <- data.frame(a = 1:2,
+                   b = c("blue","red"),
+                   ID = c("First","Second"))
+```
+
+Throughout many of the examples, we'll use the example datasets that are available by default in R.
+
+```{r, eval=FALSE}
+View(iris)
+```
+
+
+The `View()` function is specific to RStudio and provides a nice visual grid view of a data.frame and it allows you to search and sort the table for some initial exploration.
+
+More commonly, we'll import data from an outside source.
+
+## Importing data.frames
+You can import data via code, but one of the easiest ways of getting started is to load data via RStudio and have it generate the code for you.
+
+To import data... 
+
+1. Go to the Environment tab and select Import Dataset
+2. Select the relevant type of data you want to import
+3. Browse to the file you want to upload.
+
+You can tweak the advanced settings and then select the *Import* button to load the data directly into memory. Alternatively, you can copy the code it generated for you and paste it into a script. By doing this copy and pasting, you will make the import reproducible. Next time you need to load the data you can just run the code, instead of using the interface again.
+
+
+If you were tying to do this import you may have gotten an error when you tried to load a file because you don't have some of the required functionality that RStudio expects you to have.
+
+It will tell you the name of the thing you're missing. 
+
+## Getting information about data.frames
+Our data.frames are **composites**, they are the result of combining a number of vectors with different data types. As a consequence, when we run our `class()` function, it tells us an object is a `data.frame` and no longer returns the underlying datatype.
+
+```{r}
+class(iris)
+```
+
+You do not get the number of rows in a data.frame when you run the `length()` function, instead you get the number of columns (This is because a data.frame is actually just a prettily printed list, and each column in an element in said list, and length returns the number of elements overall). Alternatively, you can run the more clearly named `ncol()` function to return the number of columns in a data.frame.
+
+You can get the number of rows via the `nrow()` function.
+
+
+Similarly to `length()`, the `names()` function when applied to data.frame's only works on the columns, so you can use it to get column names. A clearer alternative is to use the `colnames()` function. You can use `rownames()` to get names for rows, if they exist.
+
+
+## Lists
+**List**s are a catch-all object. They literally hold any and all types of the objects covered in this section, including list objects!
+
+You can create lists with the `list()` function, and like with our other objects you can have named and unnamed elements.
+
+
+At least initially, most people tend to work with their data in a data.frame and may only interact with a list as a consequence of doing something like building a linear regression model. Lists are very common outputs to statistical functions because you need things like a formula, fitted results, coefficients, model metrics, and more. If you do build a model though, there's a bunch of helper functions for extracting different components so you don't even have to think about the fact you're working with a list.
+
+### Getting information about lists
+The `length()` function will tell you how many elements there are in a list.
+
+
+## Other object types
+There a number of other object types in R. We aren't going to cover them in detail, because they tend to be used by a small fraction of R users.
+
+- A **matrix** is a two-dimensional object that can only contain one datatype
+- An **array** is a multi-dimensional object that also can contain only one datatype
+- A **table** object is similar to a matrix but is created by producing a contingency table
+
+In R, developers can also create other object types specific to their requirements. People use this to create geospatial objects and more. I don't recommend you think about creating your own custom objects, especially at this point in your R writing career. If/when you want to write your own custom classes then my preferred package for that is `R6`.
+
+
+## Useful functions
+Whatever the object type, there are some functions that come in handy for exploring it and getting some useful metadata.
+
+You get the contents of any object by writing it's name.
+
+
+However, if you're working with a lot of data, you probably don't want to fill up your console that way. R has two functions, `head()` and `tail()`, which allow you to see values from the beginning or end of an object. For objects containing many elements, such as lists or data.tables, `head()` and `tail()` returns the first or last 5 values respectively.
+
+
+If you want to examine an R object, you can use the `str()` function to get the structure of the object.
+
+## Summary
+You can perform calculations on the fly or store results for later use. You can assign values with the `<-` operator.
+
+Functions like `class()`, `length()`, and `head()` work well to extract information about R objects.
+
+R performs calculations over vectors so that you only have to provide two or more vector names and the operation you want performed. R will then perform this operation pair-wise for the vectors.
+
+You can import datasets in R by using the "Import Dataset" function. This will also give you the code to use so that you can write code that another person will be able to use. This is great because it makes your work reproducible and automatable!
+
+As well as vectors and data.frames, there are list object types and some other object types. These are less commonly used, although lists are quite common when getting outputs from statistical functions.
+
+## Let's have a break from reading and do some actual coding. This includes some bits from last week to refresh your memory.
+
+Make a new script and save your code in there. 
+
+1. See what's in the built-in variable `letters`
+2. Write a check to see if "A" is present in `letters`
+3. Find out which values in the sequence 1 to 10 are greater than or equal to 3 and less than 7
+4. Make a vector containing the numbers 1 to 50
+5. Make a vector containing two words
+6. What happens when you combine these two vectors?
+7. Make a data.frame using the two vectors
+8. What happened to your text vector?
+9. Make a list containing some of the variables you've created so far
+10. Retrieve the head or tail of the `iris` dataset
+
+*Stand up. Stretch. Touch your toes. Make a coffee.*
+
+# Basic data manipulation
+##  Grid references
+
+With R objects, it's possible to use a grid reference system to select values from an object. 
+
+In vectors and lists, you can specify the element position as they only have a single dimension. In data.frames, you can pinpoint the element via the row and the column.
+
+You can provide a grid reference by adding square brackets after a name e.g. `mylist[ ]`. Inside the square brackets, we can provide values in a few different ways to say which part of the object's "grid" is required.
+
+If you want everything in an object, you can just use the object's name or put empty square brackets after it i.e. `LETTERS` and `LETTERS[]` are identical.
+
+## Grid references with numbers
+To select a specific element, you provide the number indicating it's position in the object.^[The first element in an R object is at position 1. This is contrary to a number of programming languages where the first element is at position 0.] 
+
+This is similar to Excel. When you only have a single column of values in a spreadsheet, you can identify a value to someone by telling them what row number it's on. When you have a table, you need to tell someone both the row and the column for someone to find the exact value.
+
+### Single value selection with vectors
+To select a single element from a vector, we need to put the element's position inside square brackets after the vector.
+
+To select the second element in the vector `LETTERS` we put it's position (2) into the grid.
+
+```{r}
+LETTERS[2]
+```
+
+We're not bound to selecting values from objects that are stored either! For instance, we can generate a sequence of numbers and subset from it directly.
+```{r}
+(10:25)[13]
+```
+
+### Single value selection with data.frames
+
+
+In a data.frame, you can provide one or two values. These are comma separated inside the square brackets and row numbers get specified first e.g. `iris[ row , column ]`. If you want to select all rows or all columns you leave that part of the reference blank e.g. `iris[1, ]` to return the first row and `iris[ ,2]` to return the second column. 
+
+```{r}
+mydf<-data.frame(a=1:5, b=6:10, c=11:15)
+```
+
+If we provide a row number by using `df[ X , ]`, we will get a data.frame object back with just one row.
+
+```{r eval=FALSE}
+mydf[1, ]
+```
+
+If we provide a column number by using `df[ , Y ]`, we will get a vector back.^[This is not quite accurate but it's a good starting point. In fact, a data.frame is actually a list with pretty print methods so you could theoretically have a column that is a list.] 
+
+```{r}
+mydf[ ,1]
+```
+
+If we specify a row and a column by using `df[ X , Y ]`, we get a vector back containing a single element although in we'd normally refer to it as a single value for brevity.
+
+```{r}
+mydf[3,3]
+```
+
+### Single value selection with lists
+When we use the grid reference system to select stuff from lists, R returns a list with just the element you selected in it.
+
+Our example list contains two vectors. Both vectors are stored as elements but the sequence one to three was additionally given a name.
+
+```{r linewidth=60}
+mylist<-list(a=1:3, LETTERS)
+mylist
+```
+
+We can select elements based on their position, irrespective of whether they have names.
+
+```{r  linewidth=60}
+mylist[2]
+```
+
+If an element was named, then that name will be kept and displayed.
+```{r}
+mylist[1]
+```
+
+
+### Multiple values
+Remember how a single value is still counted as a vector by R? This means that when we say `letters[1]` the 1 is actually a vector, and *that* means that we can provide longer vectors in our grid specifications too!
+
+For a vector, that means we can provide a single vector with the positions of the elements to return.
+
+```{r}
+LETTERS[1:5]
+```
+
+The ranges don't have to be continuous either.
+```{r}
+LETTERS[c(1:5, 23:26)]
+```
+
+In fact, you can repeat numbers to get the same value out multiple times.
+```{r}
+LETTERS[c(1,1,1)]
+```
+
+These things all hold true for data.frames too. This means we can provide ranges to both rows and columns to subset by the position of values in the table.
+
+```{r eval=FALSE}
+mydf[1:3,1:2]
+```
+
+
+### Negative values
+As well as positive specifications, we can also use negative values. These tell R which bits of the grid that you *don't* want.
+
+Here I exclude the first five letters.
+```{r linewidth=60}
+LETTERS[-(1:5)]
+```
+
+When it comes to data.frames we can provide negative values in both rows and columns to produce a subset we're interested in.
+
+```{r eval=FALSE}
+mydf[-3,-2]
+```
+
+
+### Missing values
+You might be wondering what happens if you refer to a row number or element position that is not between 1 and the length of your object. 
+
+In such a scenario, R will actually return an **NA** (a missing value) for that position.
+```{r}
+LETTERS[23:29]
+```
+
+```{r eval=FALSE}
+mydf[5:6, ]
+```
+
+## Grid references with names
+Where names are used, we can provide these names in our grid references.
+
+```{r}
+mylist["a"]
+```
+
+This works for column (and row) names.
+
+```{r}
+mydf[, "a"]
+```
+
+We can provide longer vectors containing column names too. Recall when we used numbers, one value in the column returned a vector, but multiple values resulted in a data.frame? The same is true here.
+
+```{r eval=FALSE}
+mydf[ , c("a","b")]
+```
+
+## Grid references with conditional values
+Whilst we often want to subset data.frames to some specific columns, a lot of the time with vectors and data.frames we want to be able to apply a condition that determines which values are returned. We want to **filter** rows.
+
+Like with SQL, you can apply a filter by telling R which rows (or elements) it should and shouldn't return. You do this be providing a set of boolean values where TRUE means the row should be returned and FALSE says it should be excluded.
+
+We can provide hard-coded boolean values to the row and column parts of our grid reference system.
+
+For instance, if I wanted to exclude the second column in the data.frame I could say to include the first and third by giving them a TRUE in my filter and I could exclude the second column by giving it a FALSE in my filter.
+
+```{r eval=FALSE}
+mydf[, c(TRUE,FALSE,TRUE)]
+```
+
+### Building conditional vectors
+Hard-coding TRUE and FALSE values is probably not your idea of fun and certainly isn't mine. We can use our knowledge of building comparisons to generate our booleans for inclusion.
+
+Let's say we wanted all the letters of the alphabet up to and including "e". We could use our comparison operators to compare every letter against "e" and return a TRUE where it is "e" or occurs before "e" in the alphabet, and it would return a FALSE when it occurs after "e". 
+
+This gives us an include and exclude instruction for each of the 26 letters. We can then use this boolean vector as our filter in the grid reference system.
+
+```{r}
+earlyletters <- LETTERS <= "E"
+LETTERS[earlyletters]
+```
+
+This can be simplified by doing the comparison directly within the grid reference.
+
+```{r}
+LETTERS[ LETTERS <= "e" ]
+```
+
+You're not limited to single comparisons either. You can use AND (`&`) and OR (`|`) to produce compound statements. 
+
+If we wanted every letter between (and including) "B" and "E" we can check to see which elements of `LETTERS` are "B" or are after "B" and combine this with our existing "E" check using an `&`.
+
+```{r}
+LETTERS[ LETTERS <= "E" & LETTERS > "B"]
+```
+
+### Conditional filters for data.frames
+If we wanted to select all columns in our data.frame that had names beginning with "a" or "b", we could compare the names to the letter "c" and use this set of boolean values to be our filter.
+
+To extract the column names, we can use `colnames()`. This returns a vector of character values and we can run a comparison.
+
+```{r}
+abcols <- colnames(mydf)<"c"
+```
+
+Now we can use that in our grid reference system.
+
+```{r eval=FALSE}
+mydf[,abcols]
+```
+
+
+Using the grid reference system, if we wanted to apply a filter to our rows based on some column's data we would first need to extract the column's values, then produce our filter, then apply our filter.
+
+
+*Don't worry if this sounds long-winded and crazy to you. You're thinking that because it's true! A little bit later in this section we'll cut out some of the craziness.*
+
+For instance, if we wanted everything from our table where our rows had a value for column "a" less than four, we would need to get column "a"s values, compare it to 4, and use this in our row area of the grid reference.
+
+```{r eval=FALSE}
+lt4 <- mydf[ , "a"] < 4
+mydf[lt4, ]
+```
+
+```{r echo=FALSE}
+lt4 <- mydf[ , "a"] < 4
+```
+
+Or we could have written it all in one go.
+```{r eval=FALSE}
+mydf[mydf[ , "a"] < 4, ]
+```
+
+### Recycling values
+When R has two mismatched vectors in terms of length, it will try to recycle values. We saw this earlier when we worked with vectors.
+
+You can use this to provide shorter vectors of value (although I don't recommend you do so often).
+
+An elegant demonstration of this is returning every other letter in the alphabet. 
+
+We need a filter that puts TRUE against the odd number positions and a FALSE against the even number positions. We could write a comparison that checks the position number is odd but that would be quite long winded. 
+
+Instead, we can rely on recycling to take a pair of values and repeat them. We can provide a vector containing TRUE and FALSE it will recycle them so that every odd numbered position gets a TRUE and every even numbered position gets a FALSE.
+
+```{r}
+LETTERS[c(TRUE,FALSE)]
+```
+
+
+## Mixed grid references
+
+You cannot provide a mix of element positions, element names, and booleans in a single vector to get a subset. This is because you have to provide a vector and a vector containing a mix of datatypes will convert everything to a single datatype.
+
+We can verify with our list. We've seen how referring to position 1 works, and referring to the element called "a", so if we wanted to specify both of these we could put them in a vector. The conversion to strings happens though and then  R searches the list for an element called "1", can't find it, and returns an NA.
+
+```{r}
+c(1,"a")
+mylist[c(1,"a")]
+```
+
+Whilst you can't combine the methods in a single section of the grid reference system, you can use different systems in different positions. This is most useful for data.frames when we want to subset our rows by a condition, and only return certain columns at the same time.
+
+```{r eval=FALSE}
+mydf[1:2, c("a","b")]
+```
+
+## Other reference methods
+If you need to select a given named value or column from an object, there are some alternative selection methods you'll use.
+
+There are double square brackets for when you expect one, and only one, named element. This is mainly used for lists.
+```{r}
+mylist[["a"]]
+```
+
+There is a much nicer option though for lists and data.frames. That option is using the dollar sign (`$`) to access named elements in lists or columns in data.frames.
+
+```{r}
+mylist$a
+```
+
+```{r}
+mydf$b
+```
+
+The `$` methodology has some benefits: It uses fewer characters and you can use code-completion with it.
+
+We can use both these notations inside our grid reference system. This becomes very handy for writing row conditions for data.frames.
+
+Taking our earlier example of subsetting rows where column "a"'s values are less than 4 becomes much simpler.
+
+```{r eval=FALSE}
+mydf[ mydf$a < 4 , ]
+```
+
+```{r echo=FALSE}
+mydf[ mydf$a <4, ]
+```
+
+
+This is the old-school way of working with data.frames. It's important to be able to write queries of your data this way, or at least read other people's code but as soon as you can you should move onto the `data.table` or `tidyverse` ways of working with data.frames.
+
+
+# Changing objects
+By utilising our reference systems, not only can we select data of interest to us, but we can add new data, update existing values, and even delete values.
+
+You can update part or all of simple objects by assigning new values against a grid-reference.
+
+Adding additional values in a vector involves specifying new element positions using the grid system and assigning a value to that part of the object.
+
+```{r}
+letters[27]<-"|"
+tail(letters)
+```
+
+Similarly, we can specify a row in a data.frame and provide all the necessary values to make a complete row.
+
+```{r}
+mydf[6,] <- c(pi, Inf, -Inf)
+```
+
+
+For data.frames, if you want to create a new column, it's usually much easier to use our `$` notation. You specify the column and assign it new values.^[This works because data.frames are actually lists so you're creating a new element containing these values.]
+
+```{r}
+mydf$d<-5
+```
+
+
+Updating values involves providing a set of values of the same size as the destination. 
+
+Here I overwrite the first three elements in our lower case alphabet vector with the first three elements in our upper case alphabet vector.
+
+```{r}
+letters[1:3] <- LETTERS[1:3]
+head(letters)
+```
+
+I can update rows by specifying the row and providing a complete set of new values.
+
+```{r}
+mydf[1, ]<- 1:4
+```
+
+
+If you provide something that is not the same size, R will apply the recycling rules. Again, this is nifty and terrible at the same time.
+
+Even though there are currently four columns in our table, we're only providing two values here. Those two values will be recycled across the columns.
+
+```{r}
+mydf[2, ]<-1:2
+```
+
+
+If you want to delete values, you can overwrite an object after doing a negative selection. Here I remove the first row of the data.frame.
+
+```{r}
+mydf<-mydf[-1,]
+```
+
+An alternative method is to specify a subset and assign the the value NULL. NULL removes contents in lists and data.frames.
+
+In a list, I can specify one or more elements and assign NULL to it, in order to remove the specific elements.
+
+```{r}
+mylist[2]<-NULL
+mylist
+```
+
+I can remove a column in a data.frame by assigning NULL to it.
+```{r}
+mydf$c<-NULL
+```
+
+Rows usually get deleted by selecting everything but the the rows you want to discard and overwriting the data.frame variable.
+
+```{r}
+mydf<-mydf[-1,]
+```
+
+# Summary
+In R, you can subset objects using positive, negative, and boolean values.  You're able to apply the same methodology to vectors, lists, and data.frames.
+
+When working with data.frames or lists you can use the dollar (`$`) notation to refer to values in a succinct way. You can use this within data.frame subsets to build filters for rows based off the values in columns.
+
+Inserting, updating, or deleting values usually involves specifying a subset and assigning values to it. When deleting, you often assign a value of NULL. You can also use NULL to remove variables in a similar fashion.
+
+# Data manipulation exercises
+1. Select all `LETTERS` before "X"
+2. Select the first 5 rows from the built-in data.frame `iris`
+3. Select the first 2 columns from `iris`
+4. Select the column Sepal.Length from `iris` by name
+5. Select rows from the `iris` data.frame where the `Sepal.Length` is greater than 5.8cm
+6. Select rows from the `iris` data.frame where the Sepal.Width is below the average for that column
+7. Select everything from `iris` except the Species column
+8. Create a copy of the `iris` data that just contains the first 100 rows and call it `myIris`
+9. Update the species column to the value "Unknown" in `myIris`
+10. Delete rows from `myIris` where the sepal length is greater than 5.5
+
