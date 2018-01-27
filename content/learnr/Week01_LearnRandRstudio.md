@@ -1,7 +1,8 @@
 ---
-title: "R and RStudio to whet your appetite"
+title: "R and RStudio"
 author: "Ellen Talbot"
 date: "08/12/2017"
+weight: 10
 output: html_document
 ---
 

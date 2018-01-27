@@ -1,6 +1,6 @@
 ---
 title: "Operators and Objects"
-
+weight: 30
 ---
 
 Basic operations
