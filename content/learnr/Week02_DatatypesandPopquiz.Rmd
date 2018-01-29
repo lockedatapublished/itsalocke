@@ -218,6 +218,6 @@ Go on, tweet us your score at @lockedata!
 
 Take a look at [these cheatsheets](https://www.rstudio.com/resources/cheatsheets/) and bookmark them, print them, laminate them! You'll use them more than you think.
 
-If you're still left wanting more, head over to the Learn R landing page and see if next weeks things take your fancy!
+If you're still left wanting more, head over to the Learn R landing page and see if next week's things take your fancy!
 
 
