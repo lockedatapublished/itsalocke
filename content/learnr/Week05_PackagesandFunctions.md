@@ -1,8 +1,8 @@
 ---
-title: "Good things come in small packages"
+title: "Functions and packages"
 author: "Ellen Talbot"
 weight: 50
-date: "19/01/2018"
+date: "2018-01-29"
 output: html_document
 ---
 
