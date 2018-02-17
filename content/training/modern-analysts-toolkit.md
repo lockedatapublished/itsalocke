@@ -111,4 +111,4 @@ Day 4 focusses on Python. Python, similarly to R, is a popular language for data
 - £575 for 2 of the days
 - £300 for just one of the days
 
-For any bookings please contact training@itsalocke.com
+For any bookings please contact training@itsalocke.com 
