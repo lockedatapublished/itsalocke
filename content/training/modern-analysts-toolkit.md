@@ -17,6 +17,8 @@ image ="img/ChibiStephBusiness.svg"
 +++
 # The Modern Analyst's Toolkit
 
+{{.TableOfContents}}
+
 If you want to stay current, learn new skills, and boost your productivity then this four-day course is for you. The intensive and practical training will give you a thorough grounding in the Modern Analyst's Toolkit. You will learn about
 
 - The latest Excel best practices and skills
@@ -111,4 +113,4 @@ Day 4 focusses on Python. Python, similarly to R, is a popular language for data
 - £575 for 2 of the days
 - £300 for just one of the days
 
-For any bookings please contact steph@itsalocke.com
+For any bookings please contact training@itsalocke.com
