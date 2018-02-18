@@ -129,7 +129,7 @@ BS1 6QH
 - £575 for 2 of the days
 - £300 for just one of the days
 
-For any bookings please contact training@itsalocke.com 
+For any bookings please contact <training@itsalocke.com> 
 
 If you are travelling via train check out this nifty benefit for reduced rail fare:
 https://visitbristol.co.uk/conferences/help-and-advice/travel-by-train
