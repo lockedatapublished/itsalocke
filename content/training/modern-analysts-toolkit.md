@@ -104,7 +104,25 @@ Day 4 focusses on Python. Python, similarly to R, is a popular language for data
 - Merging data from multiple tables
 - Building charts
 
-## Booking & Pricing
+## Booking information
+
+### Dates and location
+
+- Excel: Tuesday, 3rd of April. 09:00-17:00
+- SQL: Wednesday, 4th of April. 09:00-17:00
+- R: Thursday, 5th of April. 09:00-17:00
+- Python: Friday, 6th of April. 09:00-17:00
+
+All held at: Engine Shed, Clock Tower room.
+
+Engine Shed,
+Station Approach,
+Temple Meads,
+Bristol,
+BS1 6QH
+
+
+### Booking & Pricing
 
 - £1000 for the full 4 days
 - £800 for 3 of the days
@@ -112,3 +130,6 @@ Day 4 focusses on Python. Python, similarly to R, is a popular language for data
 - £300 for just one of the days
 
 For any bookings please contact training@itsalocke.com 
+
+If you are travelling via train check out this nifty benefit for reduced rail fare:
+https://visitbristol.co.uk/conferences/help-and-advice/travel-by-train
