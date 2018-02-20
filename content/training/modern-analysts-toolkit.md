@@ -32,6 +32,8 @@ The modular format of the course also means that you don't need to attend all th
 
 The training will be delivered by Steph Locke and Andrew Collier – two fantastic trainers and data scientists.
 
+**Need to convince a manager? Give them our [Overview sheet](../../files/modern-analysts-toolkit-overview.pdf) for the training!**
+{{<btn href="../../files/modern-analysts-toolkit-overview.pdf" msg="Download overview">}}
 
 ## What the training days look like
 
