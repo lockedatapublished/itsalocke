@@ -30,9 +30,11 @@ Steph is the founder of a consultancy in the UK. Her talks, blog posts, conferen
 - [<i class="fa fa-linkedin" ></i>  stephanielocke](//uk.linkedin.com/in/stephanielocke)
 - [<i class="fa fa-github" ></i>  stephlocke](//github.com/stephlocke)
 - [<i class="fa fa-amazon" ></i>  stephanielocke](//amazon.com/author/stephanielocke)
-- [MVP](//mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721)
+- [Microsoft Data Platform MVP award](//mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721)
+- [Past talks](https://itsalocke.com/talks)
 
 ## Images
+Grab your preferred image. All are suitably high-res for most purposes.
 <div class="row">
 <div class="col-lg-4">
 {{< figure src="/img/StephLocke-4.jpg" title="Steph Locke - portrait" width="300px" >}}
