@@ -118,6 +118,7 @@ If you buy the library add-on, we'll ship you a pack of great books that will he
 </li><li> £450 for 2 of the days
 </li><li> £800 for the full 4 days
 </li></ul>
+{{<btn href="../../files/modern-analyst-toolkit-online-overview.pdf" msg="Download online overview">}}
 
 </div>
 </div>
