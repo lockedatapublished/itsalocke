@@ -152,7 +152,7 @@ If you buy the library add-on, we'll ship you a pack of great books that will he
 <div class="col-lg-6"> 
 
 <h3> Python</h3>
-<p>Day 4 focusses on Python. Python, similarly to R, is a popular language for data science and analytical work. Whilst R is great for standalone work, knowing Python means you can help get your code into existing applications. Knowing both languages can help you pick the right one for the job!</p>
+<p>Day four focuses on Python. Python, similarly to R, is a popular language for data science and analytical work. Whilst R is great for standalone work, knowing Python means you can help get your code into existing applications. Knowing both languages can help you pick the right one for the job!</p>
 
 <ul>
 <li> Getting data in and out of python
@@ -169,5 +169,9 @@ If you buy the library add-on, we'll ship you a pack of great books that will he
 
 
 {{<btn href="mailto://training@itsalocke.com" msg="Book now">}}
+
+
+
+
 
 
