@@ -97,8 +97,31 @@ If you buy the library add-on, we'll ship you a pack of great books that will he
 
 </div>
 </div>
+<div class="row">
 
-{{< figure src="/img/Clock-Tower-Room-for-web3.jpg" title="The Engine Shed's Clock Room where we'll be doing the training" align="center" attr="Engine Shed" attrlink="http://www.engine-shed.co.uk/board-room-suite/book-a-room/" >}}
+<div class="col-lg-6"> 
+<h3>Digital attendance details</h3>
+<p> The event is adding a digital attendance option for those who are interested but unable to physically attend. </p>
+<ul>
+<li> Excel: Tuesday, 3rd of April. 09:00-17:00
+</li><li> SQL: Wednesday, 4th of April. 09:00-17:00
+</li><li> R: Thursday, 5th of April. 09:00-17:00
+</li><li> Python: Friday, 6th of April. 09:00-17:00
+</li></ul>
+
+
+</div>
+<div class="col-lg-6"> 
+<h3>Booking</h3>
+<p> The event is priced to give more discounts the more days of the course booked. To get booked and to arrange payment, please contact <a href="mailto://training@itsalocke.com"> training@itsalocke.com</a>. 
+<ul><li> £250 for just one of the days
+</li><li> £450 for 2 of the days
+</li><li> £800 for the full 4 days
+</li></ul>
+
+</div>
+</div>
+
 ## The syllabus
  <div class="row">
 
