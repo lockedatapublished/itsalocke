@@ -193,9 +193,3 @@ If you buy the library add-on, we'll ship you a pack of great books that will he
 
 
 {{<btn href="mailto://training@itsalocke.com" msg="Book now">}}
-
-
-
-
-
-
