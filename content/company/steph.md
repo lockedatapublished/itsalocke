@@ -118,4 +118,3 @@ Now in her second year as an MVP, Steph gets phenomenal opportunities to help ou
 
 - [Books](https://itsalocke.com/company/books/)
 
->>>>>>> 4bd6cbd6685e11882c9129caed40fbcae1f4a1ec
