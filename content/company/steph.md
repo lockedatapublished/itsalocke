@@ -101,7 +101,7 @@ Now in her second year as an MVP, Steph gets phenomenal opportunities to help ou
 
 [Onezeero: Q and A Guest Blog with Steph Locke](https://www.onezeero.co.uk/onezeero-blog/q-and-a-guest-blog-with-steph-locke)
 [Hooked on Data: Building Your Data Science Network. Finding Community](http://hookedondata.org/Building-Your-Data-Science-Network-Finding-Community/)
-[SQL Plaer: Stephanie Locke interview](https://sqlplayer.net/2017/09/asf-003-stephanie-locke-interview/)
+[SQL Player: Stephanie Locke interview](https://sqlplayer.net/2017/09/asf-003-stephanie-locke-interview/)
 [Etmakub: What you need to know to start a career as a data scientist](https://etmakub.com/career-as-a-data-scientist/)
 [Petri: Community champs](https://www.petri.com/community-champs/stephanie-locke)
 [Kettle: Why are there so few women in tech jobs?](https://www.kettlemag.co.uk/why-are-there-so-few-women-in-tech-jobs/)
