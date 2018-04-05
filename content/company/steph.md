@@ -113,5 +113,6 @@ Now in her second year as an MVP, Steph gets phenomenal opportunities to help ou
 - [Business News Wales: New Site Launches to Connect South Wales’ Tech Community](https://businessnewswales.com/new-site-launches-connect-south-wales-tech-community/)
 - [Tech Dragons: Welsh techies launch events listing website](http://techdragons.wales/welsh-techies-launch-events-listing-website/)
 - [GR: In With the IT Crowd- Recruiter creates tech community resource.](http://theglobalrecruiter.com/news/recruiter-creates-tech-community-resource/9355)
+-[Tech Event Wales: Q&A with Meetup Organiser Steph Locke](https://techevents.wales/qa-meetup-organiser-steph-locke/)
 - [Books](https://itsalocke.com/company/books/)
 
