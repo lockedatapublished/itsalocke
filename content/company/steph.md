@@ -92,9 +92,7 @@ January 1st 2016, Steph received an email from Microsoft. This amazing email sai
 The Data Platform MVPs number fewer than 500 globally, and they're part of just 4,000 MVPs around the world. The Data Platform MVP award goes to people leading and educating the community on SQL Server, Azure, and most relevant to Steph, R.
 
 Now in her second year as an MVP, Steph gets phenomenal opportunities to help out many technical communities.
-<<<<<<< HEAD
-<a href="https://mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721" rel="attachment wp-att-61530"><img class="wp-image-61530 size-medium" src="http://res.cloudinary.com/lockedata/image/upload/h_121,w_300/v1499850509/MVP_Logo_Horizontal_Preferred_Cyan300_RGB_300ppi_voco2z.png" alt="Steph Locke - Microsoft Data Platform MVP" width="300" height="121" /></a>  
-=======
+
 <a href="https://mvp.microsoft.com/en-us/mvp/Stephanie%20%20Locke-5001721" rel="attachment wp-att-61530"><img class="wp-image-61530 size-medium" src="http://res.cloudinary.com/lockedata/image/upload/h_121,w_300/v1499850509/MVP_Logo_Horizontal_Preferred_Cyan300_RGB_300ppi_voco2z.png" alt="Steph Locke - Microsoft Data Platform MVP" width="300" height="121" /></a>  
 
 ## Mentioned In
