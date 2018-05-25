@@ -22,7 +22,7 @@ The Disclosing Party wishes to ensure that that information is kept confidential
 In consideration of the Disclosing Party disclosing the Confidential Information to the Receiving Party, the Receiving Party hereby agrees that it will accept the Confidential Information subject to, and in accordance with the terms and conditions of this Agreement which will accordingly take effect and be binding as a contract.
 
 
-The following terms consistute the Non-disclosure agreement.
+The following terms constitute the Non-disclosure agreement.
 
 # 1. Definitions and Interpretation 
 
@@ -72,7 +72,7 @@ The following terms consistute the Non-disclosure agreement.
 
 3.2 Where the Receiving Party holds the Confidential Information in hardcopy form, it must be stored in a locked cabinet when not in use.
 
-3.3 Where the Receiving Party holds the Confidential Information electronically, the Confidential Information shall be stored only on a local computer or on secured cloud services like DropBox, OneDrive, and Google Drive. The services and devices on which the Confidential Information is stored must be protected using a password which may be shared only with those authorised to access the Confidential Informationt.
+3.3 Where the Receiving Party holds the Confidential Information electronically, the Confidential Information shall be stored only on a local computer or on secured cloud services like DropBox, OneDrive, and Google Drive. The services and devices on which the Confidential Information is stored must be protected using a password which may be shared only with those authorised to access the Confidential Information.
 
 3.4 The Disclosing Party shall have the right to access and inspect the location(s) at which the Receiving Party is to hold the Confidential Information upon not less than 7 days written notice.  If the Disclosing Party is not satisfied with any aspect of the Receiving Party’s storage arrangements, it shall have the right to request any such reasonable changes to those arrangements as it may deem necessary to satisfy the requirements described in this Agreement.
 
@@ -136,7 +136,7 @@ The obligations set out in this Agreement relating to Confidential Information s
 The Receiving Party may not assign, transfer, sub-contract, or in any other manner make available to any third party the benefit and/or burden of this Agreement without the prior written consent of the Disclosing Party, such consent not to be unreasonably withheld.
 
 # 12. Communication
-12.1 All notices under this Agreement shall be in writing or email and be deemed duly given if signed or agreed upoon digitally by the Party giving the notice or by a duly authorised officer thereof, as appropriate.
+12.1 All notices under this Agreement shall be in writing or email and be deemed duly given if signed or agreed upon digitally by the Party giving the notice or by a duly authorised officer thereof, as appropriate.
 
 12.2 Notices shall be deemed to have been duly given:
 - 12.2.1 when delivered, if delivered by courier or other messenger (including registered mail) during the normal business hours of the recipient; or
