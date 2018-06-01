@@ -20,7 +20,7 @@ Our online training events allow you to get training from the comfort of your ow
 | Date | Course | Price |
 |--------------------------------------------|----------------------------------|-------------------------------------------|
 | July 2nd-3rd | Data Science Fundamentals | £500 | 
-| July 11th | Advanced R Programming | £300 |
+| July 4th | Advanced R Programming | £300 |
 | July 9th-10th | Intro to R | £500 | 
 | July 11th  | Using the tidyverse for data science | £300 |
 | July 16th-17th | Analysing big data with Microsoft ML Server  | £500 | 
