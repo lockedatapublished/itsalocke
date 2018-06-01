@@ -10,18 +10,20 @@ image ="img/ChibiStephBusiness.svg"
 [menu.footer]
   name = "About Locke Data"
   weight = 10
+  
++++
 
-  #Stephs Birthday Giveaway!
+# Stephs Birthday Giveaway!
 
-  Hi folks. Thanks for being our follower and/or mail list subscriber. You have all won 331% discount off any single public or private training event run by Locke Data, valid until june 2nd 2019, not mixable with other discounts. Plus PDF copies of both of her books!
-
-
-  image ="img/Happy birthday Steph.png"
-
-  ##Links and resources
+Hi folks. Thanks for being our follower and/or mail list subscriber. You have all won 331% discount off any single public or private training event run by Locke Data, valid until june 2nd 2019, not mixable with other discounts. Plus PDF copies of both of her books!
 
 
-Take a look at our[avaliable training here](https://itsalocke.com/training/onlinetraining/). Make sure when you contact to organise or book your training you use code **STEPH31** for your 31% discount. *valid until june 2nd 2019, not mixable with other discounts*
+image ="img/Happy birthday Steph.png"
+
+## Links and resources
+
+
+Take a look at our [avaliable training here](https://itsalocke.com/training/onlinetraining/). Make sure when you contact to organise or book your training you use code **STEPH31** for your 31% discount. *valid until june 2nd 2019, not mixable with other discounts*
 
 
 
@@ -29,8 +31,6 @@ Download your PDF copy of [Working with R](../../files/workingwithr.pdf) and enj
 {{<btn href="../../files/workingwithr.pdf" msg="Download workingwithr.pdf book">}}
 
 
-Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) be sure to let us know if you enjoy the book.
-<<<<<<< HEAD
-{{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
+Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) be sure to let us know if you enjoy the book. {{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
 
 
