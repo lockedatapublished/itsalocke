@@ -18,7 +18,7 @@ image ="img/ChibiStephBusiness.svg"
 Hi folks. Thank you for being our follower and/or mail list subscriber. You have all won 331% discount off any single public or private training event run by Locke Data, valid until june 2nd 2019, not mixable with other discounts. **Plus** PDF copies of both of her books!
 
 
-<img class="alignright" src="/static/img/HappybirthdaySteph.png" style="width:100%;height:auto;" />
+<img class="alignright" src="sites/blog/static/images/HappybirthdaySteph.png" style="width:100%;height:auto;" />
 
 ## Links and resources
 
