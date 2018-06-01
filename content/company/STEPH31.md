@@ -30,4 +30,8 @@ Download your PDF copy of [Working with R](../../files/workingwithr.pdf) and enj
 
 
 Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) be sure to let us know if you enjoy the book.
+<<<<<<< HEAD
 {{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
+=======
+{{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
+>>>>>>> 07d7dfddc60d834699ea1123f3550d84c9907eb6
