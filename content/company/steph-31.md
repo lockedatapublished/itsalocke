@@ -15,7 +15,7 @@ image ="img/ChibiStephBusiness.svg"
 
 # Stephs Birthday Giveaway!
 
-Hi folks. Thank you for being our follower and/or mail list subscriber. You have all won 331% discount off any single public or private training event run by Locke Data, valid until june 2nd 2019, not mixable with other discounts. **Plus** PDF copies of both of her books!
+Hi folks. Thank you for being our follower and/or mail list subscriber. You have all won 31% discount off any single public or private training event run by Locke Data, valid until June 2nd 2019, not mixable with other discounts. **Plus** PDF copies of both of her books!
 
 
 <img class="alignright" src="/img/HappybirthdaySteph.png" style="width:100%;height:auto;" />
@@ -23,7 +23,7 @@ Hi folks. Thank you for being our follower and/or mail list subscriber. You have
 ## Links and resources
 
 
-Take a look at our [avaliable training here](https://itsalocke.com/training/onlinetraining/). Make sure when you contact to organise, and book your training, that you use code **STEPH31** for your 31% discount. *Valid until june 2nd 2019, not mixable with other discounts.*
+Take a look at our [avaliable training here](https://itsalocke.com/training/onlinetraining/). Make sure when you contact to organise, and book your training, that you use code **STEPH31** for your 31% discount. *Valid until June 2nd 2019, not mixable with other discounts.*
 
 
 
