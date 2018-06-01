@@ -1,0 +1,73 @@
+---
+title: "Conclusion and consolidate"
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Well done everyone! You've completed the first set of R fundamental sessions. We hope you had fun doing them, maybe had a little snigger at some of our bad jokes and possibly even learned a teeny tiny bit about R? You probably learned more than you think and it can be daunting, so don't worry if it's still not crystal clear to you yet. We're going to give you a list of some great resources that are available to you to keep growing your love for R in next week's follow up email.
+
+Hopefully you've found what Locke Data do helpful, and Steph is always available to you to help get to grips with the benfits data science could bring to you, your CV and your business. [Book in](https://itsalocke.com/#contact) for one of our free office hours and see if we can help you even more. 
+
+Over the last 5 weeks you should have learned how to :
+
+- effectively use your RStudio environment
+- perform basic tasks like importing data, subsetting and exploring data, and 
+- use R functions and new packages
+
+So let's see if you were listening at the back!
+
+## Multiple choice
+
+```{r Q1}
+quiz(
+  question("What is the operator for 'exactly equal to'?",
+    answer("!="),
+    answer(" 'equal to' "),
+    answer(" == ", correct=TRUE)
+    ),
+  
+  question("What does DRY stand for?",
+    answer("Don't Rush Yourself"),
+    answer("Don't Repeat Yourself", correct=TRUE),
+    answer("Don't Reiterate Yourself")
+  ),
+  
+  question("What is the console shortcut for bringing up the help page in RStudio?",
+    answer("?helpme" , correct=TRUE),
+    answer("?helpme?"),
+    answer("helpme?")
+  )
+)
+```
+
+### Exercises 
+
+* Use the 'combine' function to turn all the letters of your name into a vector.
+```{r combine, exercise=TRUE, exercise.lines = 3}
+
+```
+
+* Now repeat what you did above, but assign this to a variable called 'MYNAME'.
+```{r myname, exercise=TRUE, exercise.lines = 3}
+
+```
+
+* Now remove 'MYNAME'.
+```{r remove, exercise=TRUE, exercise.lines = 3}
+
+```
+
+* Install the 'datasauRus' package 
+* Load it in  
+* Find out how many rows are in the 'datasaurus_dozen' dataset
+* Look at the *last* 5 rows
+```{r timezone, exercise=TRUE, exercise.lines=10}
+
+
+```
+
