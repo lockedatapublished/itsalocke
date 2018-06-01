@@ -18,7 +18,7 @@ image ="img/ChibiStephBusiness.svg"
 Hi folks. Thanks for being our follower and/or mail list subscriber. You have all won 331% discount off any single public or private training event run by Locke Data, valid until june 2nd 2019, not mixable with other discounts. Plus PDF copies of both of her books!
 
 
-image ="img/Happy birthday Steph.png"
+[<img class="alignright" src="img/Happy birthday Steph.png" style="width:213px;height:213px;" />]
 
 ## Links and resources
 
@@ -32,5 +32,4 @@ Download your PDF copy of [Working with R](../../files/workingwithr.pdf) and enj
 
 
 Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) be sure to let us know if you enjoy the book. {{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
-
 
