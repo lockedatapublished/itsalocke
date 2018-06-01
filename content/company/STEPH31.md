@@ -25,9 +25,9 @@ Take a look at our[avaliable training here](https://itsalocke.com/training/onlin
 
 
 
-Download your PDF copy of [Working with R](../../files/workingwithr.pdf) for the training!**
+Download your PDF copy of [Working with R](../../files/workingwithr.pdf) and enjoy reading!
 {{<btn href="../../files/workingwithr.pdf" msg="Download workingwithr.pdf book">}}
 
 
-Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) for the training!**
+Download your PDF copy of [Data Manipulation in R](../../files/DataManipulationinR.pdf) be sure to let us know if you enjoy the book.
 {{<btn href="../../files/DataManipulationinR" msg="Download DataManipulationinR book">}}
