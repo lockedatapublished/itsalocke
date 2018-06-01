@@ -1,7 +1,7 @@
 +++
 title = "Steph 31"
-lastmod = "2018-06-02"
-date = "2018-06-02"
+lastmod = "2018-06-01"
+date = "2018-06-01"
 image ="img/ChibiStephBusiness.svg"
 [elements]
   footer = true
