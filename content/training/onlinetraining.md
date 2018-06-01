@@ -28,7 +28,7 @@ Our online training events allow you to get training from the comfort of your ow
 | July 23rd-24th | Bots & Cognitive Services | £500 | 
 | July 25th | Natural Language Processing in R  | £300 | 
 
-> All course start 9am GMT/BST
+> All courses start at 9am GMT/BST, unless otherwise requested 
 
 Our events are for small groups so we can tailor the content to the people attending. It also works entirely from your browser so you don't need to get lots of stuff set up before hand. 
 
@@ -40,9 +40,9 @@ Get in touch and make sure to let us know if any of the following apply:
 - you want to book multiple days
 - you fit in the following categories:
     + student
-	  + academic
-  	+ unemployed
-  	+ work for a charity
+    + academic
+    + unemployed
+    + work for a charity
 	
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
 
