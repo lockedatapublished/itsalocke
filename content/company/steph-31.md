@@ -1,5 +1,5 @@
 +++
-title = "Steph31"
+title = "Steph 31"
 lastmod = "2018-06-02"
 date = "2018-06-02"
 image ="img/ChibiStephBusiness.svg"
