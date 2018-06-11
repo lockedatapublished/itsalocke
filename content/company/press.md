@@ -13,71 +13,49 @@ image ="img/ChibiSteph.svg"
 <div class="row">
 
   <div class="col-sm-3">
-    <h3>Factsheet</h3>
+    ### Factsheet
+  
     <hr />
-    <h4>Company:</h4>
-    <p>Locke Data</p>
-    <p>Based in Cardiff, UK</p>
-    <br />
+    #### Company:
+  
+    Locke Data
+    Based in Cardiff UK
     
-    <h4>Founding date:</h4>
-    <p>December 2016</p>
-    <br />
+    #### Founding date:
     
-    <h4>Website:</h4>
-    <p><a href="https://itsalocke.com">itsalocke.com</a></p>
-    <br />
+    December 2016
     
-    <h4>Press / Business Contact:</h4>
-    <p><a href="mailto:info@itsalocke.com">info@itsalocke.com</a></p>
-    <br />
+    #### Website:
     
-    <h4>Social:</h4>
+    <a href="https://itsalocke.com">itsalocke.com</a>
     
-    <p><a href="https://twitter.com/lockedata">twitter</a></p>
-    <p><a href="https://www.youtube.com/channel/UCAg9ZUc9v3YedOuyAd-nDZQ">YouTube</a></p>
-    <p><a href="https://linkedin.com/company/locke-data">LinkedIn</a></p>
-    <p><a href="https://github.com/lockedata">github</a></p>
-    <br />
+    #### Press / Business Contact:
     
-    <h4>Address:</h4>
-    <p><address>Henstaff Court Llantrisant Road, Groesfaen, Pontyclun, CF72 8NG</address></p>
-    <br />
+    <a href="mailto:info@itsalocke.com">info@itsalocke.com</a>
     
-    <h4>Phone:</h4>
-    <p><a href="tel:+442921281903">+44(0)2921281903</a></p>
+    #### Social:
+    
+    <a href="https://twitter.com/lockedata">twitter</a>
+    <a href="https://www.youtube.com/channel/UCAg9ZUc9v3YedOuyAd-nDZQ">YouTube</a>
+    <a href="https://linkedin.com/company/locke-data">LinkedIn</a>
+    <a href="https://github.com/lockedata">github</a>
+    
+    #### Address:
+    
+    <address>Henstaff Court Llantrisant Road, Groesfaen, Pontyclun, CF72 8NG</address>
+    
+    #### Phone:
+    <a href="tel:+442921281903">+44(0)2921281903</a>
   </div>
   
   <div class="col-sm-8 col-sm-offset-1">
   
-    <h2>Description</h2>
-    <p>We’re a new data science consultancy based in Cardiff in the United Kingdom. We were founded by Steph Locke 
-    early in 2017 and our focus is on helping organisations start doing data science successfully.</p>
+    ## Description
     
-    <br />
+    We’re a new data science consultancy based in Cardiff in the United Kingdom. We were founded by Steph Locke 
+    early in 2017 and our focus is on helping organisations start doing data science successfully.
     
-    <!-- <h2>History</h2>
-    <p></p> -->
-    
-    <!-- <h2>Projects:</h2>
-    
-    <p></p> -->
-    
-    <hr />
-    
-    <!-- <h2>Images:</h2>
-    
-    <p></p>
-    
-    <hr /> -->
-    
-    <!-- <h2>Logo:</h2>
-    
-    <p></p>
-    
-    <hr /> -->
-    
-    <h2>Mentions:</h2>
+    ## Mentions:
     
     <ul class="presskit-list">
       <li><a href="https://www.onezeero.co.uk/onezeero-blog/q-and-a-guest-blog-with-steph-locke">Onezeero: Q and A Guest Blog with Steph Locke</a></li>
@@ -102,41 +80,20 @@ image ="img/ChibiSteph.svg"
     
     <hr />
     
-    <!-- <h2>Selected Articles:</h2>
+    ## Team:
     
-    <p></p>
-    
-    <hr /> -->
-    
-    <!-- <h2>Additional Links:</h2>
-    
-    <p></p>
-    
-    <hr /> -->
-    
-    <h2>Team:</h2>
-    <p>
       <a href="https://twitter.com/stefflocke" target="_blank">Steph Locke</a> - Chief Chibi Officer
-    </p>
-    <p>
       <a href="https://twitter.com/ozlocke" target="_blank">Oz Locke</a> - Lead Boldrick
-    </p>
-    <p>
+
       <a href="https://twitter.com/amymcdougall96" target="_blank">Amy McDougall</a> - Operations Manager
-    </p>
-    
-    <p>
+
       <a href="https://twitter.com/etalbot1291" target="_blank">Ellen Talbot</a> - Freelancer
-    </p>
-    <p>
+
       <a href="https://twitter.com/ma_salmon" target="_blank">Maëlle Salmon</a> - Freelancer
-    </p>
-    <p>
+
       <a>Tomaz Kastrun</a> - Freelancer
-    </p>
-    <p>
+
       <a>Rita Giordano</a> - Freelancer
-    </p>
 
   </div>
 
