@@ -10,9 +10,6 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-### Factsheet
-
-<hr />
 #### Company:
 
 Locke Data
