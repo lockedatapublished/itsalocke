@@ -49,8 +49,6 @@ image ="img/ChibiSteph.svg"
   </div>
   
   <div class="col-sm-8 col-sm-offset-1">
-    
-    <img class="img-responsive" src="/img/press-header.jpg" title="Team Locke Data">
   
     <h2>Description</h2>
     <p>We’re a new data science consultancy based in Cardiff in the United Kingdom. We were founded by Steph Locke 
