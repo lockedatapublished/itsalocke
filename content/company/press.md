@@ -1,3 +1,15 @@
++++
+title = "Press Kit"
+lastmod = "2018-06-11"
+date = "2018-06-11"
+image ="img/ChibiSteph.svg"
+[elements]
+  footer = true
+
+[style]
+  center = false
++++
+
 <div class="row">
 
   <div class="col-sm-3">
