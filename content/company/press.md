@@ -10,9 +10,6 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-<div class="row">
-
-  <div class="col-sm-3">
     ### Factsheet
   
     <hr />
@@ -46,9 +43,6 @@ image ="img/ChibiSteph.svg"
     
     #### Phone:
     <a href="tel:+442921281903">+44(0)2921281903</a>
-  </div>
-  
-  <div class="col-sm-8 col-sm-offset-1">
   
     ## Description
     
@@ -94,7 +88,3 @@ image ="img/ChibiSteph.svg"
       <a>Tomaz Kastrun</a> - Freelancer
 
       <a>Rita Giordano</a> - Freelancer
-
-  </div>
-
-</div>
