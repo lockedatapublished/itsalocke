@@ -41,6 +41,8 @@ December 2016
 #### Phone:
 <a href="tel:+442921281903">+44(0)2921281903</a>
 
+<img src="/img/press-header.jpg" class="img-responsive" alt="Team Locke Data">
+
 ## Description
 
 We’re a new data science consultancy based in Cardiff in the United Kingdom. We were founded by Steph Locke 
@@ -74,6 +76,7 @@ early in 2017 and our focus is on helping organisations start doing data science
 ## Team:
 
 <a href="https://twitter.com/stefflocke" target="_blank">Steph Locke</a> - Chief Chibi Officer
+
 <a href="https://twitter.com/ozlocke" target="_blank">Oz Locke</a> - Lead Boldrick
 
 <a href="https://twitter.com/amymcdougall96" target="_blank">Amy McDougall</a> - Operations Manager
