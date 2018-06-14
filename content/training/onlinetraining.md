@@ -23,8 +23,8 @@ Our online training events allow you to get training from the comfort of your ow
 | July 4th | Advanced R Programming | £300 |
 | July 9th-10th | Intro to R | £500 | 
 | July 11th  | Using the tidyverse for data science | £300 |
-| July 16th-17th | Analysing big data with Microsoft ML Server  | £500 | 
-| July 18th | An introduction to data science using Azure ML Studio  | £300 | 
+| July 16th-17th | [Analysing big data with Microsoft ML Server](../../courses/analysing-big-data-with-microsoft-ml-server)  | £500 | 
+| July 18th | [An introduction to data science using Azure ML Studio](../../courses/data-science-in-azure-ml)   | £300 | 
 | July 23rd-24th | Bots & Cognitive Services | £500 | 
 | July 25th | Natural Language Processing in R  | £300 | 
 
