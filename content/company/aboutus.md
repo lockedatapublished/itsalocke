@@ -24,7 +24,7 @@ We're a new data science consultancy based in Cardiff in the United Kingdom. We 
     <div class="col-lg-6  bg-light-gray"> 
 ## What we are
 - We are your advisers, your mentors, and your educators. We help you grow your skills. 
-- We focus on succesfully starting the data sicence process. Specifically, we ensure the organisation, the data, and the people are ready to do data science. 
+- We focus on succesfully starting the data science process. Specifically, we ensure the organisation, the data, and the people are ready to do data science. 
 - We are consultants who leave you with the skills needed to carry on without us.
 
 </div>
