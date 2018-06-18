@@ -7,10 +7,6 @@ image ="img/ChibiStephBusiness.svg"
   footer = true
   contact = true
 
-[menu.footer]
-  name = "About Locke Data"
-  weight = 10
-  
 +++
 
 # Stephs Birthday Giveaway!

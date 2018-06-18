@@ -1,5 +1,5 @@
 +++
-title = "Data Science in Azure ML"
+title = "Data Science Fundamentals"
 lastmod = "2018-06-11"
 date = "2018-06-11"
 [elements]
@@ -10,7 +10,7 @@ date = "2018-06-11"
 [style]
   center = false
 +++
-# An introduction to data science using Azure ML Studio
+# Data Science Fundamentals
 
 {{<btn href="mailto://training@itsalocke.com" msg="Book now">}}
 
