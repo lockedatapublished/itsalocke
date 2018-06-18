@@ -14,17 +14,16 @@ date = "2018-06-11"
 
 {{<btn href="mailto://training@itsalocke.com" msg="Book now">}}
 
-Data science is an important skill for organisations in the future. It can be difficult however to invest in lots of data science skills, especially when you just want to try it out on some proof of concept stuff! This one day training course focuses on the data science workflow using Azure ML to end up with working data science prototypes that can be called from all sorts of applications and systems.
+In this two-day course, we’ll take you from no data science knowledge to understanding the fundamentals and being able to code your own solutions. Using R, we'll cover everything from the process of doing data science to the details around sampling and model selection.
 
-- Learn how to set up Azure ML
-- Connect and consume with data
-- Tidy up and prepare data with available tools, including SQL, R, and Python
-- Sampling your data so you have some data to use and some data for testing
-- Building some models that suit tackle your data science question
-- Evaluating models and picking the best model
-- Deploying your model to a web service
+- **Overview of Data Science**
+- **Business Understanding** Determining the right question to ask and understanding the processe that you'll be impacting
+- **Data Understanding** Gathering data and putting it into the right format for later work
+- **Data preparation** Cleaning up data, joining additoinal datasets, performing feature engineering to improve your ability to generate great data science outputs
+- **Modeling** Sampling your data and building multiple models to answer your data science question
+- **Evaluation** Working out which is the best model to meet your needs
+- **Deployment** Options for getting a model live and things you need to take into consideration
 
-This isn't an in-depth introduction to data science but it gives you enough to get started and in an easy to use tool which you can use whilst you're learning the important concepts.
 
 ## What our training days look like
 
