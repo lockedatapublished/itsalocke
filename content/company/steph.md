@@ -14,7 +14,7 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-Steph is our CCO^[Chief Chibi Officer]. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough six years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
+Steph is our CEO. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough six years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
 
 This page is split up into sections to help people find what they're looking for.
  
@@ -26,7 +26,7 @@ This page is split up into sections to help people find what they're looking for
 Steph is the founder of a consultancy in the UK. Her talks, blog posts, conferences, and business all have one thing in common -- they help people get started with data science. Steph holds the Microsoft MVP award for her community contributions. In her spare time, Steph plays board games with her husband and takes copious pictures of her doggos.
 
 ## Links
-- [<i class="fa fa-twitter" ></i> @stefflocke](//twitter.com/stefflocke)
+- [<i class="fa fa-twitter" ></i> @theStephLocke](//twitter.com/theStephLocke)
 - [<i class="fa fa-linkedin" ></i>  stephanielocke](//uk.linkedin.com/in/stephanielocke)
 - [<i class="fa fa-github" ></i>  stephlocke](//github.com/stephlocke)
 - [<i class="fa fa-amazon" ></i>  stephanielocke](//amazon.com/author/stephanielocke)
