@@ -14,7 +14,17 @@ image ="img/ChibiSteph.svg"
 Welcome to the home of our online training! Here you'll find information about upcoming remote training opportunities and details about what's involved.
 
 # Upcoming courses
+
+## July courses at a glance
+- 9th - 10th: [Intro to R](../../courses/intro-to-r)
+- 11th: [Using the tidyverse for data science](../../courses/tidyverse-data-science)
+- 16th - 17th: [Analysing big data with Microsoft ML Server](../../courses/analysing-big-data-with-microsoft-ml-server) 
+- 18th: [An introduction to data science using Azure ML Studio](../../courses/data-science-in-azure-ml) 
+- 23rd - 24th: [Bots & Cognitive Services](../../courses/bots-cognitive-services)
+- 25th: [Natural Language Processing in R](../../courses/nlp-in-r)  
+
 {{<btn href="//itsalocke.com/#contact" msg="Book">}}
+
 
 ## Intro to R
 Get hands-on with the key areas of R including data manipulation, data visualisation, and data science.
@@ -24,6 +34,7 @@ Get hands-on with the key areas of R including data manipulation, data visualisa
 - Price: £600
 - More Info: [Intro to R](../../courses/intro-to-r)
 
+
 ## Using the tidyverse for data science
 See how you can upgrade your R data science workflow with the tidyverse and tidy packages.
 
@@ -31,6 +42,10 @@ See how you can upgrade your R data science workflow with the tidyverse and tidy
 - Instructor: Steph Locke
 - Price: £350
 - More Info: [Using the tidyverse for data science](../../courses/tidyverse-data-science)
+
+
+
+
 
 ## Analysing big data with Microsoft ML Server
 Get to grips with using Microsoft ML Server to make your R code run over large datasets and getting your R code into production quickly.
@@ -40,6 +55,7 @@ Get to grips with using Microsoft ML Server to make your R code run over large d
 - Price: £600
 - More Info: [Analysing big data with Microsoft ML Server](../../courses/analysing-big-data-with-microsoft-ml-server) 
 
+
 ## An introduction to data science using Azure ML Studio
 See how you can start experimenting with data science in an easy to use and free graphical interface
 
@@ -47,6 +63,10 @@ See how you can start experimenting with data science in an easy to use and free
 - Instructor: Tomaz Kastrun
 - Price: £350
 - More Info: [An introduction to data science using Azure ML Studio](../../courses/data-science-in-azure-ml) 
+
+
+
+
 
 ## Bots & Cognitive Services
 Expand your organisation's horizons with AI - learn the code you need to implement adaptive bots and add capabilities like custom image detection that were previously out of reach without a big team of data scientists
@@ -56,6 +76,8 @@ Expand your organisation's horizons with AI - learn the code you need to impleme
 - Price: £600
 - More Info: [Bots & Cognitive Services](../../courses/bots-cognitive-services)
 
+
+
 ## Natural Language Processing in R
 Learn how to leverage all that text your organisation has lying around
 
@@ -63,6 +85,8 @@ Learn how to leverage all that text your organisation has lying around
 - Instructor: Steph Locke
 - Price: £350
 - More Info: [Natural Language Processing in R](../../courses/nlp-in-r)  
+
+
 
 # Information
 
