@@ -21,7 +21,7 @@ If these bundles don't quite hit the spot, check out our [custom training](../cu
 ## Generalist bundles
 
 ### Data science generalist
-Get two to four days of training that give people skills in data wrangling, modelling, communication, and programming in R. 
+Get two to four days of training that give people skills in data wrangling, modelling, communication, and programming in R or Python. 
 
 The more days of training, the more each topic is covered: 
 
@@ -37,7 +37,7 @@ The more days of training, the more each topic is covered:
 
 ## Specialist bundles
 ### Data wrangler
-Get one to four days of wrangling data in R.  The more days of training, the more of these topics will be covered:
+Get one to four days of wrangling data in R or Python.  The more days of training, the more of these topics will be covered:
 
 - Basic data manipulation
 - Tabular data manipulation
@@ -51,7 +51,7 @@ Get one to four days of wrangling data in R.  The more days of training, the mor
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}} to book this bundle, or learn more.
 
 ### Modeller
-Get one to four days of building and evaluating analytical models in R. The more days of training, the more of these topics will be covered:
+Get one to four days of building and evaluating analytical models in R or Python. The more days of training, the more of these topics will be covered:
 
 - The end to end process
 - Data preparation and basic feature engineering
@@ -67,36 +67,36 @@ Note: A Foundation data wrangling day may be required depending on existing skil
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}} to book this bundle, or learn more.
 
 ### Communicator
-Get one to four days of using R to produce compelling graphics, inform people, and facilitate other people's exploration of results through dashboards.
+Get one to four days of using R or Python to produce compelling graphics, inform people, and facilitate other people's exploration of results through dashboards.
 
 The more days of training, the more of these topics will be covered:
  
 - Building static visualisations
 - Producing analytical documents
 - Building interactive visualisations
-- Building basic dashboards in R
+- Building basic dashboards
 - Constructing analytical web content
 - Building network graphs and other unusual graphics
 - Working with spatial data
-- Building interactive dashboards in R
+- Building interactive dashboards
 
 Note: A Foundation data wrangling day may be required depending on existing skills.
 
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}} to book this bundle, or learn more.
 
 ### Programmer
-Get one to four days of putting R and analytical models into production and working in a robust way.
+Get one to four days of putting R or Python and analytical models into production and working in a robust way.
 
 The more days of training, the more of these topics will be covered:
  
 - Creating reusable code
 - Working with source control
 - Working with APIs
-- Testing R products
-- Managing and deploying R products
+- Testing data science products
+- Managing and deploying data science products
 - Embedding models in SQL Server
-- Making R webservices
-- Using other programming languages with R
+- Making predictive webservices
+- Using other programming languages with R or Python
 
 Note: A Foundation data wrangling day may be required depending on existing skills.
 

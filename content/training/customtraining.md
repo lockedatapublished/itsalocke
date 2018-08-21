@@ -51,9 +51,12 @@ If blending existing training isn't quite right, you can even customise further 
 | Data wrangling in SQL | &checkmark; | &checkmark; | &checkmark; |  &checkmark;  | &checkmark;  |
 | Building a database for analysis | | &checkmark; |  &checkmark; | | &checkmark;  |
 | Data wrangling in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Data wrangling in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Effective Excel| &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Integrating R and SQL Server | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Integrating Python and SQL Server | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | ETL in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| ETL in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 
 ### Modelling
 | Area | Foundation | Beginner | Intermediate | Advanced | Executive |
@@ -64,36 +67,52 @@ If blending existing training isn't quite right, you can even customise further 
 | Natual Language Processing |  | &checkmark; | &checkmark; | &checkmark; |  |
 | AzureML for data science | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Microsoft Cognitive Services in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Microsoft Cognitive Services in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Reproducible analysis in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Reproducible analysis in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Using H2O with R |  | &checkmark; | &checkmark; | &checkmark; |  |
+| Using H2O with Python |  | &checkmark; | &checkmark; | &checkmark; |  |
 | Using Spark with R |  | &checkmark; | &checkmark; | &checkmark; |  |
-| Using Microsoft R Server |  | &checkmark; | &checkmark; | &checkmark; |  |
+| Using Spark with Python |  | &checkmark; | &checkmark; | &checkmark; |  |
+| Using Microsoft ML Server |  | &checkmark; | &checkmark; | &checkmark; |  |
 
 ### Communication
 | Area | Foundation | Beginner | Intermediate | Advanced | Executive |
 |--- |---|---|---|---|---|
 | Effective Excel| &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Reproducible analysis in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Reproducible analysis in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Static data visualisation in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Static data visualisation in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Interactive data visualisation in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Interactive data visualisation in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Analytical documents in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Analytical documents in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Dashboards in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Dashboards in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Combining R and Power BI | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Combining Python and Power BI | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 
 ### Programming
 | Area | Foundation | Beginner | Intermediate | Advanced | Executive |
 |--- |---|---|---|---|---|
 | R and other programming languages | &checkmark; | &checkmark; | &checkmark; |  |  |
 | Integrating R and SQL Server | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Integrating Python and SQL Server | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Scaling R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Scaling Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | ETL in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| ETL in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Reusable code in R | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
+| Reusable code in Python | &checkmark; | &checkmark; | &checkmark; | &checkmark; |  |
 | Testing & deploying R code | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Testing & deploying Python code | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Analytics and Docker | &checkmark; | &checkmark; | &checkmark; |  | &checkmark; |
 | Building databases | &checkmark; | &checkmark; | &checkmark; |  | &checkmark; |
 | Building distributed ETL on Azure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Microsoft Cognitive Services in C# | &checkmark; | &checkmark; | &checkmark; |  | &checkmark; |
 | Managing R infrastructure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Managing Python infrastructure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Managing a data science team | &checkmark; |  |  |  | &checkmark; |
 
 ### Data science processes
@@ -101,6 +120,7 @@ If blending existing training isn't quite right, you can even customise further 
 |--- |---|---|---|---|---|
 | The modeling process | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Managing R infrastructure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| Managing Python infrastructure | &checkmark; | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Managing a data science team | &checkmark; |  |  |  | &checkmark; |
 
 {{<btn href="//itsalocke.com/#contact" msg="Get in touch">}}
