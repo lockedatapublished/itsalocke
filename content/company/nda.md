@@ -12,7 +12,7 @@ image ="img/ChibiStephBusiness.svg"
 This Non-Disclosure Agreement (NDA) is between:
 
 - *Disclosing Party* of *Address* ("the Disclosing Party") and
-- Locke Data Ltd, a company registered in England and Wales under number 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG ("the Receiving Party").
+- Locke Data Ltd, a company registered in England and Wales under number 10538640, whose registered address is First floor – 29 Gelliwastad Road, Pontypridd, Wales CF37 2BN. ("the Receiving Party").
 
 
 The Disclosing Party wishes to disclose to the Receiving Party information information and/or data which is confidential to the Disclosing Party for the purposes of consultancy, mentoring, or training to be delivered to the Disclosing Party by the Receiving Party.
