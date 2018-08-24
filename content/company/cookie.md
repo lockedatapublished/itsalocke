@@ -21,7 +21,7 @@ This website itsalocke.com ("Our Site") uses cookies and similar technologies in
 
 - "cookie"	means a small file consisting of letters and numbers that Our Site downloads to your computer or device;
 - "web beacon"	means a small, transparent image file (usually only 1-pixel x 1-pixel in size) used for tracking user behaviour and activity around Our Site;
-- "We/Us/Our"	means Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG.
+- "We/Us/Our"	means Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is First floor - 29 Gelliwastad Road, Pontypridd, Wales, CF37 2BN.
 
 
 ## 2.	How Does Our Site Use Cookies?

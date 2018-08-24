@@ -162,7 +162,7 @@ Upon receipt of a SAR the Company shall have a maximum period of 40 calendar day
 - Details of any technical terminology or codes.
 
 ## 9.	Notification to the Information Commissioner’s Office
-As a data controller, the Company is required to notify the Information Commissioner’s Office that it is processing personal data.  The Company is registered in the register of data controllers, registration number: ZA274936.
+As a data controller, the Company is required to notify the Information Commissioner’s Office that it is processing personal data.  The Company is registered in the register of data controllers, registration number: 10538640.
 
 Data controllers must renew their notification with the Information Commissioner’s Office on an annual basis.  Failure to notify constitutes a criminal offence.
 
