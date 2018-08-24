@@ -20,11 +20,11 @@ These Terms and Conditions, together with any and all other documents referred t
 1.1	In these Terms and Conditions, unless the context otherwise requires, the following expressions have the following meanings:
 
 - "Content"	means any and all text, images, audio, video, scripts, code, software, databases and any other form of information capable of being stored on a computer that appears on, or forms part of, Our Site; and
-- "We/Us/Our"	means Locke Data Ltd, a company registered in England and Wales under 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG.
+- "We/Us/Our"	means Locke Data Ltd, a company registered in England and Wales under 10538640, whose registered address is First floor – 29 Gelliwastad Road, Pontypridd, Wales CF37 2BN.
 
 
 ## 2.	Information About Us
-2.1	Our Site, itsalocke.com, is owned and operated by Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG.
+2.1	Our Site, itsalocke.com, is owned and operated by Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is First floor – 29 Gelliwastad Road, Pontypridd, Wales CF37 2BN.
 
 ## 3.	Access to Our Site
 3.1	Access to Our Site is free of charge.
