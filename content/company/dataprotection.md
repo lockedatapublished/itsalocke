@@ -172,4 +172,3 @@ The Data Protection Officer shall be responsible for notifying and updating the 
 
 ## 10.	Implementation of Policy
 This Policy shall be deemed effective as of August 30th,  2017.  No part of this Policy shall have retroactive effect and shall thus apply only to matters occurring on or after this date.
-
