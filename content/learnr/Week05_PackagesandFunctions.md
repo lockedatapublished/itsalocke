@@ -6,6 +6,10 @@ date: "2018-01-29"
 output: html_document
 ---
 
+And here we have it, spoiler alert, this is the last in the series! Enjoy!
+
+{{< youtube Kq93ADb9Ii0 >}}
+
 R functions
 ===========
 

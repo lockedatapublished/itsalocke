@@ -556,3 +556,8 @@ Optional extras (this week - an excuse for a brew and a biscuit)
 -----------------------
 
 Well done everyone - You're half way through the basics course! Make yourself a brew and have a biscuit for every R Blogs you read that interest you and is relevant to your intended eventual use of R.
+
+And as usual, here's a video walk through of everything we've covered today for you to refer back to!
+
+{{< youtube RI3dD7QegfE >}}
+

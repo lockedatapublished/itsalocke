@@ -117,6 +117,9 @@ Other areas of the RStudio interface will be introduced as we go forward but tak
 
 Homework and extra reading for the real keen beans
 -----------
+- Here at Locke Data have been working hard on putting together a series of quick reference videos to go alongside this series, so watch our first instalment to consolidate everything we've covered today - and to put a face to the name behind the series (and the dodgy dad jokes).
+
+{{< youtube 8BAb0irAK2U >}}
 
 -   If you don't already have it, you should [install R and RStudio](http://www.rstudio.com/products/rstudio/download/#download).
 -   Find and follow three R or RStudio related twitter accounts or blogs \*hint: use the hashtag \#rstats
