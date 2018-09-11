@@ -34,3 +34,8 @@ Find out whether your data has been in a data breach with this wrapper of the wo
 A handy package for people doing logistic regressions, especially if you work in financial sectors.
 
 <a class="btn btn-primary" href="//itsalocke.com/optiRum" role="button">More</a>
+
+# namer
+A sweet package to save you stress íµ“ from the hassle of unnamed chunks in R Markdown! This will name all your chunks so you can quickly debug in future.
+
+<a class="btn btn-primary" href="//itsalocke.com/namer" role="button">More</a>
