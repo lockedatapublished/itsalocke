@@ -23,11 +23,11 @@ In this Policy the following terms shall have the following meanings:
 - "Cookie" means a small text file placed on your computer or device by Our Site when you visit certain parts of Our Site and when you use certain features of Our Site. Details of the Cookies used by Our Site are set out in section 12, below;
 - "Our Site" means this website, itsalocke.com;
 - "UK and EU Cookie Law" means the relevant parts of the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended in 2004, 2011 and 2015; and
-- "We/Us/Our" means Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG.
+- "We/Us/Our" means Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is First floor – 29 Gelliwastad Road, Pontypridd, Wales CF37 2BN..
 
 
 ## 2.	Information About Us
-2.1	Our Site, itsalocke.com, is owned and operated by Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is Henstaff Court, Llantrisant Road, Groesfaen, Wales, CF72 8NG.
+2.1	Our Site, itsalocke.com, is owned and operated by Locke Data Ltd, a limited company registered in England and Wales under 10538640, whose registered address is First floor – 29 Gelliwastad Road, Pontypridd, Wales CF37 2BN..
 
 ## 3.	Scope – What Does This Policy Cover?
 This Privacy Policy applies only to your use of Our Site. It does not extend to any websites that are linked to from Our Site (whether We provide those links or whether they are shared by other users). We have no control over how your data is collected, stored or used by other websites and We advise you to check the privacy policies of any such websites before providing any data to them.
