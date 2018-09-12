@@ -12,6 +12,8 @@ googleAnalytics = "UA-58415537-1"
   posts = "/posts/:title/"
   talks = "/talks/:title/"
   
+[blackfriday]
+  extensions = ["strikethrough"]
   
 DefaultContentLanguage = "en"
 
