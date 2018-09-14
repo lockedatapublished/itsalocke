@@ -11,8 +11,8 @@ date = "2018-06-11"
   center = false
 +++
 
-CosmosDB (formerly DocumentDB) is a database as a service product in azure. This non-relational data base features turnkey scalable geo-distribution, variable consistency models, schema-less writes and multiple query paradigms, but how do you do data science on it?
-This course will help you understand the core features of CosmosDB, scaling, consistency, replication, geo-distribution, non-relational data, schema-less operation. We'll also, focussed techniques to connect from a data science workflow, example service architectures for data science outputs and outline of supported compute methods to scale analysis
+CosmosDB (formerly DocumentDB) is a database as a service product in Azure. This non-relational data base features turnkey scalable geo-distribution, variable consistency models, schema-less writes and multiple query paradigms, but how do you do data science on it?
+This course will help you understand the core features of CosmosDB: scaling, consistency, replication, geo-distribution, non-relational data and schema-less operation. We'll also cover focussed techniques to connect from a data science workflow, example service architectures for data science outputs and outline supported compute methods to scale analysis
 
 ## What our training days look like
 
