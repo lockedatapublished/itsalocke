@@ -18,7 +18,7 @@ Welcome to the home of our online training! Here you'll find information about u
 ## Courses at a glance
 - October 29th - 30th: [Bots & Cognitive Services](../../courses/bots-cognitive-services)
 - October 31st - November 1st: [Analysing big data with Microsoft ML Server](../../courses/analysing-big-data-with-microsoft-ml-server) 
-- November 5th - 8th: Cosmos DB
+- November 5th - 8th: [Cosmos DB](../../courses/azure-cosmosdb)
 
 {{<btn href="//itsalocke.com/#contact" msg="Book">}}
 
