@@ -10,21 +10,9 @@ date = "2018-06-11"
 [style]
   center = false
 +++
-# An introduction to CosmosDB for Data Science
 
-{{<btn href="mailto://training@itsalocke.com" msg="Book now">}}
-
-CosmosDB (formerly DocumentDB) is a database as a service product in azure. This non-relational data base promises highly scalable 
-
-- Learn how to set up Azure ML
-- Connect and consume with data
-- Tidy up and prepare data with available tools, including SQL, R, and Python
-- Sampling your data so you have some data to use and some data for testing
-- Building some models that suit tackle your data science question
-- Evaluating models and picking the best model
-- Deploying your model to a web service
-
-This isn't an in-depth introduction to data science but it gives you enough to get started and in an easy to use tool which you can use whilst you're learning the important concepts.
+CosmosDB (formerly DocumentDB) is a database as a service product in azure. This non-relational data base features turnkey scalable geo-distribution, variable consistency models, schema-less writes and multiple query paradigms, but how do you do data science on it?
+This course will help you understand the core features of CosmosDB, scaling, consistency, replication, geo-distribution, non-relational data, schema-less operation. We'll also, focussed techniques to connect from a data science workflow, example service architectures for data science outputs and outline of supported compute methods to scale analysis
 
 ## What our training days look like
 
