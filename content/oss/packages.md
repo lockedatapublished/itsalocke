@@ -39,3 +39,8 @@ A handy package for people doing logistic regressions, especially if you work in
 A sweet package to save you stress from the hassle of unnamed chunks in R Markdown! This will name all your chunks so you can quickly debug in future.
 
 <a class="btn btn-primary" href="//itsalocke.com/namer" role="button">More</a>
+
+# hubspot
+A useful package for getting data out of the [Hubspot CRM](//hubspot.com) system, via it's API.
+
+<a class="btn btn-primary" href="//itsalocke.com/hubspot" role="button">More</a>
