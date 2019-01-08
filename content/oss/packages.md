@@ -20,10 +20,10 @@ Get some nifty data for data visualisation examples! Dino the DatasauRus and the
 
 <a class="btn btn-primary" href="//itsalocke.com/datasauRus" role="button">More</a>
 
-# pRojects
+# starters
 Avoid the rigamarole of setting up R projects meeting best practices. Do it in a line of code and save yourself tons of hassle.
 
-<a class="btn btn-primary" href="//itsalocke.com/pRojects" role="button">More</a>
+<a class="btn btn-primary" href="//itsalocke.com/starters" role="button">More</a>
 
 # HIBPwned
 Find out whether your data has been in a data breach with this wrapper of the wonderful site [HaveIBeenPwned.com](//HaveIBeenPwned.com)
