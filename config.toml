@@ -121,10 +121,10 @@ DefaultContentLanguage = "en"
    name = "Sitemaps"
    url = "sitemap_index.xml"
    
-   [[languages.en.menu.footer]]
-   weight = 50
-   name = "Bug bounty"
-   url =  "https://goo.gl/forms/KQiYR201Fcn4k9Zh2"
+  # [[languages.en.menu.footer]]
+  # weight = 50
+  # name = "Bug bounty"
+  # url =  "https://goo.gl/forms/KQiYR201Fcn4k9Zh2"
 
   #[[languages.de.menu.footer]]
   #  weight = 10
