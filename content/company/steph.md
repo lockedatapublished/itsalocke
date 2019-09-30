@@ -13,12 +13,6 @@ image ="img/ChibiSteph.svg"
   center = false
 +++
 
-Steph is our CEO. She founded Locke Data because building analytical teams who do data science has been her wheelhouse for near enough six years. Oh, and it's also part of her plans to take over the world.^[Her twenties was working for others, her thirties is consultancy, and if you want to find out more about her cunning plans you need to [arrange a call!](//itsalocke.com/#contact)]
-
-This page is split up into sections to help people find what they're looking for.
-
-- [Kit for event organisers](#kit-for-event-organisers)
-
 # Kit for event organisers
 
 ## Speaker bio
@@ -50,7 +44,7 @@ Grab your preferred image. All are suitably high-res for most purposes.
 </div>
 </div>
 
-## Mentioned In
+# Mentioned In
 
 - [Onezeero: Q and A Guest Blog with Steph Locke](https://www.onezeero.co.uk/onezeero-blog/q-and-a-guest-blog-with-steph-locke)
 - [Hooked on Data: Building Your Data Science Network. Finding Community](http://hookedondata.org/Building-Your-Data-Science-Network-Finding-Community/)
