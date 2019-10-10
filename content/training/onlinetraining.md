@@ -13,7 +13,7 @@ image ="img/ChibiSteph.svg"
 
 Welcome to the home of our online training! Here you'll find information about upcoming remote training opportunities and details about what's involved.
 
-# Upcoming courses
+<!-- # Upcoming courses
 
 ## Courses at a glance
 - October 29th - 30th: [Bots & Cognitive Services](../../courses/bots-cognitive-services)
@@ -48,7 +48,7 @@ Learn Cosmos DB and get hands-on experience working with the SQL API, JavaScript
 
 - Dates: November 5th - 6th
 - Instructor: Dave Parr
-- Price: ~~£600~~ £100 (Beta price)
+- Price: ~~£600~~ £100 (Beta price) -->
 
 
 # Information
