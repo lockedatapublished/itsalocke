@@ -1,5 +1,5 @@
 +++
-#disable = true
+disable = true
 weight = 31
 # Optional title to describe relationship or emphasize something.
 title = "Past clients"

@@ -1,6 +1,6 @@
 +++
 #disable = true
-weight = 90
+weight = 30
 title = "Contact us"
 subtitle  = "Kick off a conversation about how we can help you."
 lastmod = "2017-08-26"
@@ -29,7 +29,7 @@ button = "Send message"
 
 [menu.main]
   name = "Contact"
-  weight = 90
+  weight = 30
   url = "#contact"
 
 # Fields and messages are only defined within this file.

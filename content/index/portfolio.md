@@ -1,5 +1,5 @@
 +++
-#disable = true
+disable = true
 weight = 30
 title = "Case Studies"
 lastmod = "2017-08-26"
@@ -14,8 +14,8 @@ button = "Close project"
 [style]
   center = true
 
-[menu.main]
-  name = "Case Studies"
-  weight = 30
-  url = "#casestudies"
+#[menu.main]
+#  name = "Case Studies"
+#  weight = 30
+#  url = "#casestudies"
 +++

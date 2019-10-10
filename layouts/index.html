@@ -11,7 +11,7 @@
     {{ partial "hero.html" . }}
     {{ end }}
 
-    <!--{{ if and (eq .RelPermalink (add $.Site.LanguagePrefix "/index/services/")) (not .Params.disable) }}
+    {{ if and (eq .RelPermalink (add $.Site.LanguagePrefix "/index/services/")) (not .Params.disable) }}
         {{ partial "services.html" . }}
       {{ end }}
 	  
@@ -27,7 +27,7 @@
 
     {{ if and (eq .RelPermalink (add $.Site.LanguagePrefix "/index/calendar/")) (not .Params.disable) }}
     {{ partial "calendar.html" . }}
-    {{ end }}-->
+    {{ end }}
 
     {{ if and (eq .RelPermalink (add $.Site.LanguagePrefix "/index/community/")) (not .Params.disable) }}
     {{ partial "community.html" . }}
