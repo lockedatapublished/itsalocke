@@ -27,10 +27,6 @@ email = "info@itsalocke.com"
 
 button = "Send message"
 
-[menu.main]
-  name = "Contact"
-  weight = 30
-  url = "#contact"
 
 # Fields and messages are only defined within this file.
 

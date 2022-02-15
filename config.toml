@@ -18,9 +18,6 @@ googleAnalytics = "UA-58415537-1"
 DefaultContentLanguage = "en"
 
 [social]
-  twitter = "lockedata"
-  facebook = "lockedata"
-  googleplus = "//plus.google.com/+StephanieLocke"
 
 
 [languages.en]
@@ -79,20 +76,10 @@ DefaultContentLanguage = "en"
     enable = true
 
   [[languages.en.menu.social]]
-    weight = 10
-    name = "twitter"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/lockedata"
-  [[languages.en.menu.social]]
     weight = 20
     name = "youtube"
     pre = "<i class='fa fa-youtube'></i>"
     url = "https://www.youtube.com/channel/UCAg9ZUc9v3YedOuyAd-nDZQ"
-  [[languages.en.menu.social]]
-    weight = 30
-    name = "linkedin"
-    pre = "<i class='fa fa-linkedin'></i>"
-    url = "https://linkedin.com/company/locke-data"
   [[languages.en.menu.social]]
     weight = 40
     name = "github"

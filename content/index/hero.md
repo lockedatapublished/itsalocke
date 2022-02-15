@@ -1,9 +1,9 @@
 +++
 #disabled = true
 weight = 10
-title = "We help organisations with <br/> their data science journeys"
-subtitle = "Get started on<br/>your journey today"
-button = "Start"
+title = "Locke Data is no longer actively trading"
+subtitle = "We recommend reaching out to Jumping Rivers"
+button = "Go to Jumping Rivers"
 communitylink = "Community"
 lastmod = "2017-08-26"
 date = "2017-08-26"
